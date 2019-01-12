@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<view class='search'><i class='iconfont icon-sousuo'></i>搜索</view>
 <view class="container">
    <swiper  class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#a5b730" indicator-color="#ccc">
     <block wx:for="{{imgUrls}}" wx:key="unique">
