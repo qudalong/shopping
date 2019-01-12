@@ -1,10 +1,74 @@
-<view class='search'><i class='iconfont icon-sousuo'></i>搜索</view>
-<view class="container">
-   <swiper  class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#a5b730" indicator-color="#ccc">
-    <block wx:for="{{imgUrls}}" wx:key="unique">
-      <swiper-item>
-        <image src="{{item}}" class="slide-image" />
-      </swiper-item>
-    </block>
-  </swiper>
+<view class='search'>
+  <icon class='iconfont icon-sousuo'></icon>搜索</view>
+<!-- 轮播图 -->
+<swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#a5b730" indicator-color="#ccc">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 分类导航 -->
+<view class='classify-wrap'>
+  <view class='item'>
+    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <view>智能商铺</view>
+  </view>
+  <view class='item'>
+    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <view>在线时尚</view>
+  </view>
+  <view class='item'>
+    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <view>每日签到</view>
+  </view>
+  <view class='item'>
+    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <view>积分兑换</view>
+  </view>
+  <view class='item'>
+    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <view>领劵中心</view>
+  </view>
+  <view class='item'>
+    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <view>商城充值 </view>
+  </view>
+  <view class='item'>
+    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <view>门店</view>
+  </view>
+  <view class='item'>
+    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <view>加盟代理</view>
+  </view>
+</view>
+<!-- 公共title -->
+<view class='title-wrap border-b'>
+  <view class='left'>
+    <icon class='iconfont icon-youhuiquan'></icon>
+    <text class='lable'>专享优惠卷</text>
+  </view>
+  <view class='right'>
+    <text class='more'>更多</text>
+    <icon class='iconfont icon-mjiantou-copy'></icon>
+  </view>
+</view>
+<view class='title-wrap border-b'>
+  <view class='left'>
+    <icon class='iconfont icon-youhuiquan'></icon>
+    <text class='lable'>限量拼团，每日必逛</text>
+  </view>
+  <view class='right'>
+    <text class='more'>更多</text>
+    <icon class='iconfont icon-mjiantou-copy'></icon>
+  </view>
+</view>
+<view class="scroll_box">
+  <scroll-view class="scroll-view_x" scroll-x style="width: auto;overflow:hidden;">
+    <view id="green" class="scroll-view-item">1</view>
+    <view id="red" class="scroll-view-item">2</view>
+    <view id="yellow" class="scroll-view-item">3</view>
+    <view id="blue" class="scroll-view-item">4</view>
+  </scroll-view>
 </view>
