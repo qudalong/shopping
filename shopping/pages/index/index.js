@@ -5,11 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls: ['/image/img/banner01.jpg', '/image/img/banner02.jpg', '/image/img/banner03.jpg'],
+    imgUrls: ['/image/img/banner02.jpg', '/image/img/banner03.jpg', '/image/img/banner01.jpg'],
     indicatorDots: true,
     autoplay: true,
     interval: 4000,
-    duration: 400
+    duration: 400,
+    list:[1,1,1,1,1,1]
   },
 
   /**

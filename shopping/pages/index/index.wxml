@@ -1,15 +1,15 @@
 <view class='search'>
   <icon class='iconfont icon-sousuo'></icon>搜索</view>
 <!-- 轮播图 -->
-<swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#a5b730" indicator-color="#ccc">
+<!-- <swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#a5b730" indicator-color="#ccc">
   <block wx:for="{{imgUrls}}" wx:key="unique">
     <swiper-item>
       <image src="{{item}}" class="slide-image" />
     </swiper-item>
   </block>
-</swiper>
+</swiper> -->
 <!-- 分类导航 -->
-<view class='classify-wrap'>
+<!-- <view class='classify-wrap'>
   <view class='item'>
     <icon class='iconfont icon-yijia icon-nav'></icon>
     <view>智能商铺</view>
@@ -42,9 +42,9 @@
     <icon class='iconfont icon-yijia icon-nav'></icon>
     <view>加盟代理</view>
   </view>
-</view>
+</view> -->
 <!-- 公共title -->
-<view class='title-wrap border-b'>
+<view class='title-wrap'>
   <view class='left'>
     <icon class='iconfont icon-youhuiquan'></icon>
     <text class='lable'>专享优惠卷</text>
@@ -54,7 +54,7 @@
     <icon class='iconfont icon-mjiantou-copy'></icon>
   </view>
 </view>
-<view class='title-wrap border-b'>
+<view class='title-wrap'>
   <view class='left'>
     <icon class='iconfont icon-youhuiquan'></icon>
     <text class='lable'>限量拼团，每日必逛</text>
@@ -64,11 +64,43 @@
     <icon class='iconfont icon-mjiantou-copy'></icon>
   </view>
 </view>
-<view class="scroll_box">
-  <scroll-view class="scroll-view_x" scroll-x style="width: auto;overflow:hidden;">
-    <view id="green" class="scroll-view-item">1</view>
-    <view id="red" class="scroll-view-item">2</view>
-    <view id="yellow" class="scroll-view-item">3</view>
-    <view id="blue" class="scroll-view-item">4</view>
+<!-- 每日必逛 -->
+<view class="scroll-box">
+  <scroll-view class="scroll-view-x" scroll-x>
+    <view wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="scroll-view-item">
+      <image class='cover' src='/image/img/cover01.jpg'></image>
+      <view class='name'>羽绒服短袖</view>
+      <view class='price'>￥16{{index}}.00</view>
+      <view class='count'>已品团50{{index}}件</view>
+    </view>
   </scroll-view>
 </view>
+<!-- 特别推荐 -->
+<view class='title-mid'>
+  <view class='middle'>
+    <icon class='iconfont icon-huo'></icon>
+    <text class='lable'>特别推荐</text>
+  </view>
+  <view class='right-wrap'>
+    <text class='more'>更多</text>
+    <icon class='iconfont icon-mjiantou-copy'></icon>
+  </view>
+</view>
+<view class="product-list">
+    <view wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="item">
+      <image class='cover' src='/image/img/cover01.jpg'></image>
+      <view class='name'>羽绒服短袖</view>
+      <view class='price'>￥16{{index}}.00</view>
+    </view>
+</view>
+<view class='title-mid'>
+  <view class='middle'>
+    <icon class='iconfont icon-huo'></icon>
+    <text class='lable'>热销</text>
+  </view>
+  <view class='right-wrap'>
+    <text class='more'>更多</text>
+    <icon class='iconfont icon-mjiantou-copy'></icon>
+  </view>
+</view>
+<view style='height:100px'></view>

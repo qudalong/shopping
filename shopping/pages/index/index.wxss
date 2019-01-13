@@ -6,7 +6,7 @@ page {
   margin: 30rpx;
   height: 80rpx;
   line-height: 70rpx;
-  background: #fff;
+  background: #fff; 
   border-radius: 10rpx;
   box-shadow: 1px 1px 3px #ccc;
   text-align: center;
@@ -60,9 +60,51 @@ page {
   justify-content: space-between;
   padding:20rpx 30rpx;
   background: #fff;
+  position: relative;
+  border-bottom: 1px solid #f0f0f0;
 }
-.border-b{
-  border-bottom: 1px solid #dedede;
+.title-mid{
+  padding:20rpx 30rpx;
+  background: #fff;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+.right-wrap{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30rpx;
+}
+.middle{
+ position: relative;
+ text-align: center;
+ width: fit-content;
+ display: inline-block;
+}
+.middle .lable{
+  margin-left: 10rpx;
+}
+.middle::before{
+content: '';
+width: 60rpx;
+height: 2rpx;
+background: #ccc;
+display: block;
+position: absolute;
+top: 36rpx;
+left:-90rpx;
+}
+.middle::after{
+content: '';
+width: 60rpx;
+height: 2rpx;
+background: #ccc;
+display: block;
+position: absolute;
+top: 36rpx;
+right:-90rpx;
+border-bottom: 1px solid #dedede;
 }
 
 .title-wrap .left, .title-wrap .right {
@@ -78,18 +120,67 @@ page {
 .title-wrap .more {
   margin-right: 20rpx;
 }
-.scroll_box{
+.scroll-box{
   width: 100%;
-height: 307rpx;
 overflow: hidden;
 padding: 20rpx;
-background: #fff;
+background: #f0f0f0;
 white-space: nowrap;
 }
+.scroll-view-x{
+  width: auto;overflow:hidden;
+}
 .scroll-view-item{
- width:600rpx;
-height: auto;
 margin-right: 23rpx;
 display: inline-block;
-  background: red;
+  background: #fff;
+  line-height: 1.6;
+  padding: 20rpx;
+}
+.scroll-view-item .cover{
+  width: 250rpx;
+  height: 300rpx;
+}
+.scroll-view-item .name{
+ color: #999;
+}
+.scroll-view-item .price{
+ color: red;
+}
+.scroll-view-item .count{
+ color: #666;
+ border-top: 1px solid #dedede;
+ margin-top: 10rpx;
+ padding: 10rpx 0 0;
+}
+.product-list{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+ background: #fff;
+ padding: 30rpx;
+}
+.product-list .item{
+ width: 32%;
+ margin-right: 2%;
+ margin-bottom: 20rpx;
+}
+.product-list .item:nth-child(3n){
+   margin-right: 0;
+}
+.product-list .item .cover{
+  width: 100%;
+  height: 260rpx;
+}
+.product-list .item .name{
+ color: #999;
+}
+.product-list .item .price{
+ color: red;
+}
+.product-list .item .count{
+ color: #666;
+ border-top: 1px solid #dedede;
+ margin-top: 10rpx;
+ padding: 10rpx 0 0;
 }
