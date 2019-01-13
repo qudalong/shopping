@@ -1,15 +1,15 @@
 <view class='search'>
   <icon class='iconfont icon-sousuo'></icon>搜索</view>
 <!-- 轮播图 -->
-<!-- <swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#a5b730" indicator-color="#ccc">
+<swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#a5b730" indicator-color="#ccc">
   <block wx:for="{{imgUrls}}" wx:key="unique">
     <swiper-item>
       <image src="{{item}}" class="slide-image" />
     </swiper-item>
   </block>
-</swiper> -->
+</swiper>
 <!-- 分类导航 -->
-<!-- <view class='classify-wrap'>
+<view class='classify-wrap'>
   <view class='item'>
     <icon class='iconfont icon-yijia icon-nav'></icon>
     <view>智能商铺</view>
@@ -42,7 +42,7 @@
     <icon class='iconfont icon-yijia icon-nav'></icon>
     <view>加盟代理</view>
   </view>
-</view> -->
+</view>
 <!-- 公共title -->
 <view class='title-wrap'>
   <view class='left'>
@@ -88,7 +88,7 @@
 </view>
 <view class="product-list">
     <view wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="item">
-      <image class='cover' src='/image/img/cover01.jpg'></image>
+      <image class='cover' src='/image/img/cover02.jpg'></image>
       <view class='name'>羽绒服短袖</view>
       <view class='price'>￥16{{index}}.00</view>
     </view>
