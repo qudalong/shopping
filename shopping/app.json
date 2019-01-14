@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/shopCart/shopCart",
-    "pages/my/my",
     "pages/classify/classify",
+    "pages/shopCart/shopCart",
+    "pages/index/index",
+    "pages/my/my",
     "pages/logs/logs"
   ],
   "window": {

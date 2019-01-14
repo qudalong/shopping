@@ -6,7 +6,7 @@ page {
   margin: 30rpx;
   height: 80rpx;
   line-height: 70rpx;
-  background: #fff; 
+  background: #fff;
   border-radius: 10rpx;
   box-shadow: 1px 1px 3px #ccc;
   text-align: center;
@@ -33,9 +33,8 @@ page {
   line-height: 100rpx;
   text-align: center;
   border-radius: 50%;
-  background: red;
   color: #fff;
-  font-size: 80rpx;
+  font-size: 70rpx;
   margin-bottom: 10rpx;
 }
 
@@ -58,53 +57,64 @@ page {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:20rpx 30rpx;
+  padding: 20rpx 30rpx;
   background: #fff;
   position: relative;
   border-bottom: 1px solid #f0f0f0;
 }
-.title-mid{
-  padding:20rpx 30rpx;
+
+.title-mid {
+  padding: 20rpx 30rpx;
   background: #fff;
   position: relative;
   text-align: center;
   border-bottom: 1px solid #f0f0f0;
 }
-.right-wrap{
+
+.right-wrap {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 30rpx;
+  display: flex;
+  align-items: center;
 }
-.middle{
- position: relative;
- text-align: center;
- width: fit-content;
- display: inline-block;
+
+.middle {
+  position: relative;
+  text-align: center;
+  width: fit-content;
+  display: inline-block;
 }
-.middle .lable{
+
+.middle .lable {
   margin-left: 10rpx;
 }
-.middle::before{
-content: '';
-width: 60rpx;
-height: 2rpx;
-background: #ccc;
-display: block;
-position: absolute;
-top: 36rpx;
-left:-90rpx;
+
+.middle::before {
+  content: '';
+  width: 60rpx;
+  height: 1rpx;
+  background: #ccc;
+  display: block;
+  position: absolute;
+  top: 36rpx;
+  left: -90rpx;
 }
-.middle::after{
-content: '';
-width: 60rpx;
-height: 2rpx;
-background: #ccc;
-display: block;
-position: absolute;
-top: 36rpx;
-right:-90rpx;
-border-bottom: 1px solid #dedede;
+
+.middle::after {
+  content: '';
+  width: 60rpx;
+  height: 1rpx;
+  background: #ccc;
+  display: block;
+  position: absolute;
+  top: 36rpx;
+  right: -90rpx;
+}
+
+.title-wrap .left {
+  color: #ffa868;
 }
 
 .title-wrap .left, .title-wrap .right {
@@ -113,74 +123,127 @@ border-bottom: 1px solid #dedede;
 }
 
 .title-wrap .lable {
-  color: blue;
-  margin-left: 20rpx;
+  margin-left: 10rpx;
 }
 
-.title-wrap .more {
-  margin-right: 20rpx;
-}
-.scroll-box{
+.scroll-box {
   width: 100%;
-overflow: hidden;
-padding: 20rpx;
-background: #f0f0f0;
-white-space: nowrap;
+  overflow: hidden;
+  padding: 20rpx;
+  background: #fff7f5;
+  white-space: nowrap;
 }
-.scroll-view-x{
-  width: auto;overflow:hidden;
+
+.scroll-view-x {
+  width: auto;
+  overflow: hidden;
 }
-.scroll-view-item{
-margin-right: 23rpx;
-display: inline-block;
+
+.scroll-view-item {
+  margin-right: 23rpx;
+  display: inline-block;
   background: #fff;
   line-height: 1.6;
   padding: 20rpx;
 }
-.scroll-view-item .cover{
+
+.scroll-view-item .cover {
   width: 250rpx;
   height: 300rpx;
 }
-.scroll-view-item .name{
- color: #999;
+
+.scroll-view-item .name {
+  color: #999;
 }
-.scroll-view-item .price{
- color: red;
+
+.scroll-view-item .price {
+  color: red;
 }
-.scroll-view-item .count{
- color: #666;
- border-top: 1px solid #dedede;
- margin-top: 10rpx;
- padding: 10rpx 0 0;
+
+.scroll-view-item .count {
+  color: #666;
+  border-top: 1px solid #dedede;
+  margin-top: 10rpx;
+  padding: 10rpx 0 0;
 }
-.product-list{
+
+.product-list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
- background: #fff;
- padding: 30rpx;
+  background: #fff;
+  padding: 30rpx;
 }
-.product-list .item{
- width: 32%;
- margin-right: 2%;
- margin-bottom: 20rpx;
+
+.product-list .item {
+  width: 32%;
+  margin-right: 2%;
+  margin-bottom: 20rpx;
+  background: #fff;
+  
 }
-.product-list .item:nth-child(3n){
-   margin-right: 0;
+
+.product-list .item:nth-child(3n) {
+  margin-right: 0;
 }
-.product-list .item .cover{
+
+.product-list .item .cover {
   width: 100%;
   height: 260rpx;
 }
-.product-list .item .name{
- color: #999;
+.icon-shoucang{
+  color:#d81e06; 
 }
-.product-list .item .price{
- color: red;
+.product-list .item .name {
+  color: #999;
+  margin-bottom: 10rpx;
+  padding-left: 10rpx;
 }
-.product-list .item .count{
- color: #666;
- border-top: 1px solid #dedede;
- margin-top: 10rpx;
- padding: 10rpx 0 0;
+
+.product-list .item .price {
+  color: #d81e06;
+    padding-left: 10rpx;
+}
+
+.product-list .item .count {
+  color: #666;
+  border-top: 1px solid #dedede;
+  margin-top: 10rpx;
+  padding: 10rpx 0 0;
+}
+
+.icon01 {
+  background: #d81e06;
+}
+
+.icon02 {
+  background: #d81e06;
+}
+
+.icon03 {
+  background: #bb8d29;
+}
+
+.icon04 {
+  background: #b4ae41;
+}
+
+.icon05 {
+  background: #fe4a49;
+}
+
+.icon06 {
+  background: #ad5e0f;
+}
+
+.icon07 {
+  background: #5b46bb;
+}
+
+.icon08 {
+  background: #ec88b6;
+}
+
+.icon-iconfontyoujiantou-copy-copy-copy-copy {
+  color: #666;
 }

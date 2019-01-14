@@ -11,39 +11,38 @@
 <!-- 分类导航 -->
 <view class='classify-wrap'>
   <view class='item'>
-    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <icon class='iconfont icon-quanbu icon-nav icon01'></icon>
     <view>智能商铺</view>
   </view>
   <view class='item'>
-    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <icon class='iconfont icon-yijia icon-nav icon02'></icon>
     <view>在线时尚</view>
   </view>
   <view class='item'>
-    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <icon class='iconfont icon-qiandao icon-nav  icon03'></icon>
     <view>每日签到</view>
   </view>
   <view class='item'>
-    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <icon class='iconfont icon-qian icon-nav icon04'></icon>
     <view>积分兑换</view>
   </view>
   <view class='item'>
-    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <icon class='iconfont icon-liwu icon-nav icon05'></icon>
     <view>领劵中心</view>
   </view>
   <view class='item'>
-    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <icon class='iconfont icon-shouji icon-nav icon06'></icon>
     <view>商城充值 </view>
   </view>
   <view class='item'>
-    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <icon class='iconfont icon-16xiaoxiliebiaoshangji icon-nav icon07'></icon>
     <view>门店</view>
   </view>
   <view class='item'>
-    <icon class='iconfont icon-yijia icon-nav'></icon>
+    <icon class='iconfont icon-jiameng icon-nav  icon08'></icon>
     <view>加盟代理</view>
   </view>
 </view>
-<!-- 公共title -->
 <view class='title-wrap'>
   <view class='left'>
     <icon class='iconfont icon-youhuiquan'></icon>
@@ -51,20 +50,40 @@
   </view>
   <view class='right'>
     <text class='more'>更多</text>
-    <icon class='iconfont icon-mjiantou-copy'></icon>
+    <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
   </view>
 </view>
+<!-- 预约 -->
 <view class='title-wrap'>
   <view class='left'>
-    <icon class='iconfont icon-youhuiquan'></icon>
+    <icon class='iconfont icon-yiwancheng'></icon>
+    <text class='lable'>预约</text>
+  </view>
+  <view class='right'>
+    <text class='more'>更多</text>
+    <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
+  </view>
+</view>
+<view class="scroll-box">
+  <scroll-view class="scroll-view-x" scroll-x>
+    <view wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="scroll-view-item">
+      <image class='cover' src='/image/img/cover03.jpg'></image>
+      <view class='name'>羽绒服短袖</view>
+      <view class='price'>￥16{{index}}.00</view>
+    </view>
+  </scroll-view>
+</view>
+<!-- 每日必逛 -->
+<view class='title-wrap'>
+  <view class='left'>
+    <icon class='iconfont icon-guanyuwomen'></icon>
     <text class='lable'>限量拼团，每日必逛</text>
   </view>
   <view class='right'>
     <text class='more'>更多</text>
-    <icon class='iconfont icon-mjiantou-copy'></icon>
+    <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
   </view>
 </view>
-<!-- 每日必逛 -->
 <view class="scroll-box">
   <scroll-view class="scroll-view-x" scroll-x>
     <view wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="scroll-view-item">
@@ -78,12 +97,12 @@
 <!-- 特别推荐 -->
 <view class='title-mid'>
   <view class='middle'>
-    <icon class='iconfont icon-huo'></icon>
+    <icon class='iconfont icon-shoucang'></icon>
     <text class='lable'>特别推荐</text>
   </view>
   <view class='right-wrap'>
     <text class='more'>更多</text>
-    <icon class='iconfont icon-mjiantou-copy'></icon>
+    <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
   </view>
 </view>
 <view class="product-list">
@@ -100,7 +119,7 @@
   </view>
   <view class='right-wrap'>
     <text class='more'>更多</text>
-    <icon class='iconfont icon-mjiantou-copy'></icon>
+    <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
   </view>
 </view>
 <view style='height:100px'></view>
