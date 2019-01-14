@@ -2,12 +2,12 @@
   <icon class='iconfont icon-sousuo'></icon>搜索</view>
 <view class='hostproduct '>
   <view bindtap='bindClick' class="hotsell {{activeIndex==0?'active':''}}" data-index='0'>特别推荐</view>
-  <view bindtap='bindClick'  class="hotsell {{activeIndex==1?'active':''}}" data-index='1'>热销</view>
+  <view bindtap='bindClick' class="hotsell {{activeIndex==1?'active':''}}" data-index='1'>热销</view>
 </view>
 
 <view wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class='goods'>
   <view class='picture'>
-    <image src='/image/img/cover03.jpg' class='img' />
+    <image src='/image/img/cover01.jpg' class='img' />
   </view>
   <view class='info'>
     <view class='productname'>毛领子</view>

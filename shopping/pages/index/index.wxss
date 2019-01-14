@@ -57,14 +57,14 @@ page {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20rpx 30rpx;
+  padding: 20rpx;
   background: #fff;
   position: relative;
   border-bottom: 1px solid #f0f0f0;
 }
 
 .title-mid {
-  padding: 20rpx 30rpx;
+  padding: 20rpx;
   background: #fff;
   position: relative;
   text-align: center;
@@ -172,7 +172,7 @@ page {
   align-items: center;
   flex-wrap: wrap;
   background: #fff;
-  padding: 30rpx;
+  padding: 20rpx;
 }
 
 .product-list .item {

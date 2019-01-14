@@ -1,1 +1,125 @@
-/* pages/my/my.wxss */
+.userinfo {
+  height: 400rpx;
+  background: #feae3e;
+  color: #fff;
+  text-align: center;
+}
+
+.userAvatarUrl {
+  margin-top: 60rpx;
+  margin-bottom: 10rpx;
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.userNickName {
+  display: block;
+}
+
+.row-wrap {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  background: #fff;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+
+.row-wrap .item {
+  text-align: center;
+  flex: 1;
+}
+
+.row-wrap .item.last {
+  border-left: 1px solid #f0f0f0;
+}
+
+.icon-qianbao {
+  margin-bottom: 16rpx;
+  color: #a6a6a6;
+}
+
+.icon-jifen1, .icon-jifenshangcheng {
+  color: #a6a6a6;
+}
+
+.row-wrap .item .money {
+  color: #feae3e;
+  margin-bottom: 16rpx;
+  display: block;
+}
+
+.block {
+  text-align: center;
+}
+
+.block .iconfont {
+  margin-right: 10rpx;
+}
+
+.hd {
+  background: #fff;
+  padding: 30rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.hb {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.hb .item {
+  padding: 30rpx 0;
+  flex: 1;
+  text-align: center;
+}
+
+.hb .item icon {
+  margin-bottom: 10rpx;
+  color: #a6a6a6;
+  display: block;
+}
+
+.hb-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.hb-content .item {
+  width: 25%;
+  padding: 30rpx 0;
+  text-align: center;
+}
+
+.hb-content .item icon {
+  margin-bottom: 10rpx;
+  display: block;
+}
+.icon1{
+  color: #1E9BDD;
+}
+.icon2{
+  color: #FFBA53;
+}
+.icon3{
+  color: #1965C2;
+}
+.icon4{
+  color: #43D492;
+}
+.icon5{
+  color: #43D492;
+}
+.icon6{
+  color: #1E9BDD;
+}
+.icon7{
+  color: #5ACCED;
+}

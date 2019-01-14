@@ -1,2 +1,32 @@
-<!--pages/shopCart/shopCart.wxml-->
-<text>pages/shopCart/shopCart.wxml</text>
+<view class="row-wrap">
+  <icon bindtap='selectAll' class="iconfont icon-circle {{status ? 'icon-duihao1' : 'icon-yuan'}} " data-status="1"></icon>
+  <view>平台自营</view>
+</view>
+<view class='shop-list'>
+  <view wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="row-wrap">
+    <icon bindtap='selected' class="iconfont icon-circle {{item.status ? 'icon-duihao1' : 'icon-yuan'}} "  data-index="{{index}}"></icon>
+    <view class='produce-info'>
+      <image class='cover' src='{{item.img}}'></image>
+      <view class='info'>
+        <view class='name'>{{item.name}}</view>
+        <view class='type' wx:if="{{item.type.length}}">
+          <text wx:for="{{item.type}}" wx:key="unique">规格：{{item}}</text>
+        </view>
+        <view class='bottom-row'>
+          <view class='price'>#{{item.price}}</view>
+          <view class='control '>
+            <icon class='add'>-</icon>
+            <view class='count'>{{item.count}}</view>
+            <icon class='minus'>+</icon>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="row-wrap result-wrap">
+  <icon class='iconfont icon-yuan icon-circle'></icon>全选
+  <view class='total'>合计:￥0</view>
+  <view class='edit' hover-class='hover'>编辑</view>
+  <view class='result' hover-class='hover'>结算</view>
+</view>
