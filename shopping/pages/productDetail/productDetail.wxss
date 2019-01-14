@@ -1,0 +1,152 @@
+page{
+  padding: 0;
+}
+/* 固定定位 */
+.shopCart{
+  width: 80rpx;
+  height: 80rpx;
+  background-color: rgba(255, 255, 255, .4);
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  top: 20rpx;
+  right: 20rpx;
+  box-sizing: border-box;
+  padding-top: 12rpx;
+}
+.bottomNavigation{
+  width: 100%;
+  height: 120rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+.homepage,.collect{
+  width: 16%;
+  background-color: #FEFFFE;
+  color: #919391;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 16rpx;
+  font-size: 26rpx;
+}
+.homepage{
+  border-right: 2rpx solid #ccc;
+}
+.addcart,.buynow{
+  width: 34%;
+  background-color: #F29800;
+  color: #fff;
+  text-align: center;
+  line-height: 120rpx;
+}
+.buynow{
+   background-color: #FE4442; 
+}
+.icon-weibiaoti,.icon-kefu{
+  color: #bfbfbf;
+  font-size: 100rpx;
+}
+.icon-weibiaoti{
+  position: fixed;
+  right: 40rpx;
+  bottom: 300rpx;
+}
+.icon-kefu{
+  position: fixed;
+  right: 40rpx;
+  bottom: 180rpx;
+}
+/* 顶部轮播图 */
+.imgSwitch{
+  width: 100%;
+  height: 730rpx;
+  position: relative;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.blackspots{
+  width: 100rpx;
+  position: absolute;
+  bottom: 20rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+}
+.point{
+  width: 20rpx;
+  height: 20rpx;
+  background-color: #000;
+  border-radius: 50%;
+}
+.middle{
+  margin: 0 20rpx;
+}
+/* 商品名称价格销量 */
+.namepricesales{
+  padding: 20rpx 20rpx;
+  line-height: 2.0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #ccc;
+}
+.share{
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  color: #919391
+}
+.first{
+  color: #FE4442;
+}
+.center{
+  margin: 0 20rpx;
+  text-decoration: line-through;
+}
+/* 承诺部分 */
+.promise{
+  display: flex;
+  flex-direction: row; 
+}
+.icon-duihao{
+  color: #59B082;
+  font-size: 34rpx;
+  margin-right: 8rpx;
+}
+.second{
+  margin: 0 30rpx;
+}
+/* 选择规格 */
+.choosespecifications{
+  margin: 20rpx 0;
+  padding: 25rpx;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  line-height: 1.5;
+}
+.specifications{
+  font-size: 24rpx;
+  margin-left: 30rpx;
+  color: #5F5C58;
+}
+.choose{
+  line-height: 2;
+}
+/* 商品详情 评价 */
+.productdetailevaluation{
+  padding: 30rpx 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-bottom: 2rpx solid #ccc;
+}
+/* 商品详情 */
+.commodityimages{
+  
+}
