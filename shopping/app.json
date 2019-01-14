@@ -3,13 +3,13 @@
     "pages/productDetail/productDetail",
     "pages/classify/classify",
     "pages/shopCart/shopCart",
-    "pages/index/index",
     "pages/my/my",
-    "pages/logs/logs"
+    "pages/classify/classify",
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#000",
+    "navigationBarBackgroundColor": "#E51810",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "#fff"
   },
