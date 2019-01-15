@@ -11,3 +11,8 @@
   color: #E51810;
   border-bottom: 1px solid #E51810;
 }
+.empty{
+  margin-top: 100rpx;
+  text-align: center;
+  color: #8E8E8E;
+}

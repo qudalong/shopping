@@ -15,9 +15,10 @@ Page({
 
   },
 
-  toOrderList() {
+  toOrderList(e) {
+    const activeIndex = e.currentTarget.dataset.index;
     wx.navigateTo({
-      url: `/pages/orderList/orderList`
+      url: `/pages/orderList/orderList?activeIndex=${activeIndex}`
     })
   },
 
