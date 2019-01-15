@@ -158,9 +158,11 @@
 }
 /* 商品详情 */
 .commodity-details{
+  background: #fff;
+}
+.commodity-details .details{
   line-height: 1.4;
   padding:10rpx 20rpx;
-  background: #fff;
 }
 .commodity-details image{
   max-width: 100%;
