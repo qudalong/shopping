@@ -53,23 +53,20 @@
   color: #bfbfbf;
   font-size: 100rpx;
 }
-.icon-weibiaoti{
+.icon-kefu,.icon-weibiaoti{
   position: fixed;
   right: 40rpx;
-  bottom: 300rpx;
   background: rgba(0, 0, 0, .2);
   border-radius: 50%;
   color: #FE4442;
   padding: 4rpx;
+  font-size: 80rpx;
+}
+.icon-weibiaoti{
+  bottom: 300rpx;
 }
 .icon-kefu{
-  position: fixed;
-  right: 40rpx;
-  bottom: 160rpx;
-  background: rgba(0, 0, 0, .2);
-  border-radius: 50%;
-   color: #FE4442;
-   padding: 4rpx;
+  bottom: 180rpx;
 }
 
 /* 商品名称价格销量 */
@@ -133,16 +130,19 @@
   line-height: 2;
 }
 /* 商品详情 评价 */
+.content-wrap{
+  margin-bottom: 130rpx;
+}
 .productdetailevaluation{
   display: flex;
   justify-content: space-around;
   background-color: #fff;
   border-bottom: 1rpx solid #f0f0f0;
 }
-.productdetailevaluation text{
+.productdetailevaluation view{
   padding: 30rpx 0;
 }
-.productdetailevaluation text.active{
+.productdetailevaluation view.active{
   color: #FE4442;
   border-bottom: 1rpx solid #FE4442;
 }
@@ -159,12 +159,11 @@
   margin-bottom: 160rpx;
 }
 /* 商品详情 */
-.commodityimages{
+.commodity-details{
   line-height: 1.4;
   padding:10rpx 20rpx;
   background: #fff;
-  margin-bottom: 130rpx;
 }
-.commodityimages image{
+.commodity-details image{
   max-width: 100%;
 }
