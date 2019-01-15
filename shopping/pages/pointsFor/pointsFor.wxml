@@ -1,0 +1,92 @@
+<view class='mypoints'>
+  <!-- 我的积分 -->
+  <view class='my'>
+    <view class='points'>
+      <text>我的积分</text>
+      <icon class='iconfont'></icon>
+    </view>
+    <text class='iconfont'>2</text>
+  </view>
+  <view class='changedetail'>
+    <view class='mychange'>
+      <icon class='iconfont icon-jifenwodeduihuan'></icon>
+      <text>我的兑换</text>
+    </view>
+    <view class='detail'>
+      <icon class='iconfont icon-jifenmingxi'></icon>
+      <text>积分明细</text>
+    </view>
+  </view>
+  <view class='signin'>今日已签到</view>
+</view>
+<view class='preferential'>
+  <!-- 优惠购专区 -->
+  <text class='prefecture'>优惠购专区</text>
+</view>
+<view class='all-mall-classification'>
+  <view class='all'>
+    <icon class='iconfont icon-552cc13f75722'></icon>
+    <text>全部</text>
+  </view>
+  <view class='mall-classification1'>
+    <icon class='iconfont icon-jifenshangcheng'></icon>
+    <text>积分商城分类1</text>
+  </view>
+  <view class='mall-classification2'>
+    <icon class='iconfont icon-jifenshangcheng'></icon>
+    <text>积分商城分类2</text>
+  </view>
+</view>
+<view class='all-goods'>
+  <!-- 全部商品 -->
+  <view class='goods'>
+    <image src='../../image/img/cover02.jpg' class='cover'></image>
+    <view class='describe'>
+      <text>休闲羽绒服</text>
+      <view class='goodsname'>2000积分+￥100.00</view>
+      <view class='remaining'>
+        <text class='through'>￥400.00</text>
+        <text>仅剩20件</text>
+      </view>
+      <text class='immediately-change'>立即兑换</text>
+    </view>
+  </view>
+  <view class='goods'>
+    <image src='../../image/img/cover02.jpg' class='cover'></image>
+    <view class='describe'>
+      <text>休闲羽绒服</text>
+      <view class='goodsname'>2000积分+￥100.00</view>
+      <view class='remaining'>
+        <text class='through'>￥400.00</text>
+        <text>仅剩20件</text>
+      </view>
+      <text class='immediately-change'>立即兑换</text>
+    </view>
+  </view>
+</view>
+<view class='all-goods'>
+ <view class='goods'>
+    <image src='../../image/img/cover02.jpg' class='cover'></image>
+    <view class='describe'>
+      <text>休闲羽绒服</text>
+      <view class='goodsname'>2000积分+￥100.00</view>
+      <view class='remaining'>
+        <text class='through'>￥400.00</text>
+        <text>仅剩20件</text>
+      </view>
+      <text class='immediately-change'>立即兑换</text>
+    </view>
+  </view>
+  <view class='goods'>
+    <image src='../../image/img/cover02.jpg' class='cover'></image>
+    <view class='describe'>
+      <text>休闲羽绒服</text>
+      <view class='goodsname'>2000积分+￥100.00</view>
+      <view class='remaining'>
+        <text class='through'>￥400.00</text>
+        <text>仅剩20件</text>
+      </view>
+      <text class='immediately-change'>立即兑换</text>
+    </view>
+  </view>
+</view>
