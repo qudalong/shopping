@@ -157,7 +157,6 @@
   justify-content: space-around;
   background-color: #fff;
   margin-bottom: 160rpx;
-  
 }
 /* 商品详情 */
 .commodityimages{
