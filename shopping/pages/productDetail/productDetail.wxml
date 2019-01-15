@@ -51,11 +51,6 @@
   <view bindtap='changed' class="productdetail {{activeIndex==0 ? 'active' : '' }}" data-index="0">商品详情</view>
   <view bindtap='changed' class="evaluation {{activeIndex==1 ? 'active' : '' }}" data-index="1">评价</view>
 </view>
-<view class='content-wrap'>
-  <view class='commodity-details'>
-    商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情
-  </view>
-</view>
 <!-- 商品详情 -->
 <view wx:if="{{activeIndex==0}}" class="commodity-details">
   <view>南极人羽绒服女中长款过膝貉子毛领加厚保暖2018冬季新款韩版时尚中长款简约休闲衣服女冬装潮牌 白色、 M 建115斤-135斤</view>

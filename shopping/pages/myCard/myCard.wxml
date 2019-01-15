@@ -1,0 +1,4 @@
+<view class="order-list">
+  <view bindtap='changed' class="item {{activeIndex==0 ? 'active' : '' }}" data-index="0">未使用</view>
+  <view bindtap='changed' class="item {{activeIndex==1 ? 'active' : '' }}" data-index="1">已失效</view>
+</view>
