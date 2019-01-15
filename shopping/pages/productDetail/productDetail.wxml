@@ -1,16 +1,13 @@
 <!-- 购物车 -->
-<view class='shopCart'>
-  <icon class='iconfont icon-gouwuche1-copy'></icon>
-</view>
-<!-- 顶部轮播图 -->
-<view class='imgSwitch'>
-  <image src='../../image/img/23.jpg'></image>
-  <view class='blackspots'>
-    <view class='point'></view>
-    <view class='point middle'></view>
-    <view class='point'></view>
-  </view>
-</view>
+<icon class='iconfont icon-gouwuche1-copy shopCart'></icon>
+<!-- 轮播图 -->
+<swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#FE4442" indicator-color="#ccc">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
 <!-- 商品名称价格销量 -->
 <view class='namepricesales'>
   <view>
@@ -22,7 +19,8 @@
     </view>
   </view>
   <view class='share'>
-    <icon class='iconfont icon-fenxiang'></icon>分享
+    <icon class='iconfont icon-fenxiang'></icon>
+    <view>分享</view>
   </view>
 </view>
 <!-- 承诺部分 -->
@@ -50,12 +48,12 @@
 </view>
 <!-- 商品详情 评价 -->
 <view class='productdetailevaluation'>
-  <text class='productdetail'>商品详情</text>
+  <text class='productdetail active'>商品详情</text>
   <text class='evaluation'>评价</text>
 </view>
 <!-- 商品详情 -->
 <view class='commodityimages'>
-
+  <image src='/image/img/cover03.jpg'></image>
 </view>
 <!-- 评价 -->
 <view class='evaluations'>
@@ -75,6 +73,7 @@
     <text>差评</text>
     <text>(0)</text>
   </view>
+
 </view>
 <!-- 底部导航栏 -->
 <view class='bottomNavigation'>
@@ -89,7 +88,7 @@
 </view>
 <!-- 加入购物车 立即购买弹窗 -->
 <view class='joinbuy'>
-  
+
 </view>
 <!-- 联系电话  客服 -->
 <icon class='iconfont icon-weibiaoti'></icon>
