@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/pointsFor/pointsFor",
+    "pages/couponRedemptionCentre/couponRedemptionCentre",
     "pages/productDetail/productDetail",
     "pages/classify/classify",
     "pages/index/index",

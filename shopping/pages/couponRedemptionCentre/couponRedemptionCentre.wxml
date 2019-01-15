@@ -1,0 +1,64 @@
+<view class='coupons'>
+  <view class='top'>
+    <view class='money'>
+      <text>￥20.00</text>
+      <view class='full-reduction'>
+        <text>优惠券</text>
+        <text>满200可用</text>
+      </view>
+    </view>
+    <text class='receive'>已领取</text>
+  </view>
+  <view class='bottom'>
+    <view>有效日期：领取30天内有效</view>
+    <view>适用范围：仅限分类：使用</view>
+  </view>
+</view>
+<view class='coupons'>
+  <view class='top'>
+    <view class='money'>
+      <text>￥200</text>
+      <view class='full-reduction'>
+        <text>优惠券</text>
+        <text>满2000可用</text>
+      </view>
+    </view>
+    <text class='receive'>已领取</text>
+  </view>
+  <view class='bottom'>
+    <view>有效日期：领取30天内有效</view>
+    <view>适用范围：仅限分类：使用</view>
+  </view>
+</view>
+<view class='coupons'>
+  <view class='top'>
+    <view class='money'>
+      <text>￥300</text>
+      <view class='full-reduction'>
+        <text>优惠券</text>
+        <text>满3000可用</text>
+      </view>
+    </view>
+    <text class='receive'>已领取</text>
+  </view>
+  <view class='bottom'>
+    <view>有效日期：领取30天内有效</view>
+    <view>适用范围：仅限分类：使用</view>
+  </view>
+</view>
+<view class='coupons'>
+  <view class='top'>
+    <view class='money'>
+      <text>￥50.00</text>
+      <view class='full-reduction'>
+        <text>优惠券</text>
+        <text>满500可用</text>
+      </view>
+    </view>
+    <text class='receive'>已领取</text>
+  </view>
+  <view class='bottom'>
+    <view>有效日期：领取30天内有效</view>
+    <view>适用范围：仅限分类：使用</view>
+  </view>
+</view>
