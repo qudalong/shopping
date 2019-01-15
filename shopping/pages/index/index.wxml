@@ -4,7 +4,7 @@
 <swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#FE4442" indicator-color="#ccc">
   <block wx:for="{{imgUrls}}" wx:key="unique">
     <swiper-item>
-      <image src="{{item}}" class="slide-image" />
+      <image src="{{item}}" class="slide-image" mode='aspectFill' />
     </swiper-item>
   </block>
 </swiper>
@@ -67,7 +67,7 @@
 <view class="scroll-box">
   <scroll-view class="scroll-view-x" scroll-x>
     <view bindtap='toProduceDetail' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="scroll-view-item">
-      <image class='cover' src='/image/img/cover03.jpg'></image>
+      <image class='cover' src='/image/img/cover03.jpg' mode='aspectFit'></image>
       <view class='name'>羽绒服短袖</view>
       <view class='price'>￥16{{index}}.00</view>
     </view>
@@ -87,7 +87,7 @@
 <view class="scroll-box">
   <scroll-view class="scroll-view-x" scroll-x>
     <view bindtap='toProduceDetail' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="scroll-view-item">
-      <image class='cover' src='/image/img/cover01.jpg'></image>
+      <image class='cover' src='/image/img/cover01.jpg' mode='aspectFit'></image>
       <view class='name'>羽绒服短袖</view>
       <view class='price'>￥16{{index}}.00</view>
       <view class='count'>已品团50{{index}}件</view>
@@ -107,7 +107,7 @@
 </view>
 <view class="product-list">
     <view bindtap='toProduceDetail' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="item">
-      <image class='cover' src='/image/img/cover02.jpg'></image>
+      <image class='cover' src='/image/img/cover02.jpg' mode='aspectFit'></image>
       <view class='name'>羽绒服短袖</view>
       <view class='price'>￥16{{index}}.00</view>
     </view>

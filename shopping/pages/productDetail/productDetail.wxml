@@ -4,7 +4,7 @@
 <swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#FE4442" indicator-color="#ccc">
   <block wx:for="{{imgUrls}}" wx:key="unique">
     <swiper-item>
-      <image src="{{item}}" class="slide-image" />
+      <image src="{{item}}" class="slide-image" mode='aspectFill' />
     </swiper-item>
   </block>
 </swiper>
@@ -52,15 +52,12 @@
   <view bindtap='changed' class="evaluation {{activeIndex==1 ? 'active' : '' }}" data-index="1">评价</view>
 </view>
 
-
-
-
 <view class="commodity-details">
   <!-- 商品详情 -->
   <view wx:if="{{activeIndex==0}}">
     <view class='details'>
       <view>南极人羽绒服女中长款过膝貉子毛领加厚保暖2018冬季新款韩版时尚中长款简约休闲衣服女冬装潮牌 白色、 M 建115斤-135斤</view>
-      <image src='/image/img/cover03.jpg'></image>
+      <image src='/image/img/cover03.jpg' mode='aspectFit'></image>
     </view>
     <!-- 相关商品 -->
     <view class='related-products'>
