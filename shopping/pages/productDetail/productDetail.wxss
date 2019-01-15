@@ -167,3 +167,26 @@
 .commodity-details image{
   max-width: 100%;
 }
+/* 购买弹窗 */
+.close{
+  padding: 20rpx;
+  margin-bottom: 120rpx;
+  background-color: #fff;
+  border-bottom: 2rpx solid #ccc;
+  position: relative;
+}
+.small{
+  padding: 10rpx;
+  width: 150rpx;
+  height: 150rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 5rpx 20rpx #5F5C58;
+  position: absolute;
+  top: -50rpx;
+}
+.inventory{
+  display: flex;
+  flex-direction: column;
+  margin-left: 200rpx; 
+}

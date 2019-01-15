@@ -54,11 +54,11 @@
 <!-- 商品详情 -->
 <view class='content-wrap'>
   <view class='commodity-details'>
-  商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情
+    商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情
     <image src='/image/img/cover03.jpg'></image>
   </view>
   <view class='evaluate-details'>
-      
+
   </view>
 </view>
 <!-- 评价 -->
@@ -94,7 +94,14 @@
 </view>
 <!-- 加入购物车 立即购买弹窗 -->
 <view class='joinbuy'>
-
+  <view class='close'>
+    <image src='/image/img/cover03.jpg' class='small'></image>
+    <view class='inventory'>
+      <text>￥250</text>
+      <text>库存2000件</text>
+    </view>
+    <icon class='iconfont icon-close'></icon>
+  </view>
 </view>
 <!-- 联系电话  客服 -->
 <icon class='iconfont icon-weibiaoti'></icon>
