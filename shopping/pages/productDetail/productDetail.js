@@ -22,6 +22,7 @@ Page({
   },
 
   changed(e){
+    console.log(9)
     const activeIndex = e.currentTarget.dataset.index;
     this.setData({
       activeIndex
