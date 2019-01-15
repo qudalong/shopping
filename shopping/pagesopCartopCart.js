@@ -1,17 +1,11 @@
-// pages/productDetail/productDetail.js
+// pagesopCartopCart.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: ['/image/img/banner04.jpg', '/image/img/banner02.jpg'],
-    indicatorDots: true,
-    autoplay: true,
-    interval: 4000,
-    duration: 400,
-    activeIndex:0,//默认选中商品详情
-    list: [1, 1, 1, 1]
+
   },
 
   /**
@@ -19,13 +13,6 @@ Page({
    */
   onLoad: function (options) {
 
-  },
-
-  changed(e){
-    const activeIndex = e.currentTarget.dataset.index;
-    this.setData({
-      activeIndex
-    })
   },
 
   /**

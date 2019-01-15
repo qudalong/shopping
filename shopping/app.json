@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/productDetail/productDetail",
+    "pages/index/index",
+    "pages/myCard/myCard",
+    "pages/orderList/orderList",
+    "pages/classify/classify",
+    "pagesopCartopCart",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E51810",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#FF4544",
+    "borderStyle": "#DBDDDD",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/tab_function_gray@3x.png",
+        "selectedIconPath": "image/tab_function_green@3x.png",
+        "text": "商城"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "iconPath": "image/tab_function_gray@3x.png",
+        "selectedIconPath": "image/tab_function_green@3x.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pagesopCartopCart",
+        "iconPath": "image/tab_my_gray@3x.png",
+        "selectedIconPath": "image/tab_my_green@3x.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "image/tab_my_gray@3x.png",
+        "selectedIconPath": "image/tab_my_green@3x.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

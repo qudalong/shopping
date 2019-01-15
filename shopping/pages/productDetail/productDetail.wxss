@@ -194,6 +194,7 @@
 
 .commodity-details {
   background: #fff;
+  margin-bottom: 130rpx;
 }
 
 .commodity-details .details {
