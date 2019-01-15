@@ -1,0 +1,43 @@
+page{
+  padding: 20rpx;
+}
+.coupons{
+  width: 100%;
+  height: 300rpx;
+  background-color: skyblue;
+  border-radius: 20rpx; 
+  overflow: hidden;
+  margin-bottom: 30rpx;
+}
+.top{
+  height: 60%;
+  background-color: #B3B4B2;
+  padding: 66rpx 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between
+}
+.bottom{
+  height: 40%;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.money{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 50rpx;
+  color: #fff;
+}
+.full-reduction{
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+  margin-left: 10rpx;
+}
+.receive{
+  padding: 10rpx 30rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+}
