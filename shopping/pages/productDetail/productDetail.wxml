@@ -51,36 +51,62 @@
   <view bindtap='changed' class="productdetail {{activeIndex==0 ? 'active' : '' }}" data-index="0">商品详情</view>
   <view bindtap='changed' class="evaluation {{activeIndex==1 ? 'active' : '' }}" data-index="1">评价</view>
 </view>
-<!-- 商品详情 -->
 <view class='content-wrap'>
   <view class='commodity-details'>
     商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情
-    <image src='/image/img/cover03.jpg'></image>
   </view>
-  <view class='evaluate-details'>
-
+</view>
+<!-- 商品详情 -->
+<view wx:if="{{activeIndex==0}}" class="commodity-details">
+  <view>南极人羽绒服女中长款过膝貉子毛领加厚保暖2018冬季新款韩版时尚中长款简约休闲衣服女冬装潮牌 白色、 M 建115斤-135斤</view>
+  <image src='/image/img/cover03.jpg'></image>
+  <view>
+    <!-- 相关商品 -->
+    <view class='title-mid'>
+      <view class='middle'>
+        <icon class='iconfont icon-shoucang'></icon>
+        <text class='lable'>相关推荐</text>
+      </view>
+    </view>
+    <block wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique">
+      <view bindtap='toProduceDetail' class='goods'>
+        <view class='picture'>
+          <image src='/image/img/cover01.jpg' class='img' />
+        </view>
+        <view class='info'>
+          <view class='productname'>毛领子</view>
+          <view class='base'>
+            <view class='productprice'>￥25{{index}}.00</view>
+            <view class='sold'>已售200{{index}}件</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class='evaluate-details'>
+  <!-- 商品评价 -->
+  <view wx:if="{{activeIndex==1}}" class="evaluation-details">
+    <view class='all'>
+      <text>全部</text>
+      <text>(0)</text>
+    </view>
+    <view class='all'>
+      <text>好评</text>
+      <text>(0)</text>
+    </view>
+    <view class='all'>
+      <text>中评</text>
+      <text>(0)</text>
+    </view>
+    <view class='all'>
+      <text>差评</text>
+      <text>(0)</text>
+    </view>
+    >>>>>>> 04b675dcd19fb958bc09347c7df3a1267d15d6ce
   </view>
 </view>
 <!-- 评价 -->
-<view class='evaluations'>
-  <view class='all'>
-    <text>全部</text>
-    <text>(0)</text>
-  </view>
-  <view class='all'>
-    <text>好评</text>
-    <text>(0)</text>
-  </view>
-  <view class='all'>
-    <text>中评</text>
-    <text>(0)</text>
-  </view>
-  <view class='all'>
-    <text>差评</text>
-    <text>(0)</text>
-  </view>
-
-</view>
 <!-- 底部导航栏 -->
 <view class='bottomNavigation'>
   <view class='homepage'>

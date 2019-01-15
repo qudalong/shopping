@@ -4,16 +4,17 @@
   <view bindtap='bindClick' class="hotsell {{activeIndex==0?'active':''}}" data-index='0'>特别推荐</view>
   <view bindtap='bindClick' class="hotsell {{activeIndex==1?'active':''}}" data-index='1'>热销</view>
 </view>
-
-<view wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class='goods'>
-  <view class='picture'>
-    <image src='/image/img/cover01.jpg' class='img' />
-  </view>
-  <view class='info'>
-    <view class='productname'>毛领子</view>
-    <view class='base'>
-      <view class='productprice'>￥25{{index}}.00</view>
-      <view class='sold'>已售200{{index}}件</view>
+<block wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique">
+  <view bindtap='toProduceDetail' class='goods'>
+    <view class='picture'>
+      <image src='/image/img/cover01.jpg' class='img' />
+    </view>
+    <view class='info'>
+      <view class='productname'>毛领子</view>
+      <view class='base'>
+        <view class='productprice'>￥25{{index}}.00</view>
+        <view class='sold'>已售200{{index}}件</view>
+      </view>
     </view>
   </view>
-</view>
+</block>
