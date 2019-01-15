@@ -10,7 +10,8 @@ Page({
     autoplay: true,
     interval: 4000,
     duration: 400,
-    activeIndex:0//默认选中商品详情
+    activeIndex:0,//默认选中商品详情
+    list: [1, 1, 1]
   },
 
   /**

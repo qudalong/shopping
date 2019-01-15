@@ -1,5 +1,5 @@
-
 @import '../index/index.wxss';
+@import '../classify/classify.wxss';
 .swiper{
   height: 750rpx;
 } 
@@ -119,7 +119,6 @@
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  line-height: 1.5;
 }
 .specifications{
   font-size: 24rpx;
@@ -150,14 +149,12 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  
 }
-.evaluations{
+.evaluation-details{
   display: flex;
   justify-content: space-around;
   background-color: #fff;
-  margin-bottom: 160rpx;
-  
+  padding: 20rpx;
 }
 /* 商品详情 */
 .commodity-details{
@@ -167,4 +164,7 @@
 }
 .commodity-details image{
   max-width: 100%;
+}
+.title-mid{
+  background: #f0f0f0;
 }

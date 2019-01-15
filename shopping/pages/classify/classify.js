@@ -15,6 +15,13 @@ Page({
   onLoad: function(options) {
 
   },
+  
+  toProduceDetail() {
+    wx.navigateTo({
+      url: `/pages/productDetail/productDetail`
+    })
+  },
+
   bindClick(e) {
     const activeIndex = e.currentTarget.dataset.index;
     this.setData({

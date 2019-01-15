@@ -66,7 +66,7 @@
 </view>
 <view class="scroll-box">
   <scroll-view class="scroll-view-x" scroll-x>
-    <view wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="scroll-view-item">
+    <view bindtap='toProduceDetail' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="scroll-view-item">
       <image class='cover' src='/image/img/cover03.jpg'></image>
       <view class='name'>羽绒服短袖</view>
       <view class='price'>￥16{{index}}.00</view>
@@ -86,7 +86,7 @@
 </view>
 <view class="scroll-box">
   <scroll-view class="scroll-view-x" scroll-x>
-    <view wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="scroll-view-item">
+    <view bindtap='toProduceDetail' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="scroll-view-item">
       <image class='cover' src='/image/img/cover01.jpg'></image>
       <view class='name'>羽绒服短袖</view>
       <view class='price'>￥16{{index}}.00</view>
@@ -106,7 +106,7 @@
   </view>
 </view>
 <view class="product-list">
-    <view wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="item">
+    <view bindtap='toProduceDetail' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="item">
       <image class='cover' src='/image/img/cover02.jpg'></image>
       <view class='name'>羽绒服短袖</view>
       <view class='price'>￥16{{index}}.00</view>
@@ -122,4 +122,3 @@
     <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
   </view>
 </view>
-<view style='height:100px'></view>
