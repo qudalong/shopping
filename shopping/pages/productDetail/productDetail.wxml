@@ -115,7 +115,6 @@
       <text>库存2000件</text>
       <icon class='iconfont icon-close'></icon>
     </view>
-
   </view>
   <view class='colorsize'>
     <text>颜色</text>
