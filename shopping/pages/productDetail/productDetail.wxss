@@ -146,7 +146,15 @@ image{
   background-color: #fff;
   border-bottom: 2rpx solid #ccc;
 }
-/* 商品详情 */
-.commodityimages{
+.all{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   
+}
+.evaluations{
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  margin-bottom: 160rpx;
 }
