@@ -1,9 +1,8 @@
 {
   "pages": [
     "pages/productDetail/productDetail",
-    "pages/classify/classify",
-    "pages/shopCart/shopCart",
     "pages/my/my",
+    "pages/shopCart/shopCart",
     "pages/classify/classify",
     "pages/index/index"
   ],
