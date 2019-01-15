@@ -48,13 +48,18 @@
 </view>
 <!-- 商品详情 评价 -->
 <view class='productdetailevaluation'>
-  <text class='productdetail active'>商品详情</text>
-  <text class='evaluation'>评价</text>
+  <view bindtap='changed' class="productdetail {{activeIndex==0 ? 'active' : '' }}" data-index="0">商品详情</view>
+  <view bindtap='changed' class="evaluation {{activeIndex==1 ? 'active' : '' }}" data-index="1">评价</view>
 </view>
 <!-- 商品详情 -->
-<view class='commodityimages'>
-商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情
-  <image src='/image/img/cover03.jpg'></image>
+<view class='content-wrap'>
+  <view class='commodity-details'>
+  商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情
+    <image src='/image/img/cover03.jpg'></image>
+  </view>
+  <view class='evaluate-details'>
+      
+  </view>
 </view>
 <!-- 底部导航栏 -->
 <view class='bottomNavigation'>

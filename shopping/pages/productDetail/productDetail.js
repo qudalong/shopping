@@ -10,6 +10,7 @@ Page({
     autoplay: true,
     interval: 4000,
     duration: 400,
+    activeIndex:0//默认选中商品详情
   },
 
   /**
@@ -17,6 +18,13 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+
+  changed(e){
+    const activeIndex = e.currentTarget.dataset.index;
+    this.setData({
+      activeIndex
+    })
   },
 
   /**
