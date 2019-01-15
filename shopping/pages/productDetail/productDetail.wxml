@@ -61,6 +61,26 @@
       
   </view>
 </view>
+<!-- 评价 -->
+<view class='evaluations'>
+  <view class='all'>
+    <text>全部</text>
+    <text>(0)</text>
+  </view>
+  <view class='all'>
+    <text>好评</text>
+    <text>(0)</text>
+  </view>
+  <view class='all'>
+    <text>中评</text>
+    <text>(0)</text>
+  </view>
+  <view class='all'>
+    <text>差评</text>
+    <text>(0)</text>
+  </view>
+
+</view>
 <!-- 底部导航栏 -->
 <view class='bottomNavigation'>
   <view class='homepage'>
@@ -71,6 +91,10 @@
   </view>
   <view class='addcart'>加入购物车</view>
   <view class='buynow'>立即购买</view>
+</view>
+<!-- 加入购物车 立即购买弹窗 -->
+<view class='joinbuy'>
+
 </view>
 <!-- 联系电话  客服 -->
 <icon class='iconfont icon-weibiaoti'></icon>

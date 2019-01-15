@@ -146,6 +146,19 @@
   color: #FE4442;
   border-bottom: 1rpx solid #FE4442;
 }
+.all{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+.evaluations{
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  margin-bottom: 160rpx;
+  
+}
 /* 商品详情 */
 .commodity-details{
   line-height: 1.4;

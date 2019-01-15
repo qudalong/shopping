@@ -1,10 +1,10 @@
 {
   "pages": [
     "pages/productDetail/productDetail",
-    "pages/my/my",
+    "pages/index/index",
     "pages/shopCart/shopCart",
-    "pages/classify/classify",
-    "pages/index/index"
+    "pages/my/my",
+    "pages/classify/classify"
   ],
   "window": {
     "backgroundTextStyle": "light",
