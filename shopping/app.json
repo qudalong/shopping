@@ -4,8 +4,8 @@
     "pages/productDetail/productDetail",
     "pages/myCard/myCard",
     "pages/orderList/orderList",
+    "pages/shopCart/shopCart",
     "pages/classify/classify",
-    "pagesopCartopCart",
     "pages/my/my"
   ],
   "window": {
@@ -33,7 +33,7 @@
         "text": "分类"
       },
       {
-        "pagePath": "pagesopCartopCart",
+        "pagePath": "pages/shopCart/shopCart",
         "iconPath": "image/tab_my_gray@3x.png",
         "selectedIconPath": "image/tab_my_green@3x.png",
         "text": "购物车"
