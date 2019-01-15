@@ -39,7 +39,7 @@
   </view>
 </view>
 <!-- 选择规格 -->
-<view class='choosespecifications'>
+<view bindtap='selectType' class='choosespecifications'>
   <view class='choose'>
     <text>选择</text>
     <text class='specifications'>规格</text>
@@ -108,33 +108,33 @@
 </view>
 
 <!-- 加入购物车 立即购买弹窗 -->
-<view class='joinbuy'>
-  <view class='close'>
-    <image src='/image/img/cover01.jpg' class='small'></image>
-    <view class='inventory'>
-      <text class='first'>￥250</text>
-      <text>库存2000件</text>
+<view wx:if="{{producType}}" class='globle-cover'>
+  <view class='joinbuy'>
+    <view class='close'>
+      <image src='{{producItem.img}}' class='small'></image>
+      <view class='inventory'>
+        <text class='first'>￥{{producItem.price}}</text>
+        <text>库存{{producItem.inventory}}件</text>
+      </view>
+      <icon bindtap='closeProductType' class='iconfont icon-close'></icon>
     </view>
-    <icon class='iconfont icon-close'></icon>
-  </view>
-  <view class='colorsize'>
-    <text>颜色</text>
-    <view>
-      <text class='color'>红色</text>
-      <text class='color mi'>米色</text>
-      <text class='color'>蓝色</text>
+    <view class='colorsize'>
+      <text>颜色</text>
+      <view>
+        <text wx:for="{{producItem.color}}" wx:key="unique" class="color {{activeIndex==index ? 'active' : ''}}" data-index="{{index}}">{{item}}</text>
+      </view>
+      <text>尺码</text>
+      <view>
+        <text wx:for="{{producItem.color}}" wx:key="unique" class="color {{activeIndex==index ? 'active' : ''}}" data-index="{{index}}">{{item}}</text>
+      </view>
     </view>
-    <text>尺码</text>
-    <view>
-      <text class='color'>均码</text>
-    </view>
-  </view>
-  <view class='amount'>
-    <text>数量</text>
-    <view>
-      <icon class='iconfont icon-jianhao'></icon>
-      <text class='numberof'>1</text>
-      <icon class='iconfont icon-jia'></icon>
+    <view class='amount'>
+      <text>数量</text>
+      <view>
+        <icon class='iconfont icon-jianhao'></icon>
+        <text class='numberof'>1</text>
+        <icon class='iconfont icon-jia'></icon>
+      </view>
     </view>
   </view>
 </view>
@@ -151,6 +151,6 @@
   <view class='collect'>
     <icon class='iconfont icon-shoucang'></icon>收藏
   </view>
-  <view class='addcart'>加入购物车</view>
-  <view class='buynow'>立即购买</view>
+  <view bindtap='selectType' class='addcart'>加入购物车</view>
+  <view bindtap='selectType' class='buynow'>立即购买</view>
 </view>

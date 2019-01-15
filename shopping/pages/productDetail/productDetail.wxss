@@ -209,7 +209,11 @@
 /* 购买弹窗 */
 
 .joinbuy {
-  margin-bottom: 120rpx;
+  position: fixed;
+  bottom: 120rpx;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .close {
@@ -247,13 +251,15 @@
 }
 .color {
   padding: 15rpx 30rpx;
-  background-color: #fe4442;
+  background-color: #f0f0f0;
   border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+.color.active {
+  background-color: #fe4442;
   color: #fff;
 }
-.mi {
-  margin: 0 20rpx;
-}
+
 .amount {
   padding: 20rpx;
   background-color: #fff;
