@@ -29,6 +29,7 @@
   bottom: 0;
   display: flex;
   flex-direction: row;
+  z-index: 90;
 }
 
 .homepage, .collect {

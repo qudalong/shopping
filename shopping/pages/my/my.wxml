@@ -25,29 +25,29 @@
 <!-- 我的订单 -->
 <view class='hd'>我的订单</view>
 <view class='hb'>
-  <view class='item'>
+  <view bindtap='toOrderList' class='item'>
     <icon class='iconfont icon-jifenshangcheng'></icon>
     <text>待付款</text>
   </view>
-  <view class='item'>
+  <view bindtap='toOrderList' class='item'>
     <icon class='iconfont icon-daifahuo'></icon>
     <text>待发货</text>
   </view>
-  <view class='item'>
+  <view bindtap='toOrderList' class='item'>
     <icon class='iconfont icon-liwu'></icon>
     <text>待收货</text>
   </view>
-  <view class='item'>
+  <view bindtap='toOrderList' class='item'>
     <icon class='iconfont icon-yiwancheng'></icon>
     <text>已完成</text>
   </view>
-  <view class='item'>
+  <view bindtap='toOrderList' class='item'>
     <icon class='iconfont icon-shouhou'></icon>
     <text>售后</text>
   </view>
 </view>
 <view class='hb-content'>
-  <view class='item'>
+  <view bindtap='toMyCart' class='item'>
     <icon class='iconfont icon-qiabao icon1'></icon>
     <text>我的卡卷</text>
   </view>
