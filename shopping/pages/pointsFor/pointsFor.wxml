@@ -3,6 +3,7 @@
   <view class='my'>
     <view class='points'>
       <text>我的积分</text>
+      <text class='jf'>我的积分</text>
       <icon class='iconfont icon-wenhao'></icon>
     </view>
     <text class='iconfont'>2</text>
@@ -17,7 +18,7 @@
       <text>积分明细</text>
     </view>
   </view>
-  <view class='signin'>今日已签到</view>
+  <view class='signin'>立即签到赚积分</view>
 </view>
 <view class='preferential'>
   <!-- 优惠购专区 -->
@@ -30,11 +31,11 @@
   </view>
   <view class='mall-classification1'>
     <icon class='iconfont icon-jifenshangcheng'></icon>
-    <text>积分商城分类1</text>
+    <text>商城分类1</text>
   </view>
   <view class='mall-classification2'>
     <icon class='iconfont icon-jifenshangcheng'></icon>
-    <text>积分商城分类2</text>
+    <text>商城分类2</text>
   </view>
 </view>
 <view class='all-goods'>
