@@ -20,6 +20,16 @@ Page({
 
   },
 
+  toSign() {
+    wx.navigateTo({
+      url: `/pages/checktheCalendar/checktheCalendar`
+    })
+  },
+  toShop() {
+    wx.navigateTo({
+      url: `/pages/stores/stores`
+    })
+  },
   toProduceDetail() {
     wx.navigateTo({
       url: `/pages/productDetail/productDetail`

@@ -1,13 +1,9 @@
-.balance-payments{
-  padding: 30rpx 20rpx;
-  border-bottom: 2rpx solid #ccc;
-  display: flex;
-  justify-content: space-around;
-}
+@import "/pages/orderList/orderList.wxss";
 .mall-signin{
   padding: 30rpx 20rpx;
-  border-bottom: 2rpx solid #ccc;
   line-height: 1.8;
+  background: #fff;
+  border-top: 1rpx solid #dedede;
 }
 .check-in-time{
   display: flex;
@@ -18,4 +14,7 @@
 }
 .time{
   margin: 0 10rpx;
+}
+.right{
+  color: #666;
 }

@@ -30,11 +30,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    search:false//默认不显示搜索
+  },
 
+  bindEnter(){
+    this.setData({
+      search:true
+    })
   },
 
   shopDetails() {
-    console.log(9)
+    wx.navigateTo({
+      url: `/pages/shopDetail/shopDetail`
+    })
   },
 
   getAdress() {
