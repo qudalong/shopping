@@ -1,25 +1,16 @@
 {
   "pages": [
-<<<<<<< HEAD
-    "pages/index/index",
-    "pages/couponRedemptionCentre/couponRedemptionCentre",
-=======
     "pages/checktheCalendar/checktheCalendar",
+    "pages/index/index",
     "pages/detail/detail",
     "pages/exchange/exchange",
     "pages/instructions/instructions",
-    "pages/pointsFor/pointsFor",
-    "pages/index/index",
->>>>>>> 31929829bc5fe5d2a4be9b62c64688e13ca4a8c3
     "pages/stores/stores",
     "pages/productDetail/productDetail",
     "pages/conversion/conversion",
     "pages/pointsFor/pointsFor",
     "pages/classify/classify",
-<<<<<<< HEAD
-=======
     "pages/couponRedemptionCentre/couponRedemptionCentre",
->>>>>>> 31929829bc5fe5d2a4be9b62c64688e13ca4a8c3
     "pages/myCard/myCard",
     "pages/orderList/orderList",
     "pages/shopCart/shopCart",
