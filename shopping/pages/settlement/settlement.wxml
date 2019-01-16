@@ -1,0 +1,63 @@
+<view class='address'>
+  <text>请选择收货地址</text>
+  <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy color'></icon>
+</view>
+<view class='pay-for'>
+  <text>支付方式</text>
+  <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy color'></icon>
+</view>
+<view class='platform'>
+  <text>平台自营</text>
+</view>
+<view class='order-information'>
+  <view class='order'>
+    <image src='../../image/img/cover01.jpg'></image>
+    <view>
+      <view class='information'>
+        <view>三只松鼠坚果</view>
+        <text class='color'>规格:默认</text>
+      </view>
+      <view class='price'>
+        <view class='color'>x1</view>
+        <text>￥60.00</text>
+      </view>
+    </view>
+  </view>
+  <view class='return'>
+    <text class='color'>订单完成返回</text>
+    <text class='num'>2</text>
+    <text class='color'>积分</text>
+  </view>
+</view>
+<view class='deduction'>
+  <view class='coupons'>
+    <text>优惠券</text>
+    <view class='none'>
+      <text class='color'>目前无可用优惠券</text>
+      <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy color'></icon>
+    </view>
+  </view>
+  <view class='use'>
+    <view>
+      <text>使用</text><text>3.00</text><text>积分抵扣</text><text>0.3</text><text>元</text>
+      <icon class='iconfont icon-wenhao color'></icon>
+    </view>
+    <switch></switch>
+  </view>
+</view>
+<view class='footer'>
+  <view class='freight'>
+    <text>运费</text>
+    <view class='color'>请先选择收货地址</view>
+  </view>
+  <view class='message'>
+    <text class='leave'>买家留言</text>
+    <input placeholder='请填写备注' class='color'></input>
+  </view>
+</view>
+<view class='fixed'>
+  <view class='total'>
+    <text>总计：￥59.7</text>
+  </view>
+  <view class='submit'>提交</view>
+</view>

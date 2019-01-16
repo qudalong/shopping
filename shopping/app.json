@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/settlement/settlement",
+    "pages/checktheCalendar/checktheCalendar",
     "pages/index/index",
     "pages/stores/stores",
     "pages/shopDetail/shopDetail",
