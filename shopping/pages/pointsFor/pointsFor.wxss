@@ -61,6 +61,7 @@
   display: flex;
   flex-direction: row;
   border-bottom: 2rpx solid #ccc;
+  font-size: 24rpx;
 }
 .all,.mall-classification1,.mall-classification2{
   display: flex;
@@ -83,6 +84,7 @@
   float: left;
   margin-top: 15rpx;
   background-color: #fff;
+  font-size: 24rpx;
 }
 .goodsname{
   margin: 30rpx 0 10rpx; 
