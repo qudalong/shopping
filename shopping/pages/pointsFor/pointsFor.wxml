@@ -2,6 +2,7 @@
   <!-- 我的积分 -->
   <view class='my'>
     <view class='points'>
+      <text>我的积分</text>
       <text class='jf'>我的积分</text>
       <icon class='iconfont icon-wenhao'></icon>
     </view>

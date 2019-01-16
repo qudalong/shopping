@@ -1,9 +1,10 @@
 {
   "pages": [
     "pages/pointsFor/pointsFor",
-    "pages/couponRedemptionCentre/couponRedemptionCentre",
+    "pages/stores/stores",
     "pages/productDetail/productDetail",
     "pages/classify/classify",
+    "pages/couponRedemptionCentre/couponRedemptionCentre",
     "pages/index/index",
     "pages/myCard/myCard",
     "pages/orderList/orderList",
