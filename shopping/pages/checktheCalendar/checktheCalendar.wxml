@@ -1,0 +1,22 @@
+<view class='signin-number'>
+  <view class='rule'>规则</view>
+  <text>已连续签到</text>
+  <view class='days'>
+    <text class='numberone'>2</text>
+    <text>天</text>
+  </view>
+  <view class='today'>
+    <text>今日签到获得</text>
+    <text class='numbertwo'>1</text>
+    <text>积分</text>
+  </view>
+  <text>连续签到5天有惊喜哦</text>
+</view>
+<view class='calendar'>
+  <view class='years'>
+    <icon class='iconfont icon-mjiantou-copy'></icon>
+    <text>年份月份</text>
+    <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
+  </view>
+  <view class='week'></view>
+</view>

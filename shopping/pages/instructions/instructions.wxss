@@ -1,0 +1,7 @@
+page{
+  padding: 30rpx;
+}
+.weight{
+  font-weight: 700;
+  font-size: 36rpx;
+}
