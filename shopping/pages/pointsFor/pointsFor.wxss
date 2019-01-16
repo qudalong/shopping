@@ -69,6 +69,11 @@
 .all-goods{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.num{
+  color: #E49F60;
+  font-size: 56rpx;
 }
 .goods{
   width: 49%;
