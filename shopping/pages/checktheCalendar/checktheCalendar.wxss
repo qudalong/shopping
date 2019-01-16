@@ -1,0 +1,34 @@
+.signin-number{
+  height: 500rpx;
+  background-color: #F99C6B;
+  position: relative;
+  text-align: center;
+  padding-top: 80rpx;
+  color: #fff;
+}
+.rule{
+  width: 90rpx;
+  padding: 10rpx 20rpx;
+  background-color: rgba(0,0,0,.3);
+  color: #ccc;
+  text-align: center;
+  border-radius: 25rpx;
+  position: absolute;
+  top: 40rpx;
+  right: -30rpx;
+  border: 2rpx solid #FBC696;
+}
+.numberone,.numbertwo{
+  color: #FEDE01;
+}
+.numberone{
+  font-size: 60rpx;
+  font-weight: 700;
+}
+.days{
+  margin: 50rpx 0;
+}
+.today{
+  font-size: 34rpx;
+  margin-bottom: 20rpx;
+}
