@@ -127,10 +127,10 @@
     </view>
     <view class='amount'>
       <text>数量</text>
-      <view>
-        <icon class='iconfont icon-jianhao'></icon>
+      <view class='number'>
+        <icon class='iconfont icon-jianhao1'></icon>
         <text class='numberof'>1</text>
-        <icon class='iconfont icon-jia'></icon>
+        <icon class='iconfont icon-jiahao'></icon>
       </view>
     </view>
   </view>

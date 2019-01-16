@@ -7,6 +7,13 @@
 }
 .my{
   text-align: center;
+  color: #ccc;
+}
+.icon-jifenwodeduihuan,.icon-jifenmingxi{
+  color: #A9ABA9;
+}
+.mychange text,.detail text{
+  color: #fff;
 }
 .points{
   margin-bottom: 30rpx;
@@ -29,6 +36,7 @@
   transform: translateX(-50%);
   bottom: -15%;
   border-radius: 40rpx;
+  color: #EE9959;
 }
 .preferential{
   padding: 30rpx 15rpx;
