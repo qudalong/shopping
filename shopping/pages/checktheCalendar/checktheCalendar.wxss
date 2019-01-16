@@ -45,6 +45,12 @@ page {
 }
 .years {
   text-align: center;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  transform: translateX(-50%);
+  margin-left:50%; 
+  padding: 20rpx 0;
 }
 .week {
   display: flex;
