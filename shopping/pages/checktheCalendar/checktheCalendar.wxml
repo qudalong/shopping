@@ -16,7 +16,7 @@
   <view class='years'>
     <icon class='iconfont icon-mjiantou-copy'></icon>
     <text>年份月份</text>
-    <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
+    <icon class='iconfont icon-mjiantou-copy'></icon>
   </view>
   <view class='week'></view>
 </view>
