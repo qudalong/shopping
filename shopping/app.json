@@ -2,9 +2,6 @@
   "pages": [
     "pages/stores/stores",
     "pages/exchange/exchange",
-    "pages/checktheCalendar/checktheCalendar",
-    "pages/detail/detail",
-    "pages/instructions/instructions",
     "pages/index/index",
     "pages/productDetail/productDetail",
     "pages/conversion/conversion",

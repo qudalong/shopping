@@ -1,34 +1,62 @@
-.signin-number{
-  height: 500rpx;
-  background-color: #F99C6B;
+page {
+  background-color: #fce7e1;
+}
+.signin-number {
+  height: 440rpx;
+  background-color: #f99c6b;
   position: relative;
   text-align: center;
   padding-top: 80rpx;
   color: #fff;
 }
-.rule{
+.rule {
   width: 90rpx;
   padding: 10rpx 20rpx;
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0, 0, 0, 0.3);
   color: #ccc;
   text-align: center;
   border-radius: 25rpx;
   position: absolute;
   top: 40rpx;
   right: -30rpx;
-  border: 2rpx solid #FBC696;
+  border: 2rpx solid #fbc696;
 }
-.numberone,.numbertwo{
-  color: #FEDE01;
+.numberone, .numbertwo {
+  color: #fede01;
 }
-.numberone{
+.numberone {
   font-size: 60rpx;
   font-weight: 700;
 }
-.days{
+.days {
   margin: 50rpx 0;
 }
-.today{
+.today {
   font-size: 34rpx;
   margin-bottom: 20rpx;
+}
+.calendar{
+  border: 2rpx solid #ccc;
+  border-radius: 20rpx;
+  overflow: hidden;
+  background-color: #fff;
+  width: 96%;
+  margin: 0 auto 100rpx;
+}
+.years {
+  text-align: center;
+}
+.week {
+  display: flex;
+  justify-content: space-around;
+  color: #a0a19f;
+}
+.date {
+  display: flex;
+  flex-direction: row;
+}
+.date li {
+  border: 2rpx solid #ccc;
+  width: 14%;
+  height: 100rpx;
 }
