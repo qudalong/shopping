@@ -30,6 +30,19 @@ Page({
 
   },
 
+  selectColor(e) {
+    const activeIndexC = e.currentTarget.dataset.index;
+    this.setData({
+      activeIndexC
+    })
+  },
+  selectType(e) {
+    const activeIndexT = e.currentTarget.dataset.index;
+    this.setData({
+      activeIndexT
+    })
+  },
+
   changed(e) {
     const activeIndex = e.currentTarget.dataset.index;
     this.setData({
@@ -38,14 +51,7 @@ Page({
   },
 
   //  选择商品规格
-  selectType() {
-    if (this.data.producType) {
-      wx.showToast({
-        title: '请选择规格',
-        icon: 'none'
-      })
-
-    }
+  selectTypeOpt() {
     this.setData({
       producType: true
     })
@@ -56,6 +62,12 @@ Page({
   closeProductType() {
     this.setData({
       producType: false
+    })
+  },
+
+  toHome() {
+    wx.switchTab({
+      url: `/pages/index/index`
     })
   },
 
