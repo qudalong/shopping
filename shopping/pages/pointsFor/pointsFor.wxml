@@ -39,7 +39,7 @@
 </view>
 <view class='all-goods'>
   <!-- 全部商品 -->
-  <view bindtap='toProduceDetail' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique"  class='goods'>
+  <view bindtap='toConversion' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique"  class='goods'>
     <image src='../../image/img/cover02.jpg' class='cover'></image>
     <view class='describe'>
       <text>休闲羽绒服</text>
@@ -48,7 +48,7 @@
         <text class='through'>￥400.00</text>
         <text>仅剩20件</text>
       </view>
-      <text class='immediately-change'>立即兑换</text>
+      <view class='immediately-change' hover-class='hover'>立即兑换</view>
     </view>
   </view>
 </view>

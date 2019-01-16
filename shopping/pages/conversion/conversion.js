@@ -1,16 +1,25 @@
-// pages/my/my.js
+// pages/productDetail/productDetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: ['/image/img/banner01.jpg', '/image/img/banner02.jpg', '/image/img/banner03.jpg'],
+    imgUrls: ['/image/img/banner04.jpg', '/image/img/banner02.jpg'],
     indicatorDots: true,
     autoplay: true,
     interval: 4000,
     duration: 400,
-    list:[1,1,1,1,1,1]
+    producType: false, //默认选中商品详情
+    list: [1, 1, 1, 1],
+    producItem: {
+      img: '/image/img/banner01.jpg',
+      price: 260,
+      inventory: 100,
+      color: ['红色', '米色', '蓝色'],
+      type: ['默认', '大码'],
+      count: 4
+    }
   },
 
   /**
@@ -20,21 +29,38 @@ Page({
 
   },
 
-  toProduceDetail() {
-    wx.navigateTo({
-      url: `/pages/productDetail/productDetail`
+  selectColor(e) {
+    const activeIndexC = e.currentTarget.dataset.index;
+    this.setData({
+      activeIndexC
     })
   },
 
-  toPointsFor() {
-    wx.navigateTo({
-      url: `/pages/pointsFor/pointsFor`
+  selectType(e) {
+    const activeIndexT = e.currentTarget.dataset.index;
+    this.setData({
+      activeIndexT
     })
   },
 
-  toCoupon() {
-    wx.navigateTo({
-      url: `/pages/couponRedemptionCentre/couponRedemptionCentre`
+  //  选择商品规格
+  selectTypeOpt() {
+    this.setData({
+      producType: true
+    })
+  },
+
+
+  //  关闭商品规格
+  closeProductType() {
+    this.setData({
+      producType: false
+    })
+  },
+
+  toHome(){
+    wx.switchTab({
+      url: `/pages/index/index`
     })
   },
 

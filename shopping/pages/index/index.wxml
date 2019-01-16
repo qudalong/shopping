@@ -22,11 +22,11 @@
     <icon class='iconfont icon-qiandao icon-nav  icon03'></icon>
     <view>每日签到</view>
   </view>
-  <view class='item'>
+  <view bindtap='toPointsFor' class='item'>
     <icon class='iconfont icon-qian icon-nav icon04'></icon>
     <view>积分兑换</view>
   </view>
-  <view class='item'>
+  <view bindtap='toCoupon' class='item'>
     <icon class='iconfont icon-liwu icon-nav icon05'></icon>
     <view>领劵中心</view>
   </view>
