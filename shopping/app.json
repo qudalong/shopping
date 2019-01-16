@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/settlement/settlement",
     "pages/checktheCalendar/checktheCalendar",
+    "pages/index/index",
     "pages/stores/stores",
     "pages/exchange/exchange",
-    "pages/index/index",
     "pages/productDetail/productDetail",
     "pages/conversion/conversion",
     "pages/pointsFor/pointsFor",
