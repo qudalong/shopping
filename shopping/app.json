@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/checktheCalendar/checktheCalendar",
     "pages/stores/stores",
     "pages/exchange/exchange",
     "pages/index/index",
