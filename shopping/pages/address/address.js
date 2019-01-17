@@ -15,6 +15,51 @@ Page({
 
   },
 
+  toAddAddress(){
+    wx.navigateTo({
+      url: '/pages/addAddress/addAddress',
+    })
+  },
+
+
+  getWxAddress() {
+    const that = this;
+    wx.getSetting({
+      success(res) {
+        if (res.authSetting['scope.address']) {
+          wx.chooseAddress({
+            success(res) {
+              that.setData({
+                userName: res.userName,
+                telNumber: res.telNumber,
+                countyName: res.provinceName + res.cityName + res.countyName,
+                detailInfo: res.detailInfo,
+              })
+            }
+          })
+        } else {
+          if (res.authSetting['scope.address'] == false) {
+            wx.openSetting({
+              success(res) {
+              }
+            })
+          } else {
+            wx.chooseAddress({
+              success(res) {
+                that.setData({
+                  userName: res.userName,
+                  telNumber: res.telNumber,
+                  countyName: res.provinceName + res.cityName + res.countyName,
+                  detailInfo: res.detailInfo,
+                })
+              }
+            })
+          }
+        }
+      }
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -40,7 +85,6 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
   },
 
   /**

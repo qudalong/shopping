@@ -14,7 +14,7 @@
     <icon class='iconfont icon-quanbu icon-nav icon01'></icon>
     <view>智能商铺</view>
   </view>
-  <view class='item'>
+  <view bindtap='toFishon' class='item'>
     <icon class='iconfont icon-yijia icon-nav icon02'></icon>
     <view>在线时尚</view>
   </view>
@@ -30,15 +30,15 @@
     <icon class='iconfont icon-liwu icon-nav icon05'></icon>
     <view>领劵中心</view>
   </view>
-  <view class='item'>
+  <view bindtap='topUp' class='item'>
     <icon class='iconfont icon-shouji icon-nav icon06'></icon>
     <view>商城充值 </view>
   </view>
-  <view  bindtap='toShop' class='item'>
+  <view bindtap='toShop' class='item'>
     <icon class='iconfont icon-16xiaoxiliebiaoshangji icon-nav icon07'></icon>
     <view>门店</view>
   </view>
-  <view class='item'>
+  <view bindtap='toAgent' class='item'>
     <icon class='iconfont icon-jiameng icon-nav  icon08'></icon>
     <view>加盟代理</view>
   </view>
@@ -106,11 +106,11 @@
   </view>
 </view>
 <view class="product-list">
-    <view bindtap='toProduceDetail' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="item">
-      <image class='cover' src='/image/img/cover02.jpg' mode='aspectFit'></image>
-      <view class='name'>羽绒服短袖</view>
-      <view class='price'>￥16{{index}}.00</view>
-    </view>
+  <view bindtap='toProduceDetail' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="item">
+    <image class='cover' src='/image/img/cover02.jpg' mode='aspectFit'></image>
+    <view class='name'>羽绒服短袖</view>
+    <view class='price'>￥16{{index}}.00</view>
+  </view>
 </view>
 <view class='title-mid'>
   <view class='middle'>

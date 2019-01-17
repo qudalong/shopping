@@ -15,6 +15,18 @@ Page({
 
   },
 
+  toOffSet(){
+   wx.navigateTo({
+     url: '/pages/offSet/offSet',
+   })
+  },
+
+  addAddress(){
+   wx.navigateTo({
+     url: '/pages/address/address',
+   })
+  },
+  
   payType(){
     this.setData({
       payStyle:true
