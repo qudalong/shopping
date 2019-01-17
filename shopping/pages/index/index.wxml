@@ -10,7 +10,7 @@
 </swiper>
 <!-- 分类导航 -->
 <view class='classify-wrap'>
-  <view class='item'>
+  <view bindtap='toShops' class='item'>
     <icon class='iconfont icon-quanbu icon-nav icon01'></icon>
     <view>智能商铺</view>
   </view>

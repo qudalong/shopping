@@ -20,6 +20,11 @@ Page({
 
   },
 
+  toShops() {
+    wx.navigateTo({
+      url: `/pages/goodStoreRecommend/goodStoreRecommend`
+    })
+  },
   toAgent() {
     wx.navigateTo({
       url: `/pages/agent/agent`

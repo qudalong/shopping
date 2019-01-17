@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/goodStoreRecommend/goodStoreRecommend",
     "pages/agent/agent",
     "pages/topUp/topUp",
-    "pages/index/index",
     "pages/settlement/settlement",
     "pages/exchange/exchange",
     "pages/adress/adress",
