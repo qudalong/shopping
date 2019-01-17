@@ -1,0 +1,14 @@
+<view class="order-list">
+  <view bindtap='changed' class="item {{activeIndex==0 ? 'active' : '' }}" data-index="0">商品</view>
+  <view bindtap='changed' class="item {{activeIndex==1 ? 'active' : '' }}" data-index="1">专题</view>
+</view>
+<view wx:if="{{list.length}}" class='collect-list'>
+  <view wx:for="{{list}}" wx:key="unique" class='item'>
+    <image class='cover' src='/image/img/banner01.jpg' mode='aspectFill' />
+    <view class='info'>
+      <view class='name'>时尚女装</view>
+      <view class='price'>￥500.00</view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{!list.length}}" class='empty'>暂无收藏</view>

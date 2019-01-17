@@ -56,6 +56,16 @@ Page({
       producType: true
     })
   },
+  buyNow() {
+    if(this.data.producType){
+      wx.navigateTo({
+        url: `/pages/settlement/settlement`
+      })
+    }
+    this.setData({
+      producType: true
+    })
+  },
 
 
   //  关闭商品规格

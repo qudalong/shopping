@@ -51,7 +51,7 @@
     <icon class='iconfont icon-qiabao icon1'></icon>
     <text>我的卡卷</text>
   </view>
-  <view class='item'>
+  <view bindtap='toCollect' class='item'>
     <icon class='iconfont icon-star icon2'></icon>
     <text>我的收藏</text>
   </view>

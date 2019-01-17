@@ -1,11 +1,12 @@
-// pages/my/my.js
+// pages/myCard/myCard.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    activeIndex: 0,
+    list: [1, 1]
   },
 
   /**
@@ -15,22 +16,10 @@ Page({
 
   },
 
-  toOrderList(e) {
+  changed(e) {
     const activeIndex = e.currentTarget.dataset.index;
-    wx.navigateTo({
-      url: `/pages/orderList/orderList?activeIndex=${activeIndex}`
-    })
-  },
-
-  toCollect(e) {
-    wx.navigateTo({
-      url: `/pages/collect/collect`
-    })
-  },
-
-  toMyCart() {
-    wx.navigateTo({
-      url: `/pages/myCard/myCard`
+    this.setData({
+      activeIndex
     })
   },
 
