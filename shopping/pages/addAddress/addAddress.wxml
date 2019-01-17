@@ -1,0 +1,27 @@
+<view class='wrap'>
+  <view class='row'>
+    <view class='lable'>收货人</view>
+    <input class='inpt' type='text' value='{{userName}}' />
+  </view>
+  <view class='row'>
+    <view class='lable'>联系电话</view>
+    <input class='inpt' type='text' value='{{telNumber}}' />
+  </view>
+  <view class='row'>
+    <view class='lable'>所在地区</view>
+    <picker class='picker' mode="region" bindchange="bindRegionChange" value="{{region}}">
+      <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
+      <view wx:if="{{countyName}}"  class="region">{{countyName}}</view>
+      <view wx:if="{{!countyName}}" class="region">
+        <text wx:if="{{!region.length}}" class="region">请选择</text>
+        <view wx:if="{{region.length}}" class="region">{{region[0]}} {{region[1]}} {{region[2]}}</view>
+      </view>
+    </picker>
+  </view>
+  <view class='row'>
+    <view class='lable'>详情地址</view>
+    <input class='inpt' type='text' value='{{detailInfo}}' />
+  </view>
+</view>
+<view bindtap='getWxAddress' class='btn' hover-class='hover'>一键获取微信地址</view>
+<view class='btn-fixd' hover-class="hover">保存</view>

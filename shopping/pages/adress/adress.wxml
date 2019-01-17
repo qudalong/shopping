@@ -1,0 +1,2 @@
+<view bindtap='addAddress' class='btn-fixd' hover-class="hover">添加新地址</view>
+<view class='empty'>暂无收货地址</view>

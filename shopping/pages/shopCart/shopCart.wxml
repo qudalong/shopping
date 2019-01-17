@@ -14,10 +14,10 @@
         </view>
         <view class='bottom-row'>
           <view class='price'>#{{item.price}}</view>
-          <view class='control '>
-            <icon class='add'>-</icon>
+          <view class='control'>
+            <icon class='iconfont icon-jianhao1'></icon>
             <view class='count'>{{item.count}}</view>
-            <icon class='minus'>+</icon>
+            <icon class='iconfont icon-jiahao'></icon>
           </view>
         </view>
       </view>

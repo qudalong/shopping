@@ -70,9 +70,9 @@
     </view>
     <view class='amount'>
       <text>数量</text>
-      <view class='number'>
+      <view class='control'>
         <icon class='iconfont icon-jianhao1'></icon>
-        <text class='numberof'>1</text>
+        <view class='count'>14</view>
         <icon class='iconfont icon-jiahao'></icon>
       </view>
     </view>

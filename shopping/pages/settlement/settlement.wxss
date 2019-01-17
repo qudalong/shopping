@@ -3,22 +3,26 @@
   background-color: #fff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .pay-for {
-  margin: 15rpx 0;
+  margin: 10rpx 0;
 }
 
 .address text, .pay-for text {
   margin-top: 14rpx;
 }
-
+.patype{
+  flex: 1;
+  text-align: right;
+}
 .address text {
   color: #fe6d6d;
 }
 
 .platform {
-  border-bottom: 2rpx solid #ccc;
+  border-bottom: 1rpx solid #f0f0f0;
 }
 .order-information{
   background-color: #fff;
@@ -27,7 +31,7 @@
   margin: 0 20rpx;
   padding: 20rpx 0;
   background-color: #fff;
-  border-bottom: 2rpx solid #ccc;
+  border-bottom: 1rpx solid #f0f0f0;
   display: flex;
   flex-direction: row;
 }
@@ -53,9 +57,10 @@
   color: #fe6d6d;
 }
 .return{
-  padding: 10rpx 20rpx;
+  padding: 20rpx;
   background-color: #FFF7F4;
-  border-bottom: 2rpx solid #ccc;
+  border-bottom: 1rpx solid #f0f0f0;
+  font-size: 28rpx;
 }
 .coupons{
   margin: 0 20rpx;
@@ -63,7 +68,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2rpx solid #ccc;
+  border-bottom: 1rpx solid #f0f0f0;
 }
 .none{
   display: flex;
@@ -76,7 +81,7 @@
   padding: 20rpx;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2rpx solid #ccc;
+  border-bottom: 1rpx solid #f0f0f0;
 }
 .icon-wenhao{
   font-size: 34rpx;
@@ -87,13 +92,13 @@
 .freight{
   margin: 0 20rpx;
   padding: 20rpx 0;
-  border-bottom: 2rpx solid #ccc; 
+  border-bottom: 1rpx solid #f0f0f0; 
   display: flex;
   justify-content: space-between;
 }
 .message{
   padding: 20rpx;
-  border-bottom: 2rpx solid #ccc; 
+  border-bottom: 1rpx solid #f0f0f0; 
   display: flex;
   align-items: center;
 }
@@ -137,17 +142,29 @@
 .method{
   padding: 20rpx;
   text-align: center;
-  border-bottom: 2rpx solid #ccc; 
+  border-bottom: 1rpx solid #f0f0f0; 
 }
 .wechat,.cash-on-delivery,.balance{
   padding: 20rpx;
   display: flex;
   justify-content: space-between;
-}
-.icon-weixin{
-  margin-right: 20rpx;
+  border-bottom: 1rpx solid #f0f0f0; 
 }
 .chat{
   display: flex;
   align-items: center;
+}
+.icon-weixin,.icon-shuaqia{
+  margin-right: 20rpx;
+  padding: 6rpx;
+  border-radius: 6rpx;
+  background: #11C03A;
+  color: #fff;
+}
+.icon-shuaqia{
+  background: #1CABF0;
+  color: #fff;
+}
+.icon-right{
+  color: #FE4442;
 }
