@@ -1,6 +1,10 @@
 {
   "pages": [
+    "pages/agent/agent",
+    "pages/topUp/topUp",
+    "pages/fashion/fashion",
     "pages/offSet/offSet",
+    "pages/index/index",
     "pages/settlement/settlement",
     "pages/couponRedemptionCentre/couponRedemptionCentre",
     "pages/myCard/myCard",
@@ -8,7 +12,6 @@
     "pages/address/address",
     "pages/aboutUs/aboutUs",
     "pages/my/my",
-    "pages/index/index",
     "pages/productDetail/productDetail",
     "pages/stores/stores",
     "pages/shopDetail/shopDetail",

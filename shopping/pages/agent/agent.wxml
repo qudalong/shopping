@@ -1,0 +1,20 @@
+<view class='title'>加盟代理</view>
+<view class='date-browse'>
+  <view class='date'>2018-12-04</view>
+  <view class='browse'>141人浏览</view>
+</view>
+<view class='picture'>
+  <image src='../../image/img/browse3.jpg'></image>
+  <image src='../../image/img/browse2.jpg'></image>
+  <image src='../../image/img/browse1.jpg'></image>
+</view>
+<view class='collection-share'>
+  <view class='collection'>
+    <icon class='iconfont icon-shoucang'></icon>
+    <text>收藏</text>
+  </view>
+  <view class='share'>
+    <icon class='iconfont icon-fenxiang'></icon>
+    <text>分享</text>
+  </view>
+</view>

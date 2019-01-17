@@ -1,0 +1,58 @@
+page{
+  padding: 20rpx;
+  background-color: #fff;
+}
+.my-account{
+  padding: 20rpx 0;
+}
+.account{
+  padding-left: 30rpx;
+  border-left: 4rpx solid #E44C4A;
+  color: #888A88;
+}
+.balance{
+  background-color: #EEEFEE;
+  padding: 50rpx 40rpx;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 50rpx;
+  margin-bottom: 30rpx;
+}
+.money{
+  display: flex;
+}
+.money1{
+  padding: 30rpx 50rpx;
+  display: flex;
+  flex-direction: column;
+  border: 2rpx solid #ccc;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+.money1:hover{
+  background-color: #FEF6F5;
+  color: #EE7D7D;
+  border: 2rpx solid #EE7D7D;
+}
+.size{
+  font-size: 24rpx;
+}
+.manual{
+  padding: 20rpx 30rpx;
+  border: 2rpx solid #ccc;
+  margin: 30rpx 0;
+  border-radius: 10rpx;
+  color: #E9EAE8;
+}
+.now{
+  padding: 30rpx 0;
+  margin: 50rpx 0;
+  text-align: center;
+  background-color: #FE4442;
+  border-radius: 50rpx;
+  color: #fff;
+}
+.instructions{
+  color: #888A88;
+}

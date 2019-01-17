@@ -1,0 +1,38 @@
+page{
+  padding: 20rpx;
+  background-color: #fefffe;
+}
+.title{
+  padding: 20rpx 0;
+  font-weight: 700;
+}
+.date-browse{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  color: #888A88;
+}
+.picture{
+  width: 100%;
+  margin-bottom: 110rpx;
+}
+.picture image{
+  width: 100%;
+}
+.collection-share{
+  height: 100rpx;
+  width: 100%;
+  border-top: 2rpx solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fefffe;
+}
+.collection,.share{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

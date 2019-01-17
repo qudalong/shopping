@@ -1,0 +1,31 @@
+<view class='my-account'>
+  <text class='account'>我的账户</text>
+</view>
+<view class='balance'>
+  <view>
+    <icon class='iconfont'></icon>
+    <text>余额</text>
+  </view>
+  <view>￥0.00</view>
+</view>
+<view class='my-account'>
+  <text class='account'>充值金额</text>
+</view>
+<view class='money'>
+  <view class='money1'>
+    <text>1000.00</text>
+    <text class='size'>送100.00</text>
+  </view>
+  <view class='money1'>
+    <text>500.00</text>
+    <text class='size'>送50.00</text>
+  </view>
+</view>
+<input placeholder='手动输入充值金额' class='manual'></input>
+<view class='now'>立即充值</view>
+<view class='my-account'>
+  <text class='account'>充值说明</text>
+</view>
+<view class='instructions'>
+  用户可以自定义充值金额，但是不会有赠送用户可以自定义充值金额，但是不会有赠送用户可以自定义充值金额，但是不会有赠送用户可以自定义充值金额，但是不会有赠送用户可以自定义充值金额，但是不会有赠送用户可以自定义充值金额，但是不会有赠送用户可以自定义充值金额，但是不会有赠送用户可以自定义充值金额，但是不会有赠送用户可以自定义充值金额，但是不会有赠送用户可以自定义充值金额，但是不会有赠送
+</view>

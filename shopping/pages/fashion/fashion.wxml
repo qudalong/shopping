@@ -1,0 +1,21 @@
+<view class='title'>在线时尚</view>
+<view class='date-browse'>
+  <view class='date'>2018-12-04</view>
+  <view class='browse'>22万+人浏览</view>
+</view>
+<view class='video'>
+  <video src='' poster='../../image/img/cover01.jpg'></video>
+</view>
+<view class='picture'>
+  <image src='../../image/img/browse3.jpg'></image>
+</view>
+<view class='collection-share'>
+  <view class='collection'>
+    <icon class='iconfont icon-shoucang'></icon>
+    <text>收藏</text>
+  </view>
+  <view class='share'>
+    <icon class='iconfont icon-fenxiang'></icon>
+    <text>分享</text>
+  </view>
+</view>
