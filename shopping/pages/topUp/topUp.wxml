@@ -3,7 +3,7 @@
 </view>
 <view class='balance'>
   <view>
-    <icon class='iconfont'></icon>
+    <icon class='iconfont icon-jinbi1'></icon>
     <text>余额</text>
   </view>
   <view>￥0.00</view>
