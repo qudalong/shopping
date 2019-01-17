@@ -125,3 +125,19 @@
 .color{
   color: #888A88;
 }
+
+.payment{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+}
+.method{
+  padding: 20rpx;
+  text-align: center;
+  border-bottom: 2rpx solid #ccc; 
+}
+.wechat{
+  padding: 20rpx;
+}
