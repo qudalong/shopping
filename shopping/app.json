@@ -1,12 +1,14 @@
 {
   "pages": [
-    "pages/address/address",
+    "pages/offSet/offSet",
     "pages/settlement/settlement",
+    "pages/couponRedemptionCentre/couponRedemptionCentre",
+    "pages/myCard/myCard",
+    "pages/collect/collect",
+    "pages/address/address",
     "pages/aboutUs/aboutUs",
     "pages/my/my",
     "pages/index/index",
-    "pages/myCard/myCard",
-    "pages/collect/collect",
     "pages/productDetail/productDetail",
     "pages/stores/stores",
     "pages/shopDetail/shopDetail",
@@ -16,7 +18,6 @@
     "pages/conversion/conversion",
     "pages/pointsFor/pointsFor",
     "pages/classify/classify",
-    "pages/couponRedemptionCentre/couponRedemptionCentre",
     "pages/orderList/orderList",
     "pages/shopCart/shopCart"
   ],
