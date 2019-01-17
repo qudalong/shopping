@@ -132,7 +132,6 @@
   left: 0;
   background-color: #fff;
   width: 100%;
-  z-index: 111;
 }
 .method{
   padding: 20rpx;
@@ -143,11 +142,30 @@
   padding: 20rpx;
   display: flex;
   justify-content: space-between;
+  border-bottom: 2rpx solid #ccc;
 }
-.icon-weixin{
-  margin-right: 20rpx;
-}
+
 .chat{
   display: flex;
   align-items: center;
+}
+
+.chat text{
+  margin-left: 20rpx;
+}
+.icon-weixin,.icon-shuaqia,.icon-zhanghuyue{
+  padding: 12rpx;
+  border-radius: 10rpx;
+  color: #fff;
+}
+.icon-weixin{
+  background-color: #10BF38;
+}
+.icon-shuaqia{
+  background-color: #1AABEF;
+}
+.icon-zhanghuyue{
+  padding: 12rpx 0 8rpx 12rpx;
+  background-color: #FE4442;
+  text-align: center;
 }

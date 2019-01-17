@@ -59,34 +59,32 @@
     <input placeholder='请填写备注' class='color'></input>
   </view>
 </view>
-<!-- <view class='fixed'>
+<view class='fixed'>
   <view class='total'>
     <text>总计：￥59.7</text>
   </view>
   <view class='submit'>提交</view>
-</view> -->
+</view>
 <!-- 选择支付方式 -->
-<view class='payment'>
+<!-- <view class='payment'>
   <view class='method'>请选择支付方式</view>
   <view class='wechat'>
     <view class='chat'>
       <icon class='iconfont icon-weixin'></icon>
-      <text>微信支付</text>
+      <text class='num'>微信支付</text>
     </view>
-    <icon class='iconfont icon-right'></icon>
+    <icon class='iconfont icon-right num'></icon>
   </view>
   <view class='cash-on-delivery'>
     <view class='chat'>
       <icon class='iconfont icon-shuaqia'></icon>
-      <text>微信支付</text>
+      <text class='color'>货到付款</text>
     </view>
-    <icon class='iconfont icon-right'></icon>
   </view>
   <view class='balance'>
     <view class='chat'>
       <icon class='iconfont icon-zhanghuyue'></icon>
-      <text>微信支付</text>
+      <text class='color'>账户余额支付</text>
     </view>
-    <icon class='iconfont icon-right'></icon>
   </view>
-</view>
+</view> -->

@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/address/address",
+    "pages/settlement/settlement",
     "pages/aboutUs/aboutUs",
     "pages/my/my",
     "pages/index/index",
     "pages/myCard/myCard",
     "pages/collect/collect",
-    "pages/settlement/settlement",
     "pages/productDetail/productDetail",
     "pages/stores/stores",
     "pages/shopDetail/shopDetail",

@@ -1,0 +1,30 @@
+.the-goods {
+  padding: 20rpx;
+  background-color: #fff;
+  line-height: 2;
+}
+
+.consignee {
+  display: flex;
+  justify-content: space-between;
+}
+
+.getaddress {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx;
+}
+
+.manual, .onekey {
+  padding: 20rpx 70rpx;
+  border-radius: 10rpx;
+  color: #fff;
+}
+
+.manual {
+  background-color: #fe4442;
+}
+
+.onekey {
+  background-color: #08bb05;
+}
