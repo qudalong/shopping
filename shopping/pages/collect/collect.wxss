@@ -1,0 +1,36 @@
+@import "/pages/orderList/orderList.wxss";
+
+.collect-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10rpx;
+}
+
+.collect-list .item {
+  width: 49%;
+  margin-right: 2%;
+  text-align: center;
+  font-size: 0;
+  margin-bottom: 10rpx;
+  border-radius: 6rpx;
+  overflow: hidden;
+}
+.collect-list .item:nth-child(2n){
+  margin-right: 0;
+}
+.collect-list .item .info {
+  line-height: 1.6;
+  background: #fff;
+  font-size: 32rpx;
+}
+
+.collect-list .item .cover {
+  width: 100%;
+  height: 400rpx;
+}
+
+.collect-list .item .price {
+  color: #e51810;
+  font-size: 30rpx;
+}

@@ -149,5 +149,5 @@
     <icon class='iconfont icon-shoucang'></icon>收藏
   </view>
   <view bindtap='selectTypeOpt' class='addcart'>加入购物车</view>
-  <view bindtap='selectTypeOpt' class='buynow'>立即购买</view>
+  <view bindtap='buyNow' class='buynow'>立即购买</view>
 </view>

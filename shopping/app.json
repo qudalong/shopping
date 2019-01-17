@@ -1,22 +1,22 @@
 {
   "pages": [
-    "pages/settlement/settlement",
-    "pages/checktheCalendar/checktheCalendar",
+    "pages/my/my",
     "pages/index/index",
+    "pages/myCard/myCard",
+    "pages/collect/collect",
+    "pages/productDetail/productDetail",
+    "pages/settlement/settlement",
     "pages/stores/stores",
     "pages/shopDetail/shopDetail",
     "pages/detail/detail",
     "pages/checktheCalendar/checktheCalendar",
     "pages/exchange/exchange",
-    "pages/productDetail/productDetail",
     "pages/conversion/conversion",
     "pages/pointsFor/pointsFor",
     "pages/classify/classify",
     "pages/couponRedemptionCentre/couponRedemptionCentre",
-    "pages/myCard/myCard",
     "pages/orderList/orderList",
-    "pages/shopCart/shopCart",
-    "pages/my/my"
+    "pages/shopCart/shopCart"
   ],
   "window": {
     "backgroundTextStyle": "light",
