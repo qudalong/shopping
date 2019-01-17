@@ -1,4 +1,4 @@
-// pages/my/my.js
+// pages/aboutUs/aboutUs.js
 Page({
 
   /**
@@ -13,31 +13,6 @@ Page({
    */
   onLoad: function (options) {
 
-  },
-
-  tel: function () {
-    wx.makePhoneCall({
-      phoneNumber: '18768871896',
-    })
-  },
-
-  toOrderList(e) {
-    const activeIndex = e.currentTarget.dataset.index;
-    wx.navigateTo({
-      url: `/pages/orderList/orderList?activeIndex=${activeIndex}`
-    })
-  },
-
-  toCollect(e) {
-    wx.navigateTo({
-      url: `/pages/collect/collect`
-    })
-  },
-
-  toMyCart() {
-    wx.navigateTo({
-      url: `/pages/myCard/myCard`
-    })
   },
 
   /**

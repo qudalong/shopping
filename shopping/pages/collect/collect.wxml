@@ -3,7 +3,7 @@
   <view bindtap='changed' class="item {{activeIndex==1 ? 'active' : '' }}" data-index="1">专题</view>
 </view>
 <view wx:if="{{list.length}}" class='collect-list'>
-  <view wx:for="{{list}}" wx:key="unique" class='item'>
+  <view bindtap='toProductDetail' wx:for="{{list}}" wx:key="unique" class='item'>
     <image class='cover' src='/image/img/banner01.jpg' mode='aspectFill' />
     <view class='info'>
       <view class='name'>时尚女装</view>
