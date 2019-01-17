@@ -1,0 +1,11 @@
+.btn-fixd{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height:100rpx;
+  line-height: 100rpx;
+  color: #fff;
+  background: #E51810;
+}

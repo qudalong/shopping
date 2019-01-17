@@ -12,21 +12,21 @@ Page({
       name: '三只小松鼠',
       type: ['默认', '大码'],
       price: 260,
-      count: 4
+      count: 46
     }, {
       status: 0,
       img: '/image/img/banner02.jpg',
       name: '短袖衬衣',
       type: ['默认', '短袖'],
       price: 840,
-      count: 1
+      count: 17
     }, {
       status: 0,
       img: '/image/img/banner03.jpg',
       name: '波司登羽绒服',
       type: ['默认'],
       price: 450,
-      count: 7
+      count: 72
     }]
   },
 

@@ -1,5 +1,5 @@
 <!-- 购物车 -->
-<icon class='iconfont icon-gouwuche1-copy shopCart'></icon>
+<icon bindtap='toShopCart' class='iconfont icon-gouwuche1-copy shopCart'></icon>
 <!-- 轮播图 -->
 <swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#FE4442" indicator-color="#ccc">
   <block wx:for="{{imgUrls}}" wx:key="unique">
@@ -117,7 +117,7 @@
     </view>
     <view class='colorsize'>
       <text>颜色</text>
-       <view>
+      <view>
         <text bindtap='selectColor' wx:for="{{producItem.color}}" wx:key="unique" class="color {{activeIndexC==index ? 'active' : ''}}" data-index="{{index}}">{{item}}</text>
       </view>
       <text>尺码</text>
@@ -127,9 +127,9 @@
     </view>
     <view class='amount'>
       <text>数量</text>
-      <view class='number'>
+      <view class='control'>
         <icon class='iconfont icon-jianhao1'></icon>
-        <text class='numberof'>1</text>
+        <view class='count'>14</view>
         <icon class='iconfont icon-jiahao'></icon>
       </view>
     </view>
@@ -137,7 +137,7 @@
 </view>
 <!-- 联系电话  客服 -->
 <view>
-  <icon class='iconfont icon-weibiaoti'></icon>
+  <icon bindtap='call' class='iconfont icon-weibiaoti'></icon>
   <icon class='iconfont icon-kefu'></icon>
 </view>
 <!-- 底部导航栏 -->

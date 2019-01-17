@@ -67,6 +67,18 @@ Page({
     })
   },
 
+  toShopCart() {
+      wx.switchTab({
+        url: `/pages/shopCart/shopCart`
+      })
+  },
+
+  call() {
+    wx.makePhoneCall({
+      phoneNumber: '18768871896',
+    })
+  },
+
 
   //  关闭商品规格
   closeProductType() {

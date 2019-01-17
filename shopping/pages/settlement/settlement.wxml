@@ -2,8 +2,9 @@
   <text>请选择收货地址</text>
   <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy color'></icon>
 </view>
-<view class='pay-for'>
+<view bindtap='payType' class='pay-for'>
   <text>支付方式</text>
+  <view wx:if="{{payType}}" class='patype'>{{payType}}</view>
   <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy color'></icon>
 </view>
 <view class='platform'>
@@ -70,25 +71,22 @@
   <view class='submit'>提交</view>
 </view>
 <!-- 选择支付方式 -->
-<!-- <view class='payment'>
-  <view class='method'>请选择支付方式</view>
-  <view class='wechat'>
-    <view class='chat'>
-      <icon class='iconfont icon-weixin'></icon>
-      <text class='num'>微信支付</text>
+<view wx:if="{{payStyle}}" class='globle-cover'>
+  <view class='payment'>
+    <view class='method'>请选择支付方式</view>
+    <view bindtap='closePayType' class='wechat' data-index="0" data-txt="微信支付">
+      <view class='chat'>
+        <icon class='iconfont icon-weixin'></icon>
+        <text>微信支付</text>
+      </view>
+      <icon wx:if="{{activeIndex==0}}" class='iconfont icon-right'></icon>
     </view>
-    <icon class='iconfont icon-right num'></icon>
-  </view>
-  <view class='cash-on-delivery'>
-    <view class='chat'>
-      <icon class='iconfont icon-shuaqia'></icon>
-      <text class='color'>货到付款</text>
-    </view>
-  </view>
-  <view class='balance'>
-    <view class='chat'>
-      <icon class='iconfont icon-zhanghuyue'></icon>
-      <text class='color'>账户余额支付</text>
+    <view bindtap='closePayType' class='cash-on-delivery' data-index="1" data-txt="货到付款">
+      <view class='chat'>
+        <icon class='iconfont icon-shuaqia'></icon>
+        <text>货到付款</text>
+      </view>
+      <icon wx:if="{{activeIndex==1}}" class='iconfont icon-right'></icon>
     </view>
   </view>
-</view> -->
+</view>

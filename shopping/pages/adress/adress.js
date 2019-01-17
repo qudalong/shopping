@@ -1,11 +1,11 @@
-// pages/settlement/settlement.js
+// pages/adress/adress.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    payStyle:false
+
   },
 
   /**
@@ -13,22 +13,6 @@ Page({
    */
   onLoad: function (options) {
 
-  },
-
-  payType(){
-    this.setData({
-      payStyle:true
-    })
-  },
-
-  closePayType(e){
-    const activeIndex = e.currentTarget.dataset.index;
-    const payType = e.currentTarget.dataset.txt;
-    this.setData({
-      payStyle:false,
-      activeIndex,
-      payType
-    })
   },
 
   /**
