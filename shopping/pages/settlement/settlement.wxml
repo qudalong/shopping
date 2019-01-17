@@ -69,12 +69,24 @@
 <view class='payment'>
   <view class='method'>请选择支付方式</view>
   <view class='wechat'>
-    <view>
-      <icon class='iconfont '></icon>
+    <view class='chat'>
+      <icon class='iconfont icon-weixin'></icon>
       <text>微信支付</text>
     </view>
     <icon class='iconfont icon-right'></icon>
   </view>
-  <view class='cash-on-delivery'></view>
-  <view class='balance'></view>
+  <view class='cash-on-delivery'>
+    <view class='chat'>
+      <icon class='iconfont icon-shuaqia'></icon>
+      <text>微信支付</text>
+    </view>
+    <icon class='iconfont icon-right'></icon>
+  </view>
+  <view class='balance'>
+    <view class='chat'>
+      <icon class='iconfont icon-zhanghuyue'></icon>
+      <text>微信支付</text>
+    </view>
+    <icon class='iconfont icon-right'></icon>
+  </view>
 </view>
