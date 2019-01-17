@@ -1,4 +1,35 @@
-@import "/pages/index/index.wxss";
+.search {
+  height: 90rpx;
+  line-height: 90rpx;
+  display: flex;
+  align-items: center;
+  margin: 30rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 1px 1px 3px #ccc;
+  text-align: center;
+  color: #666;
+  overflow: hidden;
+}
+
+.inpt {
+  flex: 1;
+  padding:0 20rpx;
+  text-align: left;
+}
+.icon-sousuo{
+  font-size: 40rpx;
+  margin-right: 5rpx;
+  vertical-align: top;
+  margin-bottom: 14rpx;
+}
+.search-btn {
+  padding:0 20rpx;
+   display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 0 10rpx 10rpx 0;
+}
 
 .shop-list {
   background: #fff;
@@ -16,28 +47,32 @@
   width: 180rpx;
   height: 180rpx;
   border-radius: 50%;
-  margin-right:20rpx;
+  margin-right: 20rpx;
 }
 
-.shop-list .item .info .name{
+.info .name {
   color: #333;
   flex: 1;
 }
-.shop-list .item .info {
+
+.info {
   flex: 1;
   display: flex;
   flex-direction: column;
   color: #666;
   line-height: 1.6;
 }
-.info .raking{
+
+.info .raking {
   display: flex;
   align-items: center;
 }
-.icon-shixin{
+
+.icon-shixin {
   font-size: 40rpx;
-  color: #FF7070;
+  color: #ff7070;
 }
+
 .shop-list .item .posit {
   display: flex;
   flex-direction: column;
@@ -45,7 +80,8 @@
   align-items: center;
   color: #666;
 }
+
 .icon-daohang {
   margin-bottom: 6rpx;
-  color: #FF7070;
+  color: #ff7070;
 }

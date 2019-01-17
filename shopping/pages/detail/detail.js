@@ -1,11 +1,12 @@
-// pages/detail/detail.js
+// pages/myCard/myCard.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    activeIndex: 0,
+    list:[1,1,1,1,1]
   },
 
   /**
@@ -13,6 +14,13 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+
+  changed(e) {
+    const activeIndex = e.currentTarget.dataset.index;
+    this.setData({
+      activeIndex
+    })
   },
 
   /**

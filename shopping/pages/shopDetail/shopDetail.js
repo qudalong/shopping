@@ -1,11 +1,16 @@
-// pages/pointsFor/pointsFor.js
+// pages/shopDetail/shopDetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      list:[1,1,1,1]
+    imgUrls: ['/image/img/banner01.jpg'],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 4000,
+    duration: 400,
+    list: [1, 1, 1, 1, 1, 1]
   },
 
   /**
@@ -15,14 +20,24 @@ Page({
 
   },
 
-  toConversion() {
-    wx.navigateTo({
-      url: `/pages/conversion/conversion`
+  tel: function () {
+    wx.makePhoneCall({
+      phoneNumber: '18768871896',
     })
   },
-  toDetail() {
-    wx.navigateTo({
-      url: `/pages/detail/detail`
+
+  getAdress() {
+    wx.getLocation({
+      type: 'gcj02',
+      success(res) {
+        const latitude = res.latitude
+        const longitude = res.longitude
+        wx.openLocation({
+          latitude,
+          longitude,
+          scale: 18
+        })
+      }
     })
   },
 

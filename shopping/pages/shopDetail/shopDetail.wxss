@@ -1,0 +1,29 @@
+@import '../index/index.wxss';
+@import '../stores/stores.wxss';
+.shop-info{
+  padding: 30rpx;
+  background: #fff;
+}
+.row{
+  display: flex;
+  align-items: center;
+  padding: 30rpx 0 30rpx 30rpx;
+  background: #fff;
+  border-top: 1rpx solid #dedede;
+}
+.row .txt{
+  flex: 1;
+  border-right:1rpx solid #dedede;
+}
+.row .icon{
+  width: 100rpx;
+  text-align: center;
+}
+.hd{
+  padding: 30rpx;
+  background: #fff;
+}
+.first{
+  border-bottom: 1rpx solid #dedede;
+  margin-top: 10rpx;
+}

@@ -18,7 +18,7 @@
     <icon class='iconfont icon-yijia icon-nav icon02'></icon>
     <view>在线时尚</view>
   </view>
-  <view class='item'>
+  <view bindtap='toSign' class='item'>
     <icon class='iconfont icon-qiandao icon-nav  icon03'></icon>
     <view>每日签到</view>
   </view>
@@ -34,7 +34,7 @@
     <icon class='iconfont icon-shouji icon-nav icon06'></icon>
     <view>商城充值 </view>
   </view>
-  <view class='item'>
+  <view  bindtap='toShop' class='item'>
     <icon class='iconfont icon-16xiaoxiliebiaoshangji icon-nav icon07'></icon>
     <view>门店</view>
   </view>

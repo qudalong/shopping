@@ -1,0 +1,32 @@
+<swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#FE4442" indicator-color="#ccc">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode='aspectFill' />
+    </swiper-item>
+  </block>
+</swiper>
+<view class='info shop-info'>
+  <view class='name'>大卫城</view>
+  <view class='raking'>
+    <text>评分: </text>
+    <icon class='iconfont icon-shixin'></icon>
+    <icon class='iconfont icon-shixin'></icon>
+    <icon class='iconfont icon-shixin'></icon>
+    <icon class='iconfont icon-shixin'></icon>
+  </view>
+  <view class='distance'>营业时间: 全天</view>
+</view>
+<view bindtap='tel' class='row'>
+  <view class='txt'>电话：18768871896</view>
+  <view class='icon'>
+    <icon class='iconfont icon-weibiaoti'></icon>
+  </view>
+</view>
+<view bindtap='getAdress' class='row'>
+  <view class='txt'>河南省郑州市金水区经三路21号远洋大厦2楼</view>
+  <view class='icon'>
+    <icon class='iconfont icon-daohang'></icon>
+  </view>
+</view>
+<view class='hd first'>店铺介绍</view>
+<view class='hd'>暂无设置</view>

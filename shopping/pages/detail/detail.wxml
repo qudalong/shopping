@@ -1,37 +1,18 @@
-<view class='balance-payments'>
-  <text>收入</text>
-  <text>支出</text>
+<view class="order-list">
+  <view bindtap='changed' class="item {{activeIndex==0 ? 'active' : '' }}" data-index="0">收入</view>
+  <view bindtap='changed' class="item {{activeIndex==1 ? 'active' : '' }}" data-index="1">支出</view>
 </view>
-<view class='mall-signin'>
-  <text>商城签到</text>
-  <view class='check-in-time'>
-    <text class='integral'>+1积分</text>
-    <view>
-      <text>签到送积分</text>
-      <text class='time'>时间</text>
-      <text>2019-01-11</text>
+<view class='order-details'>
+  <view wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class='mall-signin'>
+    <text>商城签到</text>
+    <view class='check-in-time'>
+      <text class='integral'>+1积分</text>
+      <view class='right'>
+        <text>签到送积分</text>
+        <text class='time'>时间</text>
+        <text>2019-01-11</text>
+      </view>
     </view>
   </view>
-</view>
-<view class='mall-signin'>
-  <text>商城签到</text>
-  <view class='check-in-time'>
-    <text class='integral'>+1积分</text>
-    <view>
-      <text>签到送积分</text>
-      <text class='time'>时间</text>
-      <text>2019-01-11</text>
-    </view>
-  </view>
-</view>
-<view class='mall-signin'>
-  <text>商城签到</text>
-  <view class='check-in-time'>
-    <text class='integral'>+1积分</text>
-    <view>
-      <text>签到送积分</text>
-      <text class='time'>时间</text>
-      <text>2019-01-11</text>
-    </view>
-  </view>
+  <view wx:if="{{!list.length}}" class='empty'>暂无相关明细</view>
 </view>

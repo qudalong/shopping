@@ -12,7 +12,7 @@
       <icon class='iconfont icon-jifenwodeduihuan'></icon>
       <text>我的兑换</text>
     </view>
-    <view class='detail'>
+    <view bindtap='toDetail' class='detail'>
       <icon class='iconfont icon-jifenmingxi'></icon>
       <text>积分明细</text>
     </view>
