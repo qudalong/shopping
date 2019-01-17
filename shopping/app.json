@@ -2,11 +2,11 @@
   "pages": [
     "pages/aboutUs/aboutUs",
     "pages/my/my",
-    "pages/productDetail/productDetail",
     "pages/index/index",
     "pages/myCard/myCard",
     "pages/collect/collect",
     "pages/settlement/settlement",
+    "pages/productDetail/productDetail",
     "pages/stores/stores",
     "pages/shopDetail/shopDetail",
     "pages/detail/detail",
