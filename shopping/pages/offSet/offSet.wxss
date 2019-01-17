@@ -1,0 +1,44 @@
+page{
+  padding: 30rpx;
+}
+.color{
+  color: #888A88;
+}
+.notuse{
+  width: 100%;
+  padding: 20rpx 0;
+  margin: 20rpx 0;
+  border-radius: 10rpx;
+  color: #888A88;
+  text-align: center;
+  border: 2rpx solid #888A88;
+}
+.coupons{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.coupon1{
+  flex: 1;
+  background-color: #FD7B32;
+  padding: 30rpx 10rpx;
+  text-align: center;
+  color: #fff;
+}
+.coupon2{
+  flex: 2;
+  padding: 30rpx 10rpx;
+  background-color: #F1E8E1;
+}
+.period-of-validity{
+  font-size: 22rpx;
+}
+.price{
+  margin-right: 50rpx;
+}
+.money{
+  font-size: 45rpx;
+}
+.center{
+  font-size: 40rpx;
+  font-weight: 700;
+}

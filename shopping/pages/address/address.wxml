@@ -1,0 +1,11 @@
+<view class='the-goods'>
+  <view class='consignee'>
+    <view>收货人：xxx</view>
+    <view>11222334455</view>
+  </view>
+  <view>收货地址：xx省xx市xx镇xxxx</view>
+</view>
+<view class='getaddress'>
+  <view class='manual'>手动添加地址</view>
+  <view class='onekey'>一键获取地址</view>
+</view>

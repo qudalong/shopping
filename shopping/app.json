@@ -3,7 +3,6 @@
     "pages/settlement/settlement",
     "pages/index/index",
     "pages/detail/detail",
-    "pages/shopCart/shopCart",
     "pages/checktheCalendar/checktheCalendar",
     "pages/my/my",
     "pages/addAddress/addAddress",
@@ -11,6 +10,10 @@
     "pages/aboutUs/aboutUs",
     "pages/myCard/myCard",
     "pages/collect/collect",
+    "pages/agent/agent",
+    "pages/topUp/topUp",
+    "pages/fashion/fashion",
+    "pages/offSet/offSet",
     "pages/productDetail/productDetail",
     "pages/stores/stores",
     "pages/shopDetail/shopDetail",
@@ -19,7 +22,8 @@
     "pages/pointsFor/pointsFor",
     "pages/classify/classify",
     "pages/couponRedemptionCentre/couponRedemptionCentre",
-    "pages/orderList/orderList"
+    "pages/orderList/orderList",
+    "pages/shopCart/shopCart"
   ],
   "window": {
     "backgroundTextStyle": "light",

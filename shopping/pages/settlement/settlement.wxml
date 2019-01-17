@@ -35,6 +35,8 @@
     <text>优惠券</text>
     <view class='none'>
       <text class='color'>目前无可用优惠券</text>
+      <!-- 有优惠券可用时显示 -->
+      <!-- <text class='num'>有x张优惠券可用</text> -->
       <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy color'></icon>
     </view>
   </view>
@@ -54,18 +56,20 @@
   <view class='freight'>
     <text>运费</text>
     <view class='color'>请先选择收货地址</view>
+    <!-- 选择收货地址后显示运费 -->
+    <!-- <text class='num'>￥0</text> -->
   </view>
   <view class='message'>
     <text class='leave'>买家留言</text>
     <input placeholder='请填写备注' class='color'></input>
   </view>
 </view>
-<!-- <view class='fixed'>
+<view class='fixed'>
   <view class='total'>
     <text>总计：￥59.7</text>
   </view>
   <view class='submit'>提交</view>
-</view> -->
+</view>
 <!-- 选择支付方式 -->
 <view wx:if="{{payStyle}}" class='globle-cover'>
   <view class='payment'>

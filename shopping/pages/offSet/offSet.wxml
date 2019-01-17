@@ -1,0 +1,54 @@
+<text class='color'>注：优惠券只能抵消商品金额，不能抵消运费，商品金额最多又回到0.01元</text>
+<view class='notuse'>不使用优惠券</view>
+<view class='coupons'>
+  <view class='coupon1'>
+    <view>
+      <text class='price'>￥</text>
+      <text class='money'>200</text>
+    </view>
+    <text class='period-of-validity'>满2000.00元可用</text>
+  </view>
+  <view class='coupon2'>
+    <view class='center'>领券中心</view>
+    <text class='period-of-validity color'>2019.01.14 08:37~2019.02.13 08:37</text>
+  </view>
+</view>
+<view class='coupons'>
+  <view class='coupon1'>
+    <view>
+      <text class='price'>￥</text>
+      <text class='money'>50</text>
+    </view>
+    <text class='period-of-validity'>满500.00元可用</text>
+  </view>
+  <view class='coupon2'>
+    <view class='center'>领券中心</view>
+    <text class='period-of-validity color'>2019.01.14 08:37~2019.02.13 08:37</text>
+  </view>
+</view>
+<view class='coupons'>
+  <view class='coupon1'>
+    <view>
+      <text class='price'>￥</text>
+      <text class='money'>300</text>
+    </view>
+    <text class='period-of-validity'>满3000.00元可用</text>
+  </view>
+  <view class='coupon2'>
+    <view class='center'>领券中心</view>
+    <text class='period-of-validity color'>2019.01.14 08:37~2019.02.13 08:37</text>
+  </view>
+</view>
+<view class='coupons'>
+  <view class='coupon1'>
+    <view>
+      <text class='price'>￥</text>
+      <text class='money'>20</text>
+    </view>
+    <text class='period-of-validity'>满200.00元可用</text>
+  </view>
+  <view class='coupon2'>
+    <view class='center'>领券中心</view>
+    <text class='period-of-validity color'>2019.01.14 08:37~2019.02.13 08:37</text>
+  </view>
+</view>
