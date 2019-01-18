@@ -1,4 +1,11 @@
-<view class='address'>
+<view wx:if="{{userName}}" class='the-goods'>
+  <view class='consignee'>
+    <view>收货人：{{userName}}</view>
+    <view>{{telNumber}}</view>
+  </view>
+  <view>收货地址：{{countyName}}{{detailInfo}}</view>
+</view>
+<view wx:if="{{!userName}}" bindtap='addAddress' class='address'>
   <text>请选择收货地址</text>
   <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy color'></icon>
 </view>
@@ -31,12 +38,12 @@
   </view>
 </view>
 <view class='deduction'>
-  <view class='coupons'>
+  <view bindtap='toOffSet' class='coupons'>
     <text>优惠券</text>
     <view class='none'>
-      <text class='color'>目前无可用优惠券</text>
+      <!-- <text class='color'>目前无可用优惠券</text> -->
       <!-- 有优惠券可用时显示 -->
-      <!-- <text class='num'>有x张优惠券可用</text> -->
+      <text class='num'>有5张优惠券可用</text>
       <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy color'></icon>
     </view>
   </view>

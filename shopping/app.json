@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/goodStoreRecommend/goodStoreRecommend",
     "pages/index/index",
+    "pages/goodStoreRecommend/goodStoreRecommend",
     "pages/agent/agent",
     "pages/topUp/topUp",
-    "pages/address/address",
-    "pages/adress/adress",
     "pages/settlement/settlement",
+    "pages/exchange/exchange",
+    "pages/adress/adress",
     "pages/detail/detail",
     "pages/checktheCalendar/checktheCalendar",
     "pages/addAddress/addAddress",
@@ -19,7 +19,6 @@
     "pages/productDetail/productDetail",
     "pages/stores/stores",
     "pages/shopDetail/shopDetail",
-    "pages/exchange/exchange",
     "pages/conversion/conversion",
     "pages/pointsFor/pointsFor",
     "pages/classify/classify",

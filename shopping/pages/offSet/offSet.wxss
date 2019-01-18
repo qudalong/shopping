@@ -3,6 +3,7 @@ page{
 }
 .color{
   color: #888A88;
+  font-size: 30rpx;
 }
 .notuse{
   width: 100%;
@@ -33,12 +34,13 @@ page{
   font-size: 22rpx;
 }
 .price{
-  margin-right: 50rpx;
+  margin-right:4rpx;
 }
 .money{
   font-size: 45rpx;
 }
 .center{
-  font-size: 40rpx;
+  font-size: 32rpx;
   font-weight: 700;
+  color: red;
 }
