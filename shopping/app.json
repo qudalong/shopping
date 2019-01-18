@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/shopCart/shopCart",
     "pages/index/index",
+    "pages/shopCart/shopCart",
     "pages/homePage/homePage",
     "pages/productDetail/productDetail",
     "pages/search/search",
@@ -43,26 +43,26 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "image/tab_function_gray@3x.png",
-        "selectedIconPath": "image/tab_function_green@3x.png",
+        "iconPath": "image/nav-icon-index.png",
+        "selectedIconPath": "image/nav-icon-index.active.png",
         "text": "商城"
       },
       {
         "pagePath": "pages/classify/classify",
-        "iconPath": "image/tab_function_gray@3x.png",
-        "selectedIconPath": "image/tab_function_green@3x.png",
+        "iconPath": "image/nav-icon-cat.png",
+        "selectedIconPath": "image/nav-icon-cat.active.png",
         "text": "分类"
       },
       {
         "pagePath": "pages/shopCart/shopCart",
-        "iconPath": "image/tab_my_gray@3x.png",
-        "selectedIconPath": "image/tab_my_green@3x.png",
+        "iconPath": "image/nav-icon-cart.png",
+        "selectedIconPath": "image/nav-icon-cart.active.png",
         "text": "购物车"
       },
       {
         "pagePath": "pages/my/my",
-        "iconPath": "image/tab_my_gray@3x.png",
-        "selectedIconPath": "image/tab_my_green@3x.png",
+        "iconPath": "image/nav-icon-user.png",
+        "selectedIconPath": "image/nav-icon-user.active.png",
         "text": "我的"
       }
     ]

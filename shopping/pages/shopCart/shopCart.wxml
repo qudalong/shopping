@@ -1,4 +1,4 @@
-<view class="row-wrap">
+<view class="row-wrap row-wrap-top">
   <icon bindtap='selectAll' class="iconfont icon-circle {{ckAll ? 'icon-duihao1' : 'icon-yuan'}}" ></icon>
   <view>平台自营</view>
 </view>
