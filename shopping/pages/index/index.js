@@ -20,6 +20,11 @@ Page({
 
   },
 
+  toSearch() {
+    wx.navigateTo({
+      url: `/pages/search/search`
+    })
+  },
   toShops() {
     wx.navigateTo({
       url: `/pages/goodStoreRecommend/goodStoreRecommend`
@@ -65,6 +70,11 @@ Page({
   toCoupon() {
     wx.navigateTo({
       url: `/pages/couponRedemptionCentre/couponRedemptionCentre`
+    })
+  },
+  toTeamDetail() {
+    wx.navigateTo({
+      url: `/pages/teamDetail/teamDetail`
     })
   },
 

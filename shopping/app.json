@@ -1,6 +1,9 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/productDetail/productDetail",
+    "pages/search/search",
+    "pages/teamDetail/teamDetail",
     "pages/goodStoreRecommend/goodStoreRecommend",
     "pages/agent/agent",
     "pages/topUp/topUp",
@@ -16,7 +19,6 @@
     "pages/collect/collect",
     "pages/aboutUs/aboutUs",
     "pages/my/my",
-    "pages/productDetail/productDetail",
     "pages/stores/stores",
     "pages/shopDetail/shopDetail",
     "pages/conversion/conversion",

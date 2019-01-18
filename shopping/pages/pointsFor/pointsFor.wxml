@@ -17,7 +17,7 @@
       <text>积分明细</text>
     </view>
   </view>
-  <view class='signin'>立即签到赚积分</view>
+  <view bindtap='toCheckCalendar' class='signin'>立即签到赚积分</view>
 </view>
 <view class='preferential'>
   <!-- 优惠购专区 -->

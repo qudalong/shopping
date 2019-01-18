@@ -1,0 +1,33 @@
+@import "/pages/productDetail/productDetail.wxss";
+
+.Navigation {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 120rpx;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.Navigation .homepage {
+  width: 150rpx;height: 100%;
+}
+
+.Navigation .add-cart, .Navigation .buy {
+  width: 250rpx;
+  text-align: center;
+  background: #f29800;
+  color: #fff;
+  height: 100%;
+}
+.price{
+  display: block;
+  padding-top: 20rpx;
+}
+.Navigation .buy {
+  flex: 1;
+  background: #fe4442;
+}

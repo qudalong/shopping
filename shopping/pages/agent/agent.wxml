@@ -13,8 +13,5 @@
     <icon class='iconfont icon-shoucang'></icon>
     <text>收藏</text>
   </view>
-  <view class='share'>
-    <icon class='iconfont icon-fenxiang'></icon>
-    <text>分享</text>
-  </view>
+  <v-share></v-share>
 </view>

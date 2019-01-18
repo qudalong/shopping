@@ -1,11 +1,11 @@
-// pages/pointsFor/pointsFor.js
+// pages/search/search.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      list:[1,1,1,1]
+
   },
 
   /**
@@ -13,22 +13,6 @@ Page({
    */
   onLoad: function (options) {
 
-  },
-
-  toConversion() {
-    wx.navigateTo({
-      url: `/pages/conversion/conversion`
-    })
-  },
-  toCheckCalendar() {
-    wx.navigateTo({
-      url: `/pages/checktheCalendar/checktheCalendar`
-    })
-  },
-  toDetail() {
-    wx.navigateTo({
-      url: `/pages/detail/detail`
-    })
   },
 
   /**
