@@ -11,7 +11,7 @@
       <text>已售：0</text>
     </view>
   </view>
-  <view class='Intoshop'>进店逛逛</view>
+  <view bindtap='checkIn' class='Intoshop'>进店逛逛</view>
 </view>
 <image src='../../image/img/cover02.jpg' class='im'>
   <view class='inner'>￥20.00</view>
@@ -25,6 +25,6 @@
       <text>已售：0</text>
     </view>
   </view>
-  <view class='Intoshop'>进店逛逛</view>
+  <view bindtap='checkIn' class='Intoshop'>进店逛逛</view>
 </view>
 <view class='null'>暂无商品</view>
