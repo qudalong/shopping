@@ -1,0 +1,134 @@
+.title{
+  width: 100%;
+  height: 220rpx;
+  position: relative;
+}
+.title image{
+  width: 100%;
+  height: 100%;
+}
+.store{
+  width: 90%;
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 15rpx;
+  left: 15rpx;
+  color: red;
+}
+.store image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+.left{
+  display: flex;
+}
+.left image{
+  border-radius: 10rpx;
+}
+.left text{
+  font-size: 24rpx;
+}
+.kefu{
+  display: flex;
+  flex-direction: column;
+}
+.McDull{
+  margin-bottom: 10rpx;
+}
+
+.list{
+  display: flex;
+  justify-content: space-around;
+  padding: 10rpx 0;
+  background-color: #fff;
+  border-bottom: 2rpx solid #ccc;
+}
+.index{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.index:hover{
+  color: #E44C4A;
+}
+.hotsell{
+  padding: 20rpx;
+  background-color: #fff;
+}
+.goods{
+  width: 49%;
+  background-color: #fff;
+  margin-top: 10rpx;
+}
+.goods image{
+  width: 100%;
+  height: 400rpx;
+}
+.color{
+  color: #E44C4A;
+}
+.font{
+  padding: 0rpx 20rpx 20rpx;
+  line-height: 2;
+  font-size: 26rpx;
+}
+.list-all{
+  padding: 30rpx 0%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+.classification{
+  display: flex;
+  align-items: center;
+}
+.newgoods{
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.line{
+  width: 35%;
+  height: 2rpx;
+  background-color: #ccc;
+}
+
+.popup-window{
+  background-color: #fff;
+  width: 82%;
+  height: 320rpx;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 20rpx;
+  padding: 50rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+.icon-close{
+  position: fixed;
+  top: 20rpx;
+  right: 20rpx;
+}
+.hotle{
+  margin: 40rpx 0 20rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.wechat{
+  padding: 10rpx 40rpx;
+  color: #E44C4A;
+  border: 2rpx solid #E44C4A;
+  border-radius: 30rpx;
+}
