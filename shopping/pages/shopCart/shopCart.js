@@ -5,9 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    status:0,//默认不全选
+    ckAll: false, //默认不全选
     list: [{
-      status: 1,
+      status: 0,
       img: '/image/img/banner01.jpg',
       name: '三只小松鼠',
       type: ['默认', '大码'],
@@ -40,31 +40,26 @@ Page({
   //选中商品
   selected(e) {
     const curIndex = e.currentTarget.dataset.index;
-    this.data.list.forEach((cur, index, list) => {
+    this.data.list.forEach((cur, index) => {
       if (index === curIndex) {
         cur.status ? cur.status = 0 : cur.status = 1
-        this.setData({
-          list: this.data.list
-        })
       }
+    })
+    this.setData({
+      list: this.data.list
     })
   },
 
   //全选
   selectAll(e) {
-    let status = e.currentTarget.dataset.status;
-    status ? status = 0 : status = 1
-    console.log(status)
-    this.setData({
-      status
+    this.data.ckAll ? this.data.ckAll = false : this.data.ckAll = true;
+    this.data.list.forEach((cur) => {
+      this.data.ckAll ? cur.status = 1 : cur.status = 0;
     })
-    // this.data.list.forEach((cur, index, list) => {
-    //     // cur.status ? cur.status = 0 : cur.status = 1
-    //      cur.status = 1
-    //     this.setData({
-    //       list: this.data.list
-    //     })
-    // })
+    this.setData({
+      list: this.data.list,
+      ckAll: this.data.ckAll
+    })
   },
 
   /**

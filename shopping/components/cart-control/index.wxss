@@ -6,12 +6,11 @@
 }
 
 .control .iconfont {
-  padding: 6rpx 20rpx;
+  padding: 12rpx 30rpx;
 }
 
 .control .count {
-  margin: 0 4rpx;
-  padding: 16rpx;
+  padding: 12rpx;
   border-left: 1rpx solid #fff;
   border-right: 1rpx solid #fff;
 }

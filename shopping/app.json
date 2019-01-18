@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/shopCart/shopCart",
     "pages/index/index",
     "pages/homePage/homePage",
     "pages/productDetail/productDetail",
@@ -26,8 +27,7 @@
     "pages/pointsFor/pointsFor",
     "pages/classify/classify",
     "pages/couponRedemptionCentre/couponRedemptionCentre",
-    "pages/orderList/orderList",
-    "pages/shopCart/shopCart"
+    "pages/orderList/orderList"
   ],
   "window": {
     "backgroundTextStyle": "light",
