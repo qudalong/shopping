@@ -18,7 +18,7 @@ Page({
       inventory: 100,
       color: ['红色', '米色', '蓝色'],
       type: ['默认', '大码'],
-      count: 4
+      count: 1
     }
   },
 

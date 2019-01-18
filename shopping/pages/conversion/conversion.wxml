@@ -70,11 +70,7 @@
     </view>
     <view class='amount'>
       <text>数量</text>
-      <view class='control'>
-        <icon class='iconfont icon-jianhao1'></icon>
-        <view class='count'>14</view>
-        <icon class='iconfont icon-jiahao'></icon>
-      </view>
+       <v-cart-control bind:myControl='onControl' count="{{producItem.count}}"></v-cart-control>
     </view>
   </view>
 </view>
