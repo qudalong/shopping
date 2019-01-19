@@ -1,0 +1,7 @@
+<view class='search'>
+  <input class='inpt' type='text' placeholder='请输入关键字' />
+  <view class='search-btn'>
+    <icon class='iconfont icon-sousuo'></icon>
+    <text>搜索</text>
+  </view>
+</view>

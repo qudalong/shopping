@@ -28,13 +28,13 @@ page {
 }
 
 .icon-nav {
-  height: 100rpx;
-  width: 100rpx;
-  line-height: 100rpx;
+  height: 90rpx;
+  width: 90rpx;
+  line-height: 90rpx;
   text-align: center;
   border-radius: 50%;
   color: #fff;
-  font-size: 70rpx;
+  font-size:60rpx;
   margin-bottom: 10rpx;
 }
 

@@ -1,0 +1,7 @@
+@import "/pages/productDetail/productDetail.wxss";
+.homepage{
+  width: 20%;
+}
+.buynow{
+  width: 80%;
+}

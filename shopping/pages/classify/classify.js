@@ -15,6 +15,18 @@ Page({
   onLoad: function(options) {
 
   },
+  
+  toSearch() {
+    wx.navigateTo({
+      url: `/pages/search/search`
+    })
+  },
+  toProduceDetail() {
+    wx.navigateTo({
+      url: `/pages/productDetail/productDetail`
+    })
+  },
+
   bindClick(e) {
     const activeIndex = e.currentTarget.dataset.index;
     this.setData({

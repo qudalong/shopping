@@ -20,6 +20,64 @@ Page({
 
   },
 
+  toSearch() {
+    wx.navigateTo({
+      url: `/pages/search/search`
+    })
+  },
+  toShops() {
+    wx.navigateTo({
+      url: `/pages/goodStoreRecommend/goodStoreRecommend`
+    })
+  },
+  toAgent() {
+    wx.navigateTo({
+      url: `/pages/agent/agent`
+    })
+  },
+  topUp() {
+    wx.navigateTo({
+      url: `/pages/topUp/topUp`
+    })
+  },
+  toFishon() {
+    wx.navigateTo({
+      url: `/pages/fashion/fashion`
+    })
+  },
+  toSign() {
+    wx.navigateTo({
+      url: `/pages/checktheCalendar/checktheCalendar`
+    })
+  },
+  toShop() {
+    wx.navigateTo({
+      url: `/pages/stores/stores`
+    })
+  },
+  toProduceDetail() {
+    wx.navigateTo({
+      url: `/pages/productDetail/productDetail`
+    })
+  },
+
+  toPointsFor() {
+    wx.navigateTo({
+      url: `/pages/pointsFor/pointsFor`
+    })
+  },
+
+  toCoupon() {
+    wx.navigateTo({
+      url: `/pages/couponRedemptionCentre/couponRedemptionCentre`
+    })
+  },
+  toTeamDetail() {
+    wx.navigateTo({
+      url: `/pages/teamDetail/teamDetail`
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

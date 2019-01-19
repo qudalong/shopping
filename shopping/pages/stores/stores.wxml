@@ -1,0 +1,26 @@
+<view class='search'>
+  <input bindfocus='bindEnter'  class='inpt' type='text' placeholder='请输入关键字' />
+  <view wx:if="{{search}}" class='search-btn'>
+    <icon class='iconfont icon-sousuo'></icon>
+    <text>搜索</text>
+  </view>
+</view>
+<!-- 门店列表 -->
+<view class='shop-list'>
+  <view bindtap='shopDetails' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class='item'>
+    <image class='cover' src='{{item.img}}' mode='aspectFill' />
+    <view class='info'>
+      <view class='name ellipsis2'>{{item.name}}</view>
+      <view class='raking'>
+        <text>评分:</text>
+        <icon wx:for="{{item.raking}}" wx:key="unique" class='iconfont icon-shixin'></icon>
+      </view>
+      <view class='tel'>电话:{{item.tel}}</view>
+      <view class='distance'>距离:{{item.distance}}km</view>
+    </view>
+    <view catchtap='getAdress' class='posit'>
+      <icon class='iconfont icon-daohang'></icon>
+      <view>一键导航</view>
+    </view>
+  </view>
+</view>

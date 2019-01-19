@@ -1,0 +1,13 @@
+.order-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+}
+.order-list .item{
+  padding: 30rpx;
+}
+.order-list .item.active{
+  color: #E51810;
+  border-bottom: 1px solid #E51810;
+}

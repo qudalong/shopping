@@ -1,0 +1,192 @@
+@import "/pages/address/address.wxss";
+.address, .pay-for, .platform {
+  padding: 30rpx 20rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pay-for {
+  margin: 10rpx 0;
+}
+
+.address text, .pay-for text {
+  margin-top: 14rpx;
+}
+.patype{
+  flex: 1;
+  text-align: right;
+}
+.address text {
+  color: #fe6d6d;
+}
+
+.platform {
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.order-information{
+  background-color: #fff;
+}
+.order {
+  margin: 0 20rpx;
+  padding: 20rpx 0;
+  background-color: #fff;
+  border-bottom: 1rpx solid #f0f0f0;
+  display: flex;
+  flex-direction: row;
+}
+.order image {
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 20rpx;
+}
+.information{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50rpx;
+}
+.information text{
+  font-size: 26rpx;
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+  width: 540rpx;
+}
+.price text,.num{
+  color: #fe6d6d;
+}
+.return{
+  padding: 20rpx;
+  background-color: #FFF7F4;
+  border-bottom: 1rpx solid #f0f0f0;
+  font-size: 28rpx;
+}
+.coupons{
+  margin: 0 20rpx;
+  padding: 20rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.none{
+  display: flex;
+  align-items: center;
+}
+.deduction{
+  background-color: #fff; 
+}
+.use{
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.icon-wenhao{
+  font-size: 34rpx;
+}
+.footer{
+  background-color: #fff;
+}
+.freight{
+  margin: 0 20rpx;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #f0f0f0; 
+  display: flex;
+  justify-content: space-between;
+}
+.message{
+  padding: 20rpx;
+  border-bottom: 1rpx solid #f0f0f0; 
+  display: flex;
+  align-items: center;
+}
+.leave{
+  margin-right: 20rpx;
+}
+.fixed{
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.total{
+  flex: 2;
+  background-color: #fff;
+  color: #FE4442;
+  text-align: left;
+  padding-left: 30rpx;
+}
+.submit{
+  text-align: center;
+  flex: 1;
+  background-color: #FE4442;
+  color: #fff;
+}
+.color{
+  color: #888A88;
+}
+
+.payment{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+}
+.method{
+  padding: 20rpx;
+  text-align: center;
+  border-bottom: 1rpx solid #f0f0f0; 
+}
+.wechat,.cash-on-delivery,.balance{
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #f0f0f0; 
+}
+
+.chat{
+  display: flex;
+  align-items: center;
+}
+.icon-weixin,.icon-shuaqia{
+  margin-right: 20rpx;
+  padding: 6rpx;
+  border-radius: 6rpx;
+  background: #11C03A;
+  color: #fff;
+}
+.icon-shuaqia{
+  background: #1CABF0;
+  color: #fff;
+}
+.icon-right{
+  color: #FE4442;
+}
+.chat text{
+  margin-left: 20rpx;
+}
+.icon-weixin,.icon-shuaqia,.icon-zhanghuyue{
+  padding: 12rpx;
+  border-radius: 10rpx;
+  color: #fff;
+}
+.icon-weixin{
+  background-color: #10BF38;
+}
+.icon-shuaqia{
+  background-color: #1AABEF;
+}
+.icon-zhanghuyue{
+  padding: 12rpx 0 8rpx 12rpx;
+  background-color: #FE4442;
+  text-align: center;
+}

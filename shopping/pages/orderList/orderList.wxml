@@ -1,0 +1,10 @@
+<view class="order-list">
+  <view bindtap='changed' class="item {{activeIndex==0 ? 'active' : '' }}" data-index="0">待付款</view>
+  <view bindtap='changed' class="item {{activeIndex==1 ? 'active' : '' }}" data-index="1">待发货</view>
+  <view bindtap='changed' class="item {{activeIndex==2 ? 'active' : '' }}" data-index="2">待收款</view>
+  <view bindtap='changed' class="item {{activeIndex==3 ? 'active' : '' }}" data-index="3">已完成</view>
+  <view bindtap='changed' class="item {{activeIndex==4 ? 'active' : '' }}" data-index="4">售后</view>
+</view>
+<view class='order-details'>
+  <view class='empty'>暂无相关订单</view>
+</view>

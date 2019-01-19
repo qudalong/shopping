@@ -123,3 +123,14 @@
 .icon7{
   color: #5ACCED;
 }
+.hb-content button{
+  background: #fff;
+  border: none;
+  height: 166rpx;
+  line-height: 1.2;
+  font-size: 32rpx;
+  padding: 0;
+  margin: 0;
+}
+
+

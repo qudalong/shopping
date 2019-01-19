@@ -1,0 +1,12 @@
+<view wx:if="{{userName}}" class='the-goods'>
+  <view class='consignee'>
+    <view>收货人：{{userName}}</view>
+    <view>{{telNumber}}</view>
+  </view>
+  <view>收货地址：{{countyName}}{{detailInfo}}</view>
+</view>
+<view wx:if="{{!userName}}" class='empty'>请添加收货地址</view>
+<view class='getaddress'>
+  <view bindtap='toAddAddress' class='manual'>手动添加地址</view>
+  <view bindtap='getWxAddress' class='onekey'>一键获取地址</view>
+</view>

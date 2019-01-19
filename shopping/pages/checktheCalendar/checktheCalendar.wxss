@@ -1,0 +1,83 @@
+page {
+  background-color: #fce7e1;
+}
+
+.signin-number {
+  height: 440rpx;
+  background-color: #f99c6b;
+  position: relative;
+  text-align: center;
+  padding-top: 80rpx;
+  color: #fff;
+}
+
+.rule {
+  width: 90rpx;
+  padding: 10rpx 20rpx;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ccc;
+  text-align: center;
+  border-radius: 25rpx;
+  position: absolute;
+  top: 40rpx;
+  right: -30rpx;
+  border: 2rpx solid #fbc696;
+}
+
+.numberone, .numbertwo {
+  color: #fede01;
+}
+
+.numberone {
+  font-size: 60rpx;
+  font-weight: 700;
+}
+
+.days {
+  margin: 50rpx 0;
+}
+
+.today {
+  font-size: 34rpx;
+  margin-bottom: 20rpx;
+}
+
+.calendar {
+  border: 1rpx solid #f0f0f0;
+  overflow: hidden;
+  background-color: #fff;
+  width: 96%;
+  margin: 0 auto 100rpx;
+  padding: 0 6rpx 40rpx;
+}
+
+.years {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  padding: 20rpx 0;
+}
+
+.week {
+  display: flex;
+  justify-content: space-around;
+  color: #a0a19f;
+  padding-bottom: 10rpx;
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+  border-left: 1rpx solid #ccc;
+}
+
+.date li {
+  border: 1rpx solid #ccc;
+  width: 14%;
+  height: 100rpx;
+  margin-left: -1rpx;
+  margin-top: -1rpx;
+}

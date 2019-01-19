@@ -1,0 +1,83 @@
+<!-- 轮播图 -->
+<swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#FE4442" indicator-color="#ccc">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode='aspectFill' />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 商品名称价格销量 -->
+<view class='namepricesales'>
+  <view>
+    <view>休闲羽绒服</view>
+    <view>
+      <text class='first'>2000积分+￥699</text>
+      <text class='center'>￥780</text>
+    </view>
+  </view>
+</view>
+<!-- 承诺部分 -->
+<view class='promise'>
+  <view>
+    <icon class='iconfont icon-duihao'></icon>
+    <text>品质保障</text>
+  </view>
+  <view class='second'>
+    <icon class='iconfont icon-duihao'></icon>
+    <text>极速发货</text>
+  </view>
+  <view>
+    <icon class='iconfont icon-duihao'></icon>
+    <text>7天退换货</text>
+  </view>
+</view>
+<!-- 选择规格 -->
+<view bindtap='selectTypeOpt' class='choosespecifications'>
+  <view class='choose'>
+    <text>选择</text>
+    <text class='specifications'>规格</text>
+  </view>
+  <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
+</view>
+<view class="commodity-details">
+  <!-- 商品详情 -->
+    <view class='details'>
+      <view>南极人羽绒服女中长款过膝貉子毛领加厚保暖2018冬季新款韩版时尚中长款简约休闲衣服女冬装潮牌 白色、 M 建115斤-135斤</view>
+      <image src='/image/img/cover03.jpg' mode='aspectFit'></image>
+    </view>
+</view>
+
+<!-- 加入购物车 立即购买弹窗 -->
+<view wx:if="{{producType}}" class='globle-cover'>
+  <view class='joinbuy'>
+    <view class='close'>
+      <image src='{{producItem.img}}' class='small'></image>
+      <view class='inventory'>
+        <text class='first'>￥{{producItem.price}}</text>
+        <text>库存{{producItem.inventory}}件</text>
+      </view>
+      <icon bindtap='closeProductType' class='iconfont icon-close'></icon>
+    </view>
+    <view class='colorsize'>
+      <text>颜色</text>
+      <view>
+        <text bindtap='selectColor' wx:for="{{producItem.color}}" wx:key="unique" class="color {{activeIndexC==index ? 'active' : ''}}" data-index="{{index}}">{{item}}</text>
+      </view>
+      <text>尺码</text>
+      <view>
+        <text bindtap='selectType' wx:for="{{producItem.type}}" wx:key="unique" class="color {{activeIndexT==index ? 'active' : ''}}" data-index="{{index}}">{{item}}</text>
+      </view>
+    </view>
+    <view class='amount'>
+      <text>数量</text>
+       <v-cart-control bind:myControl='onControl' count="{{producItem.count}}"></v-cart-control>
+    </view>
+  </view>
+</view>
+<!-- 底部导航栏 -->
+<view class='bottomNavigation'>
+  <view bindtap='toHome' class='homepage' hover-class='hover'>
+    <icon class='iconfont icon-home'></icon>首页
+  </view>
+  <view bindtap='selectTypeOpt' class='buynow'>立即兑换</view>
+</view>

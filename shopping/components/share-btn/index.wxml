@@ -1,0 +1,4 @@
+  <button class='share' open-type='share'>
+    <icon class='iconfont icon-fenxiang'></icon>
+    <view>分享</view>
+  </button>

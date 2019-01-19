@@ -25,54 +25,54 @@
 <!-- 我的订单 -->
 <view class='hd'>我的订单</view>
 <view class='hb'>
-  <view class='item'>
+  <view bindtap='toOrderList' class='item' hover-class='hover' data-index="0">
     <icon class='iconfont icon-jifenshangcheng'></icon>
     <text>待付款</text>
   </view>
-  <view class='item'>
+  <view bindtap='toOrderList' class='item' hover-class='hover' data-index="1">
     <icon class='iconfont icon-daifahuo'></icon>
     <text>待发货</text>
   </view>
-  <view class='item'>
+  <view bindtap='toOrderList' class='item' hover-class='hover' data-index="2">
     <icon class='iconfont icon-liwu'></icon>
     <text>待收货</text>
   </view>
-  <view class='item'>
+  <view bindtap='toOrderList' class='item' hover-class='hover' data-index="3">
     <icon class='iconfont icon-yiwancheng'></icon>
     <text>已完成</text>
   </view>
-  <view class='item'>
+  <view bindtap='toOrderList' class='item' hover-class='hover' data-index="4">
     <icon class='iconfont icon-shouhou'></icon>
     <text>售后</text>
   </view>
 </view>
 <view class='hb-content'>
-  <view class='item'>
+  <view bindtap='toMyCart' class='item' hover-class='hover'>
     <icon class='iconfont icon-qiabao icon1'></icon>
     <text>我的卡卷</text>
   </view>
-  <view class='item'>
+  <view bindtap='toCollect' class='item' hover-class='hover'>
     <icon class='iconfont icon-star icon2'></icon>
     <text>我的收藏</text>
   </view>
-  <view class='item'>
+  <view class='item' hover-class='hover'>
     <icon class='iconfont icon-kefu icon3'></icon>
     <text>在线客服</text>
   </view>
-  <view class='item'>
+  <view bindtap='tel' class='item' hover-class='hover'>
     <icon class='iconfont icon-weibiaoti icon4'></icon>
     <text>联系我们</text>
   </view>
-  <view class='item'>
+  <view bindtap='toAboutUs' class='item' hover-class='hover'>
     <icon class='iconfont icon-guanyuwomen icon5'></icon>
     <text>关于我们</text>
   </view>
-  <view class='item'>
+  <view bindtap='toAddress' class='item' hover-class='hover'>
     <icon class='iconfont icon-shouhuodizhi icon6'></icon>
     <text>收货地址</text>
   </view>
-  <view class='item'>
+  <button class='item' hover-class='hover' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
     <icon class='iconfont icon-shouji icon7'></icon>
     <text>绑定手机号</text>
-  </view>
+  </button>
 </view>
