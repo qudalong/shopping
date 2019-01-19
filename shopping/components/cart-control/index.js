@@ -27,7 +27,7 @@ Component({
       this.setData({
         count
       });
-      this.triggerEvent('myControl', count)
+      this.triggerEvent('myControl', count);
     },
     
     minus() {
@@ -39,7 +39,7 @@ Component({
       this.setData({
         count
       });
-      this.triggerEvent('myControl', count)
+      this.triggerEvent('myControl', count);
     },
 
   }

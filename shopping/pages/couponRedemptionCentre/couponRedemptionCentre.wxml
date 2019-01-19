@@ -1,5 +1,5 @@
-<view wx:if="{{list.length}}"  wx:for="{{list}}" wx:key="unique" class='coupons'>
-  <view class="top {{item.status==1?'received':'SSS'}}">
+<view wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class='coupons'>
+  <view class="top {{item.status==1?'received':''}}">
     <view class='money'>
       <text>￥{{item.price}}</text>
       <view class='full-reduction'>
@@ -15,4 +15,3 @@
     <view>适用范围：仅限分类：使用</view>
   </view>
 </view>
-

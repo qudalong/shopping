@@ -30,11 +30,11 @@ Page({
 
   getCoupon(e) {
     const activeIndex = e.currentTarget.dataset.index;
-    this.data.list.forEach((cur,index)=>{
-      if(activeIndex===index){
-        cur.status=1;
+    this.data.list.forEach((cur, index) => {
+      if (activeIndex === index) {
+        cur.status = 1;
         this.setData({
-          list:this.data.list
+          list: this.data.list
         })
       }
       wx.showToast({

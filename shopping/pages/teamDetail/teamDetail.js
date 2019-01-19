@@ -34,21 +34,6 @@ Page({
     // console.log(e.detail)
   },
 
-  add() {
-    let count = this.data.producItem.count++;
-    this.setData({
-      producItem: this.data.producItem
-    })
-  },
-  minus() {
-    if (this.data.producItem.count <= 0) {
-      return
-    }
-    this.data.producItem.count--;
-    this.setData({
-      producItem: this.data.producItem
-    })
-  },
 
   selectColor(e) {
     const activeIndexC = e.currentTarget.dataset.index;
