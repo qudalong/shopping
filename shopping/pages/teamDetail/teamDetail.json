@@ -1,6 +1,7 @@
 {
+  "navigationBarTitleText": "拼团详情",
   "usingComponents": {
+    "v-swiper": "/components/swiper/index",
     "v-cart-control": "/components/cart-control/index"
-  },
-  "navigationBarTitleText": "拼团详情"
+  }
 }

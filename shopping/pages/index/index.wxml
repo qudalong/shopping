@@ -1,13 +1,7 @@
 <view bindtap='toSearch' class='search'>
   <icon class='iconfont icon-sousuo'></icon>搜索</view>
 <!-- 轮播图 -->
-<swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#FE4442" indicator-color="#ccc">
-  <block wx:for="{{imgUrls}}" wx:key="unique">
-    <swiper-item>
-      <image src="{{item}}" class="slide-image" mode='aspectFill' />
-    </swiper-item>
-  </block>
-</swiper>
+<v-swiper imgList="{{imgList}}"></v-swiper>
 <!-- 分类导航 -->
 <view class='classify-wrap'>
   <view bindtap='toShops' class='item'>

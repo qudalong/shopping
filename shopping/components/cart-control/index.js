@@ -20,6 +20,7 @@ Component({
   /**
    * 组件的方法列表
    */
+ 
   methods: {
     add() {
       let {count} = this.data;
@@ -40,7 +41,6 @@ Component({
         count
       });
       this.triggerEvent('myControl', count);
-    },
-
+    }
   }
 })
