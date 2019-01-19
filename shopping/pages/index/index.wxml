@@ -20,7 +20,7 @@
   </view>
   <view class='item'>
     <icon class='iconfont icon-qiandao icon-nav  icon03'></icon>
-    <view>每日签到</view>
+    <view>每日签到</view> 
   </view>
   <view class='item'>
     <icon class='iconfont icon-qian icon-nav icon04'></icon>
