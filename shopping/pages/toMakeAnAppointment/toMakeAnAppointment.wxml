@@ -1,0 +1,84 @@
+<!-- 轮播图 -->
+<v-swiper imgList="{{imgList}}" my-class="swiper-h"></v-swiper>
+<!-- 商品名称价格销量 -->
+<view class='namepricesales'>
+  <view>
+    <view>背包</view>
+    <view>
+      <text class='first'>￥100.00</text> 原价:
+      <text class='center'>300.00</text>
+      <view>已成交200笔</view>
+    </view>
+  </view>
+  <v-share></v-share>
+</view>
+<!-- 承诺部分 -->
+<view class='promise'>
+  <view>
+    <icon class='iconfont icon-duihao'></icon>
+    <text>正品保障</text>
+  </view>
+  <view class='second'>
+    <icon class='iconfont icon-duihao'></icon>
+    <text>极速发货</text>
+  </view>
+  <view>
+    <icon class='iconfont icon-duihao'></icon>
+    <text>7天退换货</text>
+  </view>
+</view>
+<!-- 门店信息 -->
+<view class='stores'>
+  <view class='information'>门店信息</view>
+  <view class='stores1'>
+    <text>门店1</text>
+    <view class='address'>
+      <text>地址：河南省郑州市金水区经三路北21号远洋大厦8层</text>
+      <view>营业时间：全天</view>
+    </view>
+  </view>
+  <view class='footer'>
+    <view class='skyblue'>查看全部2家分店</view>
+    <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
+  </view>
+</view>
+<!-- 商品详情 评价 -->
+<view class='productdetailevaluation'>
+  <view bindtap='changed' class="productdetail {{activeIndex==0 ? 'active' : '' }}" data-index="0">预约详情</view>
+  <view bindtap='changed' class="evaluation {{activeIndex==1 ? 'active' : '' }}" data-index="1">评价</view>
+</view>
+<!-- 商品评价 -->
+<view wx:if="{{activeIndex==1}}" class="evaluation-details">
+  <view class='all'>
+    <text>全部</text>
+    <text>(0)</text>
+  </view>
+  <view class='all'>
+    <text>好评</text>
+    <text>(0)</text>
+  </view>
+  <view class='all'>
+    <text>中评</text>
+    <text>(0)</text>
+  </view>
+  <view class='all'>
+    <text>差评</text>
+    <text>(0)</text>
+  </view>
+</view>
+<!-- 预约详情 -->
+<view class='appointment' wx:if="{{activeIndex==0}}">
+  <image src='../../image/img/cover01.jpg'></image>
+  <image src='../../image/img/cover01.jpg'></image>
+  <image src='../../image/img/cover01.jpg'></image>
+</view>
+<!-- 底部导航栏 -->
+<view class='bottomNavigation'>
+  <view bindtap='toHome' class='homepage'>
+    <icon class='iconfont icon-lianxiwomen'></icon>客服
+  </view>
+  <view class='collect'>
+    <icon class='iconfont icon-home'></icon>首页
+  </view>
+  <view bindtap='buyNow' class='buynow'>立即预约</view>
+</view>

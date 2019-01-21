@@ -1,0 +1,100 @@
+@import '../productDetail/productDetail.wxss';
+
+.swiper-h {
+  height: 750rpx !important;
+}
+/* 商品名称价格销量 */
+.namepricesales {
+  padding: 20rpx 20rpx;
+  line-height: 2.0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2rpx solid #f0f0f0;
+  background: #fff;
+}
+
+.share {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  color: #919391;
+  align-content: center;
+  padding: 0 30rpx;
+  align-items: center;
+  transform: translateX(100%);
+}
+
+.share icon {
+  margin-bottom: 10rpx;
+}
+
+.first {
+  color: #fe4442;
+  font-size: 40rpx;
+  margin-right: 30rpx;
+}
+
+.center {
+  margin: 0 20rpx;
+  text-decoration: line-through;
+}
+
+/* 承诺部分 */
+
+.promise {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+}
+.icon-duihao {
+  color: #fe4442;
+  font-size: 34rpx;
+  margin-right: 8rpx;
+}
+.second {
+  margin: 0 30rpx;
+}
+/* 门店信息 */
+.stores{
+  padding: 0 20rpx;
+  background-color: #fff;
+}
+.information{
+  color: #919391;
+  padding: 20rpx 10rpx;
+  border-bottom: 2rpx solid #919391;
+}
+.stores1{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10rpx;
+  font-size: 29rpx;
+  line-height: 2;
+}
+.address{
+  color: #919391;
+  line-height: 1;
+}
+.footer{
+  display: flex;
+  padding: 20rpx 10rpx;
+  justify-content: space-between;
+  align-items: center; 
+}
+.skyblue{
+  color: skyblue;
+}
+.appointment image{
+  width: 100%;
+  height: 600rpx;
+}
+.buynow{
+  flex: 4;
+}
+.icon-lianxiwomen{
+  color: skyblue;
+}
+.evaluation-details,.appointment{
+  margin-bottom: 130rpx;
+}
