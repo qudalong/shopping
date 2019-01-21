@@ -286,3 +286,6 @@
 .icon-jianhao1, .icon-jiahao {
   background-color: #f0f0f0;
 }
+.icon-shixin{
+  color: #fe4442;
+}

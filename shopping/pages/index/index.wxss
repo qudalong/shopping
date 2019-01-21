@@ -238,3 +238,6 @@ page {
 .icon-iconfontyoujiantou-copy-copy-copy-copy {
   color: #666;
 }
+.icon-huo{
+  color:red;
+}

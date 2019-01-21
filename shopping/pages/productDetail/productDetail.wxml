@@ -132,8 +132,15 @@
   <view bindtap='toHome' class='homepage'>
     <icon class='iconfont icon-home'></icon>首页
   </view>
-  <view class='collect'>
-    <icon class='iconfont icon-shoucang'></icon>收藏
+  <view bindtap='collect' class='collect'>
+    <view wx:if="{{!collectFlag}}">
+      <icon class="iconfont icon-shoucang"></icon>
+      <view>收藏</view>
+    </view>
+    <view wx:if="{{collectFlag}}">
+      <icon class="iconfont icon-shixin"></icon>
+       <view>已收藏</view>
+    </view>
   </view>
   <view bindtap='selectTypeOpt' class='addcart'>加入购物车</view>
   <view bindtap='buyNow' class='buynow'>立即购买</view>

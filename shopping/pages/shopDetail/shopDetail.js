@@ -5,11 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls: ['/image/img/banner01.jpg'],
-    indicatorDots: true,
-    autoplay: true,
-    interval: 4000,
-    duration: 400,
+    imgList: ['/image/img/banner01.jpg'],
     list: [1, 1, 1, 1, 1, 1]
   },
 
