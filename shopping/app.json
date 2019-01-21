@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/submitTheBooking/submitTheBooking",
     "pages/toMakeAnAppointment/toMakeAnAppointment",
     "pages/index/index",
     "pages/appointment/appointment",

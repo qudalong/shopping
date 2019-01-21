@@ -1,0 +1,63 @@
+page {
+  padding: 20rpx;
+}
+
+.backpack {
+  padding: 20rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.backpack image {
+  width: 250rpx;
+  height: 250rpx;
+  margin-right: 30rpx;
+}
+
+.img {
+  display: flex;
+  align-items: flex-start;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #919293;
+  margin-right: 40rpx;
+}
+.present-price{
+  color: #f10215;
+  font-size: 34rpx;
+}
+.reservationform{
+  background-color: #fff;
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+}
+.form{
+  text-align: center;
+  border-bottom: 1rpx solid #ccc; 
+}
+.input{
+  display: flex;
+  align-items: center;
+  padding: 30rpx 20rpx;
+  margin: 0 20rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.phone{
+  border: none;
+}
+.submit{
+  width: 100%;
+  background-color: #f10215;
+  font-size: 34rpx;
+  padding: 30rpx 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+}
