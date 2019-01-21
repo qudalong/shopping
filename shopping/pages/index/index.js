@@ -5,11 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls: ['/image/img/banner01.jpg', '/image/img/banner02.jpg', '/image/img/banner03.jpg'],
-    indicatorDots: true,
-    autoplay: true,
-    interval: 4000,
-    duration: 400,
+    imgList: ['/image/img/banner01.jpg', '/image/img/banner02.jpg', '/image/img/banner03.jpg'],
     list:[1,1,1,1,1,1]
   },
 
@@ -20,6 +16,11 @@ Page({
 
   },
 
+  toSearch() {
+    wx.navigateTo({
+      url: `/pages/search/search`
+    })
+  },
   toShops() {
     wx.navigateTo({
       url: `/pages/goodStoreRecommend/goodStoreRecommend`
@@ -65,6 +66,11 @@ Page({
   toCoupon() {
     wx.navigateTo({
       url: `/pages/couponRedemptionCentre/couponRedemptionCentre`
+    })
+  },
+  toTeamDetail() {
+    wx.navigateTo({
+      url: `/pages/teamDetail/teamDetail`
     })
   },
 

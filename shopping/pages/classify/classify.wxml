@@ -1,4 +1,4 @@
-<view class='search'>
+<view bindtap='toSearch' class='search'>
   <icon class='iconfont icon-sousuo'></icon>搜索</view>
 <view class='hostproduct '>
   <view bindtap='bindClick' class="hotsell {{activeIndex==0?'active':''}}" data-index='0'>特别推荐</view>

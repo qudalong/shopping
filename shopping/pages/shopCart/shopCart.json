@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "购物车"
+  "navigationBarTitleText": "购物车",
+  "usingComponents": {
+    "v-cart-control": "/components/cart-control/index"
+  }
 }

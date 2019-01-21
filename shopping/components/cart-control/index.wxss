@@ -1,0 +1,16 @@
+@import "/app.wxss";
+.control {
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+}
+
+.control .iconfont {
+  padding: 12rpx 30rpx;
+}
+
+.control .count {
+  padding: 12rpx;
+  border-left: 1rpx solid #fff;
+  border-right: 1rpx solid #fff;
+}

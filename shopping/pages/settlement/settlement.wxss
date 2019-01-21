@@ -109,6 +109,8 @@
 .fixed{
   width: 100%;
   height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
   display: flex;
   flex-direction: row;
   position: fixed;
@@ -116,13 +118,13 @@
   left: 0;
 }
 .total{
-  padding: 40rpx 30rpx;
   flex: 2;
   background-color: #fff;
   color: #FE4442;
+  text-align: left;
+  padding-left: 30rpx;
 }
 .submit{
-  padding: 40rpx 0;
   text-align: center;
   flex: 1;
   background-color: #FE4442;

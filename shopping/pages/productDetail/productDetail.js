@@ -5,13 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls: ['/image/img/banner04.jpg', '/image/img/banner02.jpg'],
-    indicatorDots: true,
-    autoplay: true,
-    interval: 4000,
-    duration: 400,
+    imgList: ['/image/img/banner04.jpg', '/image/img/banner02.jpg'],
     activeIndex: 0, //默认选中商品详情
-    producType: false, //默认选中商品详情
+    producType: false, //默认隐藏
     list: [1, 1, 1, 1],
     producItem: {
       img: '/image/img/banner01.jpg',
@@ -19,7 +15,7 @@ Page({
       inventory: 100,
       color: ['红色', '米色', '蓝色'],
       type: ['默认', '大码'],
-      count: 4
+      count: 6
     }
   },
 
@@ -29,6 +25,12 @@ Page({
   onLoad: function(options) {
 
   },
+
+  onControl(e){
+    // console.log(e.detail)
+  },
+
+ 
 
   selectColor(e) {
     const activeIndexC = e.currentTarget.dataset.index;
@@ -57,7 +59,7 @@ Page({
     })
   },
   buyNow() {
-    if(this.data.producType){
+    if (this.data.producType) {
       wx.navigateTo({
         url: `/pages/settlement/settlement`
       })
@@ -68,9 +70,9 @@ Page({
   },
 
   toShopCart() {
-      wx.switchTab({
-        url: `/pages/shopCart/shopCart`
-      })
+    wx.switchTab({
+      url: `/pages/shopCart/shopCart`
+    })
   },
 
   call() {

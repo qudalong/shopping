@@ -1,13 +1,7 @@
-<view class='search'>
+<view bindtap='toSearch' class='search'>
   <icon class='iconfont icon-sousuo'></icon>搜索</view>
 <!-- 轮播图 -->
-<swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#FE4442" indicator-color="#ccc">
-  <block wx:for="{{imgUrls}}" wx:key="unique">
-    <swiper-item>
-      <image src="{{item}}" class="slide-image" mode='aspectFill' />
-    </swiper-item>
-  </block>
-</swiper>
+<v-swiper imgList="{{imgList}}"></v-swiper>
 <!-- 分类导航 -->
 <view class='classify-wrap'>
   <view bindtap='toShops' class='item'>
@@ -20,7 +14,7 @@
   </view>
   <view bindtap='toSign' class='item'>
     <icon class='iconfont icon-qiandao icon-nav  icon03'></icon>
-    <view>每日签到</view>
+    <view>每日签到</view> 
   </view>
   <view bindtap='toPointsFor' class='item'>
     <icon class='iconfont icon-qian icon-nav icon04'></icon>
@@ -43,7 +37,7 @@
     <view>加盟代理</view>
   </view>
 </view>
-<view class='title-wrap'>
+<!-- <view class='title-wrap'>
   <view class='left'>
     <icon class='iconfont icon-youhuiquan'></icon>
     <text class='lable'>专享优惠卷</text>
@@ -52,7 +46,7 @@
     <text class='more'>更多</text>
     <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
   </view>
-</view>
+</view> -->
 <!-- 预约 -->
 <view class='title-wrap'>
   <view class='left'>
@@ -86,7 +80,7 @@
 </view>
 <view class="scroll-box">
   <scroll-view class="scroll-view-x" scroll-x>
-    <view bindtap='toProduceDetail' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="scroll-view-item">
+    <view bindtap='toTeamDetail' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="scroll-view-item">
       <image class='cover' src='/image/img/cover01.jpg' mode='aspectFit'></image>
       <view class='name'>羽绒服短袖</view>
       <view class='price'>￥16{{index}}.00</view>
@@ -120,5 +114,12 @@
   <view class='right-wrap'>
     <text class='more'>更多</text>
     <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
+  </view>
+</view>
+<view class="product-list">
+  <view bindtap='toProduceDetail' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="item">
+    <image class='cover' src='/image/img/banner01.jpg' mode='aspectFill'></image>
+    <view class='name'>羽绒服短袖</view>
+    <view class='price'>￥16{{index}}.00</view>
   </view>
 </view>

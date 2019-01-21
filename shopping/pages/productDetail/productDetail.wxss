@@ -1,11 +1,9 @@
 @import '../index/index.wxss';
 @import '../classify/classify.wxss';
 
-.swiper {
-  height: 750rpx;
+.swiper-h {
+  height: 750rpx !important;
 }
-
-/* 固定定位 */
 
 .shopCart {
   width: 80rpx;
@@ -101,6 +99,7 @@
   align-content: center;
   padding: 0 30rpx;
   align-items: center;
+  transform: translateX(100%);
 }
 
 .share icon {
@@ -235,26 +234,31 @@
   position: absolute;
   top: -60rpx;
 }
+
 .inventory {
   display: flex;
   flex-direction: column;
   margin-left: 200rpx;
 }
+
 .title-mid {
   background: #f0f0f0;
 }
+
 .colorsize {
   padding: 20rpx;
   background-color: #fff;
   line-height: 2.5;
   border-bottom: 2rpx solid #ccc;
 }
+
 .color {
   padding: 15rpx 30rpx;
   background-color: #f0f0f0;
   border-radius: 10rpx;
   margin-right: 20rpx;
 }
+
 .color.active {
   background-color: #fe4442;
   color: #fff;
@@ -266,16 +270,19 @@
   display: flex;
   justify-content: space-between;
 }
-.numberof{
+
+.numberof {
   padding: 14rpx 30rpx;
   font-size: 30rpx;
   background-color: #ccc;
   margin: 0 5rpx;
 }
-.number{
+
+.number {
   display: flex;
   align-items: center;
 }
-.icon-jianhao1,.icon-jiahao{
+
+.icon-jianhao1, .icon-jiahao {
   background-color: #f0f0f0;
 }

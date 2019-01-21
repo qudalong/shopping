@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    closeShadow:false,
+    activeIndex: 0,
+    list: [1, 1, 1, 1],
   },
 
   /**
@@ -13,6 +15,25 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+
+  changed(e) {
+    const activeIndex = e.currentTarget.dataset.index;
+    this.setData({
+      activeIndex
+    })
+  },
+
+
+  linkKF(){
+    this.setData({
+      closeShadow:true
+    })
+  },
+  closeShadow(){
+    this.setData({
+      closeShadow:false
+    })
   },
 
   /**

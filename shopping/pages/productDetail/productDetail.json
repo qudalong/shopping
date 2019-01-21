@@ -1,4 +1,8 @@
 {
   "navigationBarTitleText": "商品详情",
-  "usingComponents": {}
+  "usingComponents": {
+    "v-swiper": "/components/swiper/index",
+    "v-share": "/components/share-btn/index",
+    "v-cart-control": "/components/cart-control/index"
+  }
 }

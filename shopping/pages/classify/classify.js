@@ -16,6 +16,11 @@ Page({
 
   },
   
+  toSearch() {
+    wx.navigateTo({
+      url: `/pages/search/search`
+    })
+  },
   toProduceDetail() {
     wx.navigateTo({
       url: `/pages/productDetail/productDetail`

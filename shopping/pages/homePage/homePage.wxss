@@ -15,7 +15,13 @@
   position: absolute;
   bottom: 15rpx;
   left: 15rpx;
-  color: red;
+  color: #fff;
+}
+.count{
+  margin-right: 20rpx;
+}
+.index text{
+  font-size: 30rpx;
 }
 .store image{
   width: 100rpx;
@@ -34,6 +40,7 @@
 .kefu{
   display: flex;
   flex-direction: column;
+  color: #fff;
 }
 .McDull{
   margin-bottom: 10rpx;
@@ -44,14 +51,14 @@
   justify-content: space-around;
   padding: 10rpx 0;
   background-color: #fff;
-  border-bottom: 2rpx solid #ccc;
+  border-bottom: 1rpx solid #f0f0f0;
 }
 .index{
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.index:hover{
+.index.active{
   color: #E44C4A;
 }
 .hotsell{
@@ -59,9 +66,14 @@
   background-color: #fff;
 }
 .goods{
-  width: 49%;
+  width: 49.5%;
   background-color: #fff;
   margin-top: 10rpx;
+  float: left;
+  margin-right: 1%;
+}
+.goods:nth-child(2n){
+   margin-right: 0;
 }
 .goods image{
   width: 100%;

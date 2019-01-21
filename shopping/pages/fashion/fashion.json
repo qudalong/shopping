@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "v-share": "/components/share-btn/index"
+  },
   "navigationBarTitleText": "专题详情"
 }

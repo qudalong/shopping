@@ -1,13 +1,7 @@
 <!-- 购物车 -->
 <icon bindtap='toShopCart' class='iconfont icon-gouwuche1-copy shopCart'></icon>
 <!-- 轮播图 -->
-<swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#FE4442" indicator-color="#ccc">
-  <block wx:for="{{imgUrls}}" wx:key="unique">
-    <swiper-item>
-      <image src="{{item}}" class="slide-image" mode='aspectFill' />
-    </swiper-item>
-  </block>
-</swiper>
+<v-swiper imgList="{{imgList}}" my-class="swiper-h"></v-swiper>
 <!-- 商品名称价格销量 -->
 <view class='namepricesales'>
   <view>
@@ -18,10 +12,7 @@
       <text>销量:200件</text>
     </view>
   </view>
-  <view class='share'>
-    <icon class='iconfont icon-fenxiang'></icon>
-    <view>分享</view>
-  </view>
+  <v-share></v-share>
 </view>
 <!-- 承诺部分 -->
 <view class='promise'>
@@ -127,11 +118,7 @@
     </view>
     <view class='amount'>
       <text>数量</text>
-      <view class='control'>
-        <icon class='iconfont icon-jianhao1'></icon>
-        <view class='count'>14</view>
-        <icon class='iconfont icon-jiahao'></icon>
-      </view>
+      <v-cart-control bind:myControl='onControl' count="{{producItem.count}}"></v-cart-control>
     </view>
   </view>
 </view>
