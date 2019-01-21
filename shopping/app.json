@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/toMakeAnAppointment/toMakeAnAppointment",
     "pages/index/index",
+    "pages/hotMore/hotMore",
+    "pages/homePage/homePage",
+    "pages/toMakeAnAppointment/toMakeAnAppointment",
     "pages/appointment/appointment",
     "pages/more/more",
     "pages/productDetail/productDetail",
@@ -9,7 +11,6 @@
     "pages/goodStoreRecommend/goodStoreRecommend",
     "pages/my/my",
     "pages/shopCart/shopCart",
-    "pages/homePage/homePage",
     "pages/search/search",
     "pages/teamDetail/teamDetail",
     "pages/agent/agent",

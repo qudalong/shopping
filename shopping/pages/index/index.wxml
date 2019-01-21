@@ -68,7 +68,7 @@
   </scroll-view>
 </view>
 <!-- 每日必逛 -->
-<view bindtap='toMore' class='title-wrap' hover-class='hover'  data-title="拼团">
+<view bindtap='toGroupMore' class='title-wrap' hover-class='hover'  data-title="拼团">
   <view class='left'>
     <icon class='iconfont icon-guanyuwomen'></icon>
     <text class='lable'>限量拼团，每日必逛</text>
@@ -89,7 +89,7 @@
   </scroll-view>
 </view>
 <!-- 特别推荐 -->
-<view class='title-mid'>
+<view  bindtap='toHotMore' class='title-mid'>
   <view class='middle'>
     <icon class='iconfont icon-shoucang'></icon>
     <text class='lable'>特别推荐</text>
@@ -106,7 +106,7 @@
     <view class='price'>￥16{{index}}.00</view>
   </view>
 </view>
-<view class='title-mid'>
+<view bindtap='toHotMore' class='title-mid'>
   <view class='middle'>
     <icon class='iconfont icon-huo'></icon>
     <text class='lable'>热销</text>

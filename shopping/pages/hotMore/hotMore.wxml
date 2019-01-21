@@ -1,0 +1,23 @@
+<view class='list-all'>
+  <view class='classification'>
+    <text>综合</text>
+  </view>
+  <view class='classification'>
+    <text>销量</text>
+  </view>
+  <view class='classification'>
+    <text>价格</text>
+  </view>
+  <view class='classification'>
+    <text>销量</text>
+  </view>
+</view>
+<view>
+  <view class='goods' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique">
+    <image src='../../image/img/cover01.jpg'></image>
+    <view class='font'>
+      <view>麦兜娃娃</view>
+      <text class='color'>￥20.00</text>
+    </view>
+  </view>
+</view>
