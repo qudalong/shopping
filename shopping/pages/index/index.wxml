@@ -48,7 +48,7 @@
   </view>
 </view> -->
 <!-- 预约 -->
-<view class='title-wrap'>
+<view bindtap='toAppointment' class='title-wrap' hover-class='hover' data-title="预约">
   <view class='left'>
     <icon class='iconfont icon-yiwancheng'></icon>
     <text class='lable'>预约</text>
@@ -68,7 +68,7 @@
   </scroll-view>
 </view>
 <!-- 每日必逛 -->
-<view class='title-wrap'>
+<view bindtap='toMore' class='title-wrap' hover-class='hover'  data-title="拼团">
   <view class='left'>
     <icon class='iconfont icon-guanyuwomen'></icon>
     <text class='lable'>限量拼团，每日必逛</text>

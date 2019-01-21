@@ -1,0 +1,25 @@
+<view class='tab-wrap'>
+  <view bindtap='selectItem' class="item {{activeIndex==0?'active':''}}" data-index="0">全部</view>
+  <view class="scroll-box">
+    <scroll-view class="scroll-view-x" scroll-x>
+      <view bindtap='selectItem' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="item {{activeIndex==index+1?'active':''}}" data-index="{{index+1}}">预约{{index+1}}</view>
+    </scroll-view>
+  </view>
+</view>
+<!-- 商品列表 -->
+<view class='related-products'>
+  <block wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique">
+    <view bindtap='toProduceDetail' class='goods' hover-class='hover'>
+      <view class='picture'>
+        <image src='/image/img/cover01.jpg' class='img' />
+      </view>
+      <view class='info'>
+        <view class='productname'>毛领子</view>
+        <view class='base'>
+          <view class='productprice'>￥25{{index}}.00</view>
+          <view class='appointment-btn'>预约</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

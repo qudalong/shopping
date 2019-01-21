@@ -1,8 +1,10 @@
 {
   "pages": [
     "pages/toMakeAnAppointment/toMakeAnAppointment",
-    "pages/productDetail/productDetail",
     "pages/index/index",
+    "pages/appointment/appointment",
+    "pages/more/more",
+    "pages/productDetail/productDetail",
     "pages/detail/detail",
     "pages/goodStoreRecommend/goodStoreRecommend",
     "pages/my/my",

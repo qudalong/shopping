@@ -1,0 +1,8 @@
+@import "/pages/more/more.wxss";
+@import '../classify/classify.wxss';
+.appointment-btn{
+  border: 1px solid #d81e06;
+  border-radius: 30rpx;
+  padding: 6rpx 25rpx;
+  color: #d81e06;
+}
