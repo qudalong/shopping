@@ -5,11 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls: ['/image/img/banner04.jpg', '/image/img/banner02.jpg'],
-    indicatorDots: true,
-    autoplay: true,
-    interval: 4000,
-    duration: 400,
+    imgList: ['/image/img/banner04.jpg', '/image/img/banner02.jpg'],
     producType: false, //默认选中商品详情
     list: [1, 1, 1, 1],
     producItem: {
@@ -45,6 +41,11 @@ Page({
 
   //  选择商品规格
   selectTypeOpt() {
+    if (this.data.producType){
+      wx.navigateTo({
+        url: `/pages/submitTheBooking/submitTheBooking`
+      })
+    }
     this.setData({
       producType: true
     })
