@@ -69,16 +69,14 @@
 <!-- 预约详情 -->
 <view class='appointment' wx:if="{{activeIndex==0}}">
   <image src='../../image/img/cover01.jpg'></image>
-  <image src='../../image/img/cover01.jpg'></image>
-  <image src='../../image/img/cover01.jpg'></image>
 </view>
 <!-- 底部导航栏 -->
 <view class='bottomNavigation'>
-  <view bindtap='toHome' class='homepage'>
+  <view class='homepage'>
     <icon class='iconfont icon-lianxiwomen'></icon>客服
   </view>
-  <view class='collect'>
+  <view bindtap='toHome'  class='collect'>
     <icon class='iconfont icon-home'></icon>首页
   </view>
-  <view bindtap='buyNow' class='buynow'>立即预约</view>
+  <view bindtap='appointment' class='buynow'>立即预约</view>
 </view>

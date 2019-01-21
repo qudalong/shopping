@@ -13,7 +13,7 @@
       <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
       <view wx:if="{{countyName}}"  class="region">{{countyName}}</view>
       <view wx:if="{{!countyName}}" class="region">
-        <text wx:if="{{!region.length}}" class="region">请选择</text>
+        <view wx:if="{{!region.length}}" class="region tr">请选择</view>
         <view wx:if="{{region.length}}" class="region">{{region[0]}} {{region[1]}} {{region[2]}}</view>
       </view>
     </picker>
@@ -24,4 +24,4 @@
   </view>
 </view>
 <view bindtap='getWxAddress' class='btn' hover-class='hover'>一键获取微信地址</view>
-<view class='btn-fixd' hover-class="hover">保存</view>
+<view bindtap='saveAddress' class='btn-fixd' hover-class="hover">保存</view>

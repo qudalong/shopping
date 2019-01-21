@@ -16,8 +16,12 @@
   padding:30rpx 0;
 }
 .region{
-  float: right;
+  flex: 1;
   padding-top: 8rpx;
+  text-align: left;
+}
+.tr{
+  text-align: right;
 }
 .picker{
   display: block;

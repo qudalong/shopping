@@ -34,6 +34,12 @@ Page({
     })
   },
 
+  toMakeAnAppointment() {
+    wx.navigateTo({
+      url: `/pages/toMakeAnAppointment/toMakeAnAppointment`
+    })
+  },
+
   toAppointment(e) {
     const title = e.currentTarget.dataset.title;
     wx.navigateTo({
@@ -94,7 +100,7 @@ Page({
       url: `/pages/couponRedemptionCentre/couponRedemptionCentre`
     })
   },
-  
+
   toTeamDetail() {
     wx.navigateTo({
       url: `/pages/teamDetail/teamDetail`

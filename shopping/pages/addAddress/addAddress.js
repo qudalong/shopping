@@ -15,6 +15,12 @@ Page({
 
   },
 
+  saveAddress() {
+    this.setData({
+      region: e.detail.value
+    })
+  },
+
   bindRegionChange(e) {
     this.setData({
       region: e.detail.value

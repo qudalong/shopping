@@ -28,9 +28,9 @@ Page({
   },
 
 
-  toProduceDetail() {
+  toMakeAnAppointment() {
     wx.navigateTo({
-      url: `/pages/productDetail/productDetail`
+      url: `/pages/toMakeAnAppointment/toMakeAnAppointment`
     })
   },
 

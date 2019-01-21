@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    discountsMoney:0,//优惠多少钱
+     list:[1,1,1,1,1]
   },
 
   /**
@@ -16,6 +17,16 @@ Page({
   },
 
   notUse(){
+    wx.navigateBack({
+      delta:1
+    })
+  },
+
+  discounts(e){
+    const discountsMoney = e.currentTarget.dataset.money;
+    this.setData({
+      discountsMoney
+    });
     wx.navigateBack({
       delta:1
     })
@@ -46,7 +57,12 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    const pages = getCurrentPages();
+    const currPage = pages[pages.length - 1];   //当前页面
+    const prevPage = pages[pages.length - 2];  //上一个页面
+    prevPage.setData({
+      discountsMoney: this.data.discountsMoney
+    });
   },
 
   /**

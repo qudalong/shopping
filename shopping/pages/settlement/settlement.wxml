@@ -43,7 +43,8 @@
     <view class='none'>
       <!-- <text class='color'>目前无可用优惠券</text> -->
       <!-- 有优惠券可用时显示 -->
-      <text class='num'>有5张优惠券可用</text>
+      <text wx:if="{{!discountsMoney}}" class='num'>有5张优惠券可用</text>
+      <text wx:if="{{discountsMoney}}" class='num'>-{{discountsMoney}}元</text>
       <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy color'></icon>
     </view>
   </view>
