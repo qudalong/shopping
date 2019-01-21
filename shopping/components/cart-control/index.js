@@ -7,31 +7,35 @@ Component({
     count: {
       type: Number,
       value: null,
-      desc:'商品数量'
+      desc: '商品数量'
     }
   },
 
   /**
    * 组件的初始数据
    */
-  data: {
-  },
+  data: {},
 
   /**
    * 组件的方法列表
    */
+
   methods: {
     add() {
-      let {count} = this.data;
+      let {
+        count
+      } = this.data;
       count++;
       this.setData({
         count
       });
       this.triggerEvent('myControl', count);
     },
-    
+
     minus() {
-      let {count} = this.data;
+      let {
+        count
+      } = this.data;
       if (count <= 0) {
         return
       }
@@ -41,6 +45,5 @@ Component({
       });
       this.triggerEvent('myControl', count);
     }
-
   }
 })

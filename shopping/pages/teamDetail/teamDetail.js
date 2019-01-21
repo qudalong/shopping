@@ -5,13 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls: ['/image/img/banner04.jpg', '/image/img/banner02.jpg'],
-    indicatorDots: true,
-    autoplay: true,
-    interval: 4000,
-    duration: 400,
+    imgList: ['/image/img/banner04.jpg', '/image/img/banner02.jpg'],
     activeIndex: 0, //默认选中商品详情
-    producType: false, //默认选中商品详情
+    producType: false, //默认规格隐藏
     list: [1, 1, 1, 1],
     producItem: {
       img: '/image/img/banner01.jpg',

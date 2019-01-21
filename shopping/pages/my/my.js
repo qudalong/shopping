@@ -15,10 +15,7 @@ Page({
 
   },
 
-  getPhoneNumber: function(e) {
-    console.log(e.detail.errMsg)
-    console.log(e.detail.iv)
-    console.log(e.detail.encryptedData)
+  getPhoneNumber(e) {
     if (e.detail.errMsg == 'getPhoneNumber:fail user deny') {
       wx.showModal({
         title: '提示',
@@ -36,7 +33,7 @@ Page({
     }
   },
 
-  tel: function() {
+  tel() {
     wx.makePhoneCall({
       phoneNumber: '18768871896',
     })
@@ -61,7 +58,7 @@ Page({
     })
   },
 
-  toCollect(e) {
+  toCollect() {
     wx.navigateTo({
       url: `/pages/collect/collect`
     })

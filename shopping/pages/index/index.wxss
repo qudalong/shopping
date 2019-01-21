@@ -18,15 +18,6 @@ page {
   color: #666;
 }
 
-.swiper {
-  height: 400rpx;
-}
-
-.swiper swiper-item, .swiper .slide-image {
-  width: 100%;
-  height: 100%;
-}
-
 .icon-nav {
   height: 90rpx;
   width: 90rpx;
