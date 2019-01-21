@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    collectFlag:false,//收藏
     imgList: ['/image/img/banner04.jpg', '/image/img/banner02.jpg'],
     activeIndex: 0, //默认选中商品详情
     producType: false, //默认隐藏
@@ -31,6 +32,13 @@ Page({
   },
 
  
+
+  collect() {
+    console.log(9)
+    this.setData({
+      collectFlag:true
+    })
+  },
 
   selectColor(e) {
     const activeIndexC = e.currentTarget.dataset.index;

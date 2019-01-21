@@ -22,9 +22,7 @@ Component({
 
   methods: {
     add() {
-      let {
-        count
-      } = this.data;
+      let {count} = this.data;
       count++;
       this.setData({
         count
@@ -33,9 +31,7 @@ Component({
     },
 
     minus() {
-      let {
-        count
-      } = this.data;
+      let {count} = this.data;
       if (count <= 0) {
         return
       }

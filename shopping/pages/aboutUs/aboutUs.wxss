@@ -1,9 +1,14 @@
+page{
+  font-size: 0;
+}
 .about-us{
   padding: 30rpx;
   line-height: 1.6;
   text-indent: 60rpx;
   text-align: justify;
   color: #666;
+  background: #fff;
+  font-size: 32rpx;
 }
 image{
   width: 100%;
