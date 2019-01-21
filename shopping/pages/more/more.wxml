@@ -1,0 +1,26 @@
+<view class='tab-wrap'>
+  <icon bindtap='toSearch' class='iconfont icon-sousuo'></icon>
+  <view bindtap='selectItem' class="hook {{activeIndex==0?'active':''}}" data-index="0">热销</view>
+  <view class="scroll-box">
+    <scroll-view class="scroll-view-x" scroll-x>
+      <view bindtap='selectItem' wx:if="{{list.length}}" wx:for="{{list}}" wx:key="unique" class="item {{activeIndex==index+1?'active':''}}" data-index="{{index+1}}">拼团{{index+1}}</view>
+    </scroll-view>
+  </view>
+</view>
+<v-swiper imgList="{{imgList}}"></v-swiper>
+<!-- 商品列表 -->
+<view class='product-list'>
+  <view wx:if="{{list.length}}"  bindtap='toTeam' class='item' hover-class='hover' wx:for="{{list}}" wx:key="unique">
+    <image class='cover' src='/image/img/banner01.jpg' mode='aspectFill' />
+    <view class='info'>
+      <view class='name'>羽绒服短袖</view>
+      <view class='group'>已团20{{index}}件</view>
+      <view class='row'>
+        <view class='price'>￥6{{index}}.00
+          <text class='old-price'>￥20{{index}}.00</text>
+        </view>
+        <view class='go-group' hover-class='hover'>去拼团</view>
+      </view>
+    </view>
+  </view>
+</view>

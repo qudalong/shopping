@@ -21,6 +21,18 @@ Page({
       url: `/pages/search/search`
     })
   },
+  toMore(e) {
+    const title = e.currentTarget.dataset.title;
+    wx.navigateTo({
+      url: `/pages/more/more?title=${title}`
+    })
+  },
+  toAppointment(e) {
+    const title = e.currentTarget.dataset.title;
+    wx.navigateTo({
+      url: `/pages/appointment/appointment?title=${title}`
+    })
+  },
   toShops() {
     wx.navigateTo({
       url: `/pages/goodStoreRecommend/goodStoreRecommend`
