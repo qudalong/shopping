@@ -39,6 +39,7 @@ page {
 .form{
   text-align: center;
   border-bottom: 1rpx solid #ccc; 
+  padding: 30rpx 0;
 }
 .input{
   display: flex;
