@@ -41,6 +41,10 @@ page {
   border-bottom: 1rpx solid #f0f0f0; 
   padding: 30rpx 0;
 }
+.reservationform .lable{
+  width: 200rpx;
+  text-align: right;
+}
 .input{
   display: flex;
   align-items: center;
@@ -54,7 +58,7 @@ page {
 .submit{
   width: 100%;
   background-color: #f10215;
-  padding: 30rpx 0;
+  padding: 35rpx 0;
   text-align: center;
   position: fixed;
   bottom: 0;

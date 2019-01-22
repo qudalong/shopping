@@ -16,7 +16,7 @@ page{
   border-radius: 20rpx;
   display: flex;
   justify-content: space-between;
-  font-size: 50rpx;
+  font-size: 46rpx;
   margin-bottom: 30rpx;
 }
 .money{
@@ -57,4 +57,9 @@ page{
   color: #666;
   font-size: 28rpx;
   text-align: justify;
+}
+.icon-jinbi1{
+  font-size: 60rpx;
+  color: #E44C4A;
+  margin-right:10rpx;
 }

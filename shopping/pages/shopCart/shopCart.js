@@ -11,54 +11,71 @@ Page({
       img: '/image/img/banner01.jpg',
       name: '三只小松鼠',
       type: ['默认', '大码'],
-      price: 260,
-      count: 46
+      price: 100,
+      count: 1
     }, {
       status: 0,
       img: '/image/img/banner02.jpg',
       name: '短袖衬衣',
       type: ['默认', '短袖'],
-      price: 840,
-      count: 17
+      price: 200,
+      count: 2
     }, {
       status: 0,
       img: '/image/img/banner03.jpg',
       name: '波司登羽绒服',
       type: ['默认'],
-      price: 450,
-      count: 72
-    }]
+      price: 300,
+      count: 3
+    }],
+    totalMoney:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+  },
 
+  onControl(e){
+    let { name,count } = e.detail;
+    let { list } = this.data;
+    list.forEach((good)=>{
+      // console.log(good)
+    })
   },
 
   //选中商品
   selected(e) {
     const curIndex = e.currentTarget.dataset.index;
-    this.data.list.forEach((cur, index) => {
-      if (index === curIndex) {
-        cur.status ? cur.status = 0 : cur.status = 1
+    let {totalMoney,list}=this.data;
+    let selectFoods=[];
+    list.forEach((cur, index) => {
+      if (curIndex === index) {
+        cur.status ? cur.status = 0 : cur.status = 1;
+        // totalMoney = cur.price*cur.count;
+      }
+      if (cur.status){
+        selectFoods.push(cur)
       }
     })
+      // console.log(selectFoods)
     this.setData({
-      list: this.data.list
+      list,
+      totalMoney
     })
   },
 
   //全选
   selectAll(e) {
-    this.data.ckAll ? this.data.ckAll = false : this.data.ckAll = true;
-    this.data.list.forEach((cur) => {
-      this.data.ckAll ? cur.status = 1 : cur.status = 0;
+    let { ckAll, list } = this.data;
+    ckAll ? ckAll = false :ckAll = true;
+    list.forEach((cur) => {
+     ckAll ? cur.status = 1 : cur.status = 0;
     })
     this.setData({
-      list: this.data.list,
-      ckAll: this.data.ckAll
+      list,
+      ckAll
     })
   },
 

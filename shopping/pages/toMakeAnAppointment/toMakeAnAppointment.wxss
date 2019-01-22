@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2rpx solid #f0f0f0;
+  border-bottom: 1rpx solid #f0f0f0;
   background: #fff;
 }
 
@@ -63,7 +63,7 @@
 .information{
   color: #919391;
   padding: 20rpx 10rpx;
-  border-bottom: 2rpx solid #919391;
+  border-bottom: 1rpx solid #f0f0f0;
 }
 .stores1{
   display: flex;

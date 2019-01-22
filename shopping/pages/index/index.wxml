@@ -37,7 +37,8 @@
     <view>加盟代理</view>
   </view>
 </view>
-<!-- <view class='title-wrap'>
+<!-- 专享优惠卷 -->
+<view bindtap='toCoupon' class='title-wrap'>
   <view class='left'>
     <icon class='iconfont icon-youhuiquan'></icon>
     <text class='lable'>专享优惠卷</text>
@@ -46,7 +47,19 @@
     <text class='more'>更多</text>
     <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
   </view>
-</view> -->
+</view>
+<view class="scroll-box scroll-juan">
+  <scroll-view class="scroll-view-x" scroll-x wx:if="{{list.length}}">
+  <view class='juan' wx:for="{{list}}" wx:key="unique">
+      <icon class='iconfont icon-ziyuan'  ></icon>
+      <view class='filter'>
+      <view>￥2{{index}}.00</view>
+      <view>满2{{index}}0元可用</view>
+      </view>
+      <view class='geted'>已领取</view>
+  </view>
+  </scroll-view>
+</view>
 <!-- 预约 -->
 <view bindtap='toAppointment' class='title-wrap' hover-class='hover' data-title="预约">
   <view class='left'>

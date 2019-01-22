@@ -46,6 +46,18 @@ Page({
     })
   },
 
+  topUp() {
+    wx.navigateTo({
+      url: `/pages/topUp/topUp`
+    })
+  },
+
+  toPointsFor() {
+    wx.navigateTo({
+      url: `/pages/pointsFor/pointsFor`
+    })
+  },
+
   toAboutUs() {
     wx.navigateTo({
       url: `/pages/aboutUs/aboutUs`

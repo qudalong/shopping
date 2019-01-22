@@ -1,5 +1,5 @@
 <view class='control'>
   <icon bindtap='minus' class='iconfont icon-jianhao1'></icon>
-  <view class='count'>{{count}}</view>
+  <view class='count'>{{product.count}}</view>
   <icon bindtap='add' class='iconfont icon-jiahao'></icon>
 </view>
