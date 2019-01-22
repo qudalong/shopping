@@ -4,15 +4,15 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    // count: {
-    //   type: Number,
-    //   value: null,
-    //   desc: '商品数量'
-    // },
     product:{
       type:Object,
       value:null,
       desc:'单个商品信息'
+    },
+    index: {
+      type: Number,
+      value: null,
+      desc: '商品下标'
     }
   },
 
@@ -27,16 +27,20 @@ Component({
 
   methods: {
     add() {
-      let { product } = this.data;
+      let { product,index } = this.data;
       product.count++;
       this.setData({
         product
       });
-      this.triggerEvent('myControl', product);
+      let myEventDetail={
+        product,
+        index
+      }
+      this.triggerEvent('myControl', myEventDetail);
     },
 
     minus() {
-      let { product } = this.data;
+      let { product, index } = this.data;
       if (product.count <= 0) {
         return
       }
@@ -44,7 +48,11 @@ Component({
       this.setData({
         product
       });
-      this.triggerEvent('myControl', product);
+      let myEventDetail = {
+        product,
+        index
+      }
+      this.triggerEvent('myControl', myEventDetail);
     }
   }
 })

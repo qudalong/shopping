@@ -28,51 +28,38 @@ Page({
       price: 300,
       count: 3
     }],
-    totalMoney:0
+    totalMoney: 0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
-  },
-
-  onControl(e){
-    let { name,count } = e.detail;
+  onLoad: function(options) { },
+  
+  //自定义事件
+  onControl(e) {
+    let { product,index } = e.detail;
     let { list } = this.data;
-    list.forEach((good)=>{
-      // console.log(good)
-    })
+    let good = list[index];
+    // 改变商品的数量
+    good.count = product.count;
   },
 
   //选中商品
   selected(e) {
     const curIndex = e.currentTarget.dataset.index;
-    let {totalMoney,list}=this.data;
-    let selectFoods=[];
-    list.forEach((cur, index) => {
-      if (curIndex === index) {
-        cur.status ? cur.status = 0 : cur.status = 1;
-        // totalMoney = cur.price*cur.count;
-      }
-      if (cur.status){
-        selectFoods.push(cur)
-      }
-    })
-      // console.log(selectFoods)
+    let { totalMoney,list} = this.data;
+    list[curIndex].status ? list[curIndex].status = 0 : list[curIndex].status = 1;
     this.setData({
-      list,
-      totalMoney
+      list
     })
   },
 
   //全选
   selectAll(e) {
-    let { ckAll, list } = this.data;
-    ckAll ? ckAll = false :ckAll = true;
-    list.forEach((cur) => {
-     ckAll ? cur.status = 1 : cur.status = 0;
-    })
+    let {ckAll,list} = this.data;
+    ckAll ? ckAll = false : ckAll = true;
+    list.forEach(cur => ckAll ? cur.status = 1 : cur.status = 0 )
     this.setData({
       list,
       ckAll
