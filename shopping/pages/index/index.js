@@ -21,6 +21,12 @@ Page({
     })
   },
 
+  toSeckill() {
+    wx.navigateTo({
+      url: `/pages/seckill/seckill`
+    })
+  },
+  
   toHotMore() {
     wx.navigateTo({
       url: `/pages/hotMore/hotMore`

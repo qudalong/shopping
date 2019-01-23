@@ -118,7 +118,7 @@
     </view>
     <view class='amount'>
       <text>数量</text>
-      <v-cart-control bind:myControl='onControl' count="{{producItem.count}}"></v-cart-control>
+       <v-cart-control bind:myControl='onControl' index="{{index}}" product="{{producItem}}"></v-cart-control>
     </view>
   </view>
 </view>

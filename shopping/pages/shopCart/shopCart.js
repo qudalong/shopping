@@ -37,6 +37,12 @@ Page({
    */
   onLoad: function(options) {},
 
+  toAccount(){
+    wx.navigateTo({
+      url: `/pages/settlement/settlement`
+    })
+  },
+
   //自定义事件
   onControl(e) {
     let {

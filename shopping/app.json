@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/seckill/seckill",
     "pages/shopCart/shopCart",
     "pages/addAddress/addAddress",
     "pages/settlement/settlement",

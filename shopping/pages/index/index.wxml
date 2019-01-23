@@ -50,8 +50,8 @@
 </view>
 <view class="scroll-box scroll-juan">
   <scroll-view class="scroll-view-x" scroll-x wx:if="{{list.length}}">
-  <view class='juan' wx:for="{{list}}" wx:key="unique">
-      <icon class='iconfont icon-ziyuan'  ></icon>
+  <view class='juan' wx:for="{{list}}" wx:key="unique" data-index="{{index}}">
+      <icon class="iconfont icon-ziyuan"></icon>
       <view class='filter'>
       <view>￥2{{index}}.00</view>
       <view>满2{{index}}0元可用</view>
@@ -79,6 +79,17 @@
       <view class='price'>￥16{{index}}.00</view>
     </view>
   </scroll-view>
+</view>
+<!-- 秒杀活动 -->
+<view bindtap='toSeckill' class='title-wrap' hover-class='hover' data-title="预约">
+  <view class='left'>
+    <icon class='iconfont icon-zhengdianmiaosha'></icon>
+    <text class='lable'>暂无秒杀活动</text>
+  </view>
+  <view class='right'>
+    <text class='more'>更多</text>
+    <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy'></icon>
+  </view>
 </view>
 <!-- 每日必逛 -->
 <view bindtap='toGroupMore' class='title-wrap' hover-class='hover'  data-title="拼团">
