@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/shopCart/shopCart",
     "pages/index/index",
+    "pages/shopCart/shopCart",
     "pages/addAddress/addAddress",
     "pages/settlement/settlement",
     "pages/toMakeAnAppointment/toMakeAnAppointment",

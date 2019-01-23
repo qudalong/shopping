@@ -68,13 +68,33 @@ Page({
     } else {
       if (selectFoods.includes(itemGood)) {
         let index = selectFoods.indexOf(itemGood)
-        selectFoods.splice(index, 1)
+        selectFoods.splice(index, 1);
       }
     }
     this.setData({
       list,
       selectFoods,
       totalMoney
+    });
+    this.calculateMoney(selectFoods);
+  },
+
+  //全选
+  selectAll(e) {
+    let {
+      ckAll,
+      selectFoods,
+      list
+    } = this.data;
+    ckAll ? ckAll = false : ckAll = true;
+    list.forEach(cur => {
+      ckAll ? cur.status = 1 : cur.status = 0;
+      ckAll ? selectFoods = list : selectFoods = [];
+    })
+    this.setData({
+      list,
+      ckAll,
+      selectFoods
     });
     this.calculateMoney(selectFoods);
   },
@@ -86,26 +106,6 @@ Page({
       totalMoney += selectFoods[i].price * selectFoods[i].count;
     }
     this.setData({
-      totalMoney
-    });
-  },
-
-  //全选
-  selectAll(e) {
-    let {
-      ckAll,
-      selectFoods,
-      list
-    } = this.data;
-    let totalMoney = 0;
-    ckAll ? ckAll = false : ckAll = true;
-    list.forEach(cur => {
-      ckAll ? cur.status = 1 : cur.status = 0;
-      ckAll ? totalMoney += cur.price * cur.count : totalMoney = 0;
-    })
-    this.setData({
-      list,
-      ckAll,
       totalMoney
     });
   },
