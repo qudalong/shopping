@@ -5,7 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    ckAll: false, //默认不全选
     list: [{
       status: 0,
       img: '/image/img/banner01.jpg',
@@ -28,42 +27,87 @@ Page({
       price: 300,
       count: 3
     }],
+    selectFoods: [],
+    ckAll: false, //默认不全选
     totalMoney: 0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) { },
-  
+  onLoad: function(options) {},
+
   //自定义事件
   onControl(e) {
-    let { product,index } = e.detail;
-    let { list } = this.data;
-    let good = list[index];
-    // 改变商品的数量
-    good.count = product.count;
+    let {
+      product,
+      index
+    } = e.detail;
+    let {
+      list,
+      selectFoods
+    } = this.data;
+    let itemGood = list[index];
+    itemGood.count = product.count;
+    this.calculateMoney(selectFoods);
   },
 
   //选中商品
   selected(e) {
     const curIndex = e.currentTarget.dataset.index;
-    let { totalMoney,list} = this.data;
-    list[curIndex].status ? list[curIndex].status = 0 : list[curIndex].status = 1;
+    let {
+      totalMoney,
+      list,
+      selectFoods
+    } = this.data;
+    let itemGood = list[curIndex];
+    itemGood.status ? itemGood.status = 0 : itemGood.status = 1;
+    // 选中与取消
+    if (itemGood.status) {
+      selectFoods.push(itemGood)
+    } else {
+      if (selectFoods.includes(itemGood)) {
+        let index = selectFoods.indexOf(itemGood)
+        selectFoods.splice(index, 1)
+      }
+    }
     this.setData({
-      list
-    })
+      list,
+      selectFoods,
+      totalMoney
+    });
+    this.calculateMoney(selectFoods);
+  },
+
+  /*计算总价格*/
+  calculateMoney(selectFoods) {
+    let totalMoney = 0;
+    for (let i = 0; i < selectFoods.length; i++) {
+      totalMoney += selectFoods[i].price * selectFoods[i].count;
+    }
+    this.setData({
+      totalMoney
+    });
   },
 
   //全选
   selectAll(e) {
-    let {ckAll,list} = this.data;
+    let {
+      ckAll,
+      selectFoods,
+      list
+    } = this.data;
+    let totalMoney = 0;
     ckAll ? ckAll = false : ckAll = true;
-    list.forEach(cur => ckAll ? cur.status = 1 : cur.status = 0 )
+    list.forEach(cur => {
+      ckAll ? cur.status = 1 : cur.status = 0;
+      ckAll ? totalMoney += cur.price * cur.count : totalMoney = 0;
+    })
     this.setData({
       list,
-      ckAll
-    })
+      ckAll,
+      totalMoney
+    });
   },
 
   /**

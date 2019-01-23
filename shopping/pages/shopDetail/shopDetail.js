@@ -20,7 +20,7 @@ Page({
     wx.makePhoneCall({
       phoneNumber: '18768871896',
     })
-  },
+  }, 
 
   getAdress() {
     wx.getLocation({
