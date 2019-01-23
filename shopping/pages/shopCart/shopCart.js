@@ -89,8 +89,6 @@ Page({
     ckAll ? ckAll = false : ckAll = true;
     list.forEach(cur => {
       ckAll ? cur.status = 1 : cur.status = 0;
-      // ckAll ? selectFoods = JSON.parse(JSON.stringify(list)) : selectFoods = [];
-      // ckAll ? selectFoods = list : selectFoods = [];
       if (cur.status) {
         selectFoods.push(cur)
       } else {
