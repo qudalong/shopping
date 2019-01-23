@@ -24,6 +24,6 @@
   <icon bindtap='selectAll'  class="iconfont icon-circle {{ckAll ? 'icon-duihao1' : 'icon-yuan'}}"></icon>
   全选
   <view class='total'>合计:￥{{totalMoney}}</view>
-  <view class='edit' hover-class='hover'>编辑</view>
+  <view class='edit' hover-class='hover'>编辑11</view>
   <view class='result' hover-class='hover'>结算</view>
 </view>
