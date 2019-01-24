@@ -1,11 +1,11 @@
-<view wx:if="{{userName}}" class='the-goods'>
+<view wx:if="{{address}}" class='the-goods'>
   <view class='consignee'>
-    <view>收货人：{{userName}}</view>
-    <view>{{telNumber}}</view>
+    <view>收货人：{{address.userName}}</view>
+    <view>{{address.telNumber}}</view>
   </view>
-  <view>收货地址：{{countyName}}{{detailInfo}}</view>
+  <view>收货地址：{{address.countyName}}{{address.detailInfo}}</view>
 </view>
-<view wx:if="{{!userName}}" bindtap='addAddress' class='address'>
+<view wx:if="{{!address}}" bindtap='addAddress' class='address'>
   <text>请选择收货地址</text>
   <icon class='iconfont icon-iconfontyoujiantou-copy-copy-copy-copy color'></icon>
 </view>

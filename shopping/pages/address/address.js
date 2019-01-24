@@ -34,6 +34,10 @@ Page({
                 telNumber: res.telNumber,
                 countyName: res.provinceName + res.cityName + res.countyName,
                 detailInfo: res.detailInfo,
+              });
+              wx.setStorageSync("address", res);
+              wx.navigateBack({
+                delta: 1,
               })
             }
           })
@@ -51,6 +55,10 @@ Page({
                   telNumber: res.telNumber,
                   countyName: res.provinceName + res.cityName + res.countyName,
                   detailInfo: res.detailInfo,
+                });
+                wx.setStorageSync("address", res);
+                wx.navigateBack({
+                  delta: 1,
                 })
               }
             })
